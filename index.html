@@ -1,0 +1,1840 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Joel Pinheiro | Ilustração de Moda Sob Encomenda</title>
+<meta name="description" content="Ilustração de moda sob encomenda para marcas, estilistas e artistas: croqui personalizado com o traço que já assinou looks para Ludmilla e KATSEYE. Projetos pontuais e parcerias contínuas.">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Joel Pinheiro (@joelcoveero)">
+<meta name="theme-color" content="#0a0710">
+<link rel="canonical" href="https://lindpinheiro.github.io/joel-croquis-de-moda/">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Joel Pinheiro | Ilustração">
+<meta property="og:title" content="Joel Pinheiro | Ilustração de Moda Sob Encomenda">
+<meta property="og:description" content="Croqui personalizado do briefing à arte final. O traço que já assinou looks para Ludmilla e KATSEYE, agora sob encomenda para o seu projeto.">
+<meta property="og:image" content="https://lindpinheiro.github.io/joel-croquis-de-moda/assets/joel-foto-ilustracao.webp">
+<meta property="og:url" content="https://lindpinheiro.github.io/joel-croquis-de-moda/">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Joel Pinheiro | Ilustração de Moda Sob Encomenda">
+<meta name="twitter:description" content="Croqui personalizado do briefing à arte final, para marcas, estilistas e artistas.">
+<meta name="twitter:image" content="https://lindpinheiro.github.io/joel-croquis-de-moda/assets/joel-foto-ilustracao.webp">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230a0710'/%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23ff2f8f'/%3E%3Cstop offset='1' stop-color='%239b5cff'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ctext x='32' y='43' font-family='Arial,sans-serif' font-weight='700' font-size='26' fill='url(%23g)' text-anchor='middle'%3EJC%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;800&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,500&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Ilustração de moda sob encomenda",
+  "provider": { "@type": "Person", "name": "Joel Pinheiro", "alternateName": "@joelcoveero" },
+  "areaServed": "BR",
+  "description": "Ilustração de moda sob encomenda para marcas, estilistas e artistas: croqui personalizado do briefing à arte final."
+}
+</script>
+<style>
+  :root{
+    --bg:#0a0710;
+    --bg-alt:#120b1c;
+    --bg-card:#171025;
+    --ink:#f6f2fb;
+    --ink-soft:#b3a7c7;
+    --ink-faint:#8b80a8;
+    --line:#2b2140;
+    --pink:#ff2f8f;
+    --lime:#d7ff3e;
+    --violet:#9b5cff;
+    --radius:18px;
+    --max:1120px;
+    --font-display:'Unbounded',sans-serif;
+    --font-body:'Plus Jakarta Sans',sans-serif;
+    --font-mono:'JetBrains Mono',monospace;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  /* O coverflow do hero deixa imagens vazando pros lados (overflow:visible) —
+     sem isso a pagina ganha rolagem horizontal no mobile. `clip` em vez de
+     `hidden` porque `hidden` transforma o elemento em contexto de rolagem e
+     quebraria o position:sticky do header. */
+  html{overflow-x:hidden;}
+  @supports (overflow-x: clip){ html{overflow-x:clip;} }
+  body{
+    margin:0;
+    max-width:100vw;
+    overflow-x:hidden;
+    font-family:var(--font-body);
+    background:
+      radial-gradient(ellipse 900px 520px at 12% -8%, rgba(255,47,143,.18), transparent 60%),
+      radial-gradient(ellipse 750px 520px at 105% 8%, rgba(155,92,255,.16), transparent 55%),
+      var(--bg);
+    color:var(--ink);
+    line-height:1.6;
+  }
+  @supports (overflow-x: clip){ body{overflow-x:clip;} }
+  img{max-width:100%;display:block;}
+  @media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto;} }
+  a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-visible{
+    outline:2px solid var(--lime);outline-offset:3px;border-radius:4px;
+  }
+  .skip-link{
+    position:absolute;left:16px;top:-64px;z-index:70;
+    background:var(--bg-card);color:var(--ink);
+    border:1px solid var(--lime);border-radius:8px;
+    padding:10px 16px;text-decoration:none;font-weight:600;
+    transition:top .2s ease;
+  }
+  .skip-link:focus-visible{top:12px;}
+  main:focus, main:focus-visible{outline:none;}
+  .reveal{opacity:0;transform:translateY(24px);transition:opacity .6s cubic-bezier(.22,1,.36,1),transform .6s cubic-bezier(.22,1,.36,1);}
+  .reveal.is-visible{opacity:1;transform:translateY(0);}
+  @media (prefers-reduced-motion: reduce){
+    .reveal, .reveal.is-visible{opacity:1 !important;transform:none !important;transition:none !important;}
+  }
+  a{color:inherit;}
+  h1,h2,h3{font-family:var(--font-display);text-wrap:balance;}
+  h1 em{font-style:italic;font-weight:700;color:var(--pink);text-shadow:0 0 26px rgba(255,47,143,.35);}
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 24px;}
+
+  header.site{
+    position:sticky;top:0;z-index:20;
+    background:rgba(10,7,16,.78);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line);
+  }
+  header.site .wrap{display:flex;align-items:center;justify-content:space-between;padding:14px 24px;gap:14px;}
+  .brand{font-family:var(--font-display);font-weight:700;letter-spacing:.01em;font-size:1.05rem;text-decoration:none;flex-shrink:0;}
+  .brand span{background:linear-gradient(90deg,var(--pink),var(--violet));-webkit-background-clip:text;background-clip:text;color:transparent;}
+  nav.site{display:flex;align-items:center;margin-left:auto;}
+  nav.site a{margin-left:22px;text-decoration:none;font-size:.92rem;color:var(--ink-soft);transition:color .15s ease;white-space:nowrap;flex-shrink:0;}
+  nav.site a:hover{color:var(--lime);}
+  .btn{
+    display:inline-block;background:linear-gradient(90deg,var(--pink),var(--violet));
+    color:#fff;padding:12px 26px;border-radius:999px;text-decoration:none;
+    font-weight:600;font-size:1rem;border:none;cursor:pointer;
+    box-shadow:0 8px 26px -10px rgba(255,47,143,.6);
+    transition:box-shadow .18s ease, transform .18s ease;
+  }
+  .btn:hover{box-shadow:0 10px 32px -8px rgba(255,47,143,.8);transform:translateY(-1px);}
+  .btn.ghost{background:transparent;border:1.5px solid var(--violet);color:var(--ink);box-shadow:none;}
+  .btn.ghost:hover{background:rgba(155,92,255,.14);box-shadow:none;}
+  .btn.small{padding:8px 18px;font-size:.9rem;flex-shrink:0;}
+
+  /* Seletor de idioma — bandeira do idioma ativo + dropdown com os outros.
+     Uma copia fica dentro do nav.site (some no mobile junto com o resto do
+     menu horizontal) e outra dentro do painel mobile. */
+  .lang-switch{position:relative;margin-left:22px;}
+  .lang-trigger{
+    display:inline-flex;align-items:center;gap:7px;background:transparent;
+    border:1px solid var(--line);border-radius:999px;padding:6px 12px;
+    color:var(--ink-soft);cursor:pointer;font-family:var(--font-mono);
+    font-size:.82rem;font-weight:600;transition:border-color .15s ease, color .15s ease;
+  }
+  .lang-trigger:hover{color:var(--ink);border-color:var(--violet);}
+  .lang-switch.open .lang-trigger{color:var(--lime);border-color:var(--lime);}
+  .lang-flag{font-size:1.05rem;line-height:1;}
+  .lang-caret{color:var(--ink-faint);transition:transform .15s ease;flex-shrink:0;}
+  .lang-switch.open .lang-caret{transform:rotate(180deg);}
+  .lang-menu{
+    list-style:none;margin:8px 0 0;padding:6px;position:absolute;top:100%;right:0;
+    min-width:150px;background:var(--bg-card);border:1px solid var(--line);
+    border-radius:12px;box-shadow:0 18px 40px -14px rgba(0,0,0,.6);
+    opacity:0;visibility:hidden;transform:translateY(-6px);
+    transition:opacity .15s ease, transform .15s ease, visibility .15s;
+    z-index:40;
+  }
+  .lang-switch.open .lang-menu{opacity:1;visibility:visible;transform:translateY(0);}
+  .lang-menu button{
+    display:flex;align-items:center;gap:9px;width:100%;background:transparent;border:none;
+    color:var(--ink-soft);text-align:left;padding:9px 10px;border-radius:8px;cursor:pointer;
+    font-family:var(--font-body);font-size:.9rem;font-weight:500;
+  }
+  .lang-menu button:hover{background:rgba(255,255,255,.06);color:var(--ink);}
+  .mobile-nav .lang-switch{
+    margin:28px 0 0;padding-top:20px;border-top:1px solid var(--line);
+  }
+  .mobile-nav .lang-trigger{width:100%;justify-content:space-between;padding:12px 14px;font-size:.95rem;}
+  .mobile-nav .lang-menu{
+    position:static;display:none;opacity:1;visibility:visible;transform:none;
+    box-shadow:none;border:none;background:transparent;margin-top:10px;padding:0;
+  }
+  .mobile-nav .lang-switch.open .lang-menu{display:block;}
+  .mobile-nav .lang-menu button{font-size:1.05rem;padding:10px 6px;}
+
+  .sm-toggle{
+    display:none;align-items:center;gap:8px;background:transparent;border:1px solid var(--line);
+    color:var(--ink);border-radius:999px;padding:8px 14px;font-family:var(--font-mono);font-size:.82rem;
+    cursor:pointer;flex-shrink:0;
+  }
+  .sm-icon{display:inline-flex;flex-direction:column;gap:3px;width:16px;}
+  .sm-icon span{display:block;height:1.5px;background:var(--ink);border-radius:1px;}
+  .mobile-nav{
+    display:none;position:fixed;inset:0;z-index:30;background:rgba(10,7,16,.97);
+    padding:100px 24px 40px;opacity:0;pointer-events:none;transition:opacity .25s ease;
+  }
+  .mobile-nav.is-open{opacity:1;pointer-events:auto;}
+  .mobile-nav a{
+    display:block;font-family:var(--font-display);font-size:1.6rem;color:var(--ink);
+    text-decoration:none;padding:14px 0;border-bottom:1px solid var(--line);
+  }
+  .mobile-nav a:hover{color:var(--lime);}
+  @media (max-width:1140px){
+    nav.site{display:none;}
+    .header-cta{display:none;}
+    .sm-toggle{display:inline-flex;}
+    .mobile-nav{display:block;}
+  }
+  .mobile-nav .btn{display:inline-block;margin-top:24px;}
+
+  .hero{padding:64px 0 56px;}
+  .hero .wrap{display:grid;grid-template-columns:1fr .85fr;gap:48px;align-items:center;}
+  /* Itens de grid tem min-width:auto por padrao: sem isso, o carrossel do
+     hero (filhos absolutos com transforms grandes) pode forcar a coluna a
+     ficar mais larga que o viewport, cortando o texto da outra coluna no
+     meio da palavra em vez de quebrar linha. */
+  .hero .wrap > *{min-width:0;}
+  .eyebrow{
+    font-family:var(--font-mono);text-transform:uppercase;letter-spacing:.1em;font-size:.76rem;
+    color:var(--lime);font-weight:600;margin-bottom:16px;
+  }
+  h1{font-size:clamp(2rem,4vw,2.65rem);line-height:1.15;margin:0 0 18px;font-weight:700;}
+  .lead{font-size:1.05rem;color:var(--ink-soft);margin:0 0 22px;max-width:50ch;}
+  .hero-actions{display:flex;gap:14px;flex-wrap:wrap;align-items:center;}
+  @media (max-width:520px){
+    .hero-actions{flex-direction:column;align-items:stretch;}
+    .hero-actions .btn{width:100%;text-align:center;}
+  }
+  .hero-note{font-family:var(--font-mono);font-size:.84rem;font-weight:600;color:var(--lime);margin:16px 0 0;}
+
+  .stat-strip{display:flex;align-items:center;gap:22px;margin-top:30px;flex-wrap:wrap;}
+  .stat-item{display:flex;flex-direction:column;}
+  .stat-num{font-family:var(--font-mono);font-weight:700;font-size:1.7rem;color:var(--lime);text-shadow:0 0 20px rgba(215,255,62,.4);line-height:1;}
+  .stat-label{font-family:var(--font-mono);font-size:.66rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-faint);margin-top:6px;}
+  .stat-div{width:1px;height:32px;background:linear-gradient(180deg,transparent,var(--violet),transparent);opacity:.7;}
+
+  .hero-visual{position:relative;aspect-ratio:4/5;text-align:center;overflow:visible;}
+  @media (max-width:820px){ .hero-visual{aspect-ratio:16/10;order:-1;} }
+
+  /* Carrossel coverflow — mesma logica do hero da LP do pack: uma imagem
+     ativa no centro, duas vizinhas solidas e duas mais distantes e
+     transparentes. No desktop as duas distantes ficam escondidas (so 3
+     visiveis, girando nas pontas); no mobile as 5 aparecem. */
+  .showcase-carousel{position:relative;width:464px;height:580px;max-width:100%;margin:8px auto 0;}
+  @media (min-width:821px){ .hero .wrap{align-items:start;gap:120px;} }
+  .showcase-carousel img{
+    /* height:100% e nao top/bottom:0 — imagens sao elementos substituidos e
+       ignoram o "esticar" entre top e bottom, ficando na altura intrinseca. */
+    position:absolute;top:0;left:50%;
+    width:100%;height:100%;object-fit:contain;border-radius:var(--radius);
+    opacity:0;transition:opacity .6s ease, transform .6s ease;
+    transform:translateX(-50%) scale(.5);
+    z-index:1;pointer-events:none;cursor:pointer;
+  }
+  .showcase-carousel img.active{opacity:1;transform:translateX(-50%) scale(1);z-index:5;pointer-events:auto;}
+  .showcase-carousel img.near-prev{opacity:1;transform:translateX(calc(-50% - 130px)) scale(.78);z-index:4;pointer-events:auto;}
+  .showcase-carousel img.near-next{opacity:1;transform:translateX(calc(-50% + 130px)) scale(.78);z-index:4;pointer-events:auto;}
+  .showcase-carousel img.far-prev{opacity:.25;transform:translateX(calc(-50% - 220px)) scale(.58);z-index:3;}
+  .showcase-carousel img.far-next{opacity:.25;transform:translateX(calc(-50% + 220px)) scale(.58);z-index:3;}
+  .showcase-carousel img.hidden{opacity:0;transform:translateX(-50%) scale(.4);z-index:1;}
+  @media (prefers-reduced-motion: reduce){ .showcase-carousel img{transition:none;} }
+  @media (min-width:821px){
+    .showcase-carousel img.far-prev,
+    .showcase-carousel img.far-next{opacity:0;}
+  }
+  @media (max-width:820px){
+    .showcase-carousel{width:100%;height:320px;}
+    .showcase-carousel img.near-prev{transform:translateX(calc(-50% - 88px)) scale(.74);}
+    .showcase-carousel img.near-next{transform:translateX(calc(-50% + 88px)) scale(.74);}
+    .showcase-carousel img.far-prev{transform:translateX(calc(-50% - 140px)) scale(.55);}
+    .showcase-carousel img.far-next{transform:translateX(calc(-50% + 140px)) scale(.55);}
+  }
+
+  section{padding:56px 0;}
+  section.alt{background:var(--bg-alt);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+  h2{font-size:clamp(1.5rem,3vw,2rem);margin:0 0 10px;font-weight:700;}
+  .section-lead{color:var(--ink-soft);max-width:60ch;margin:0 0 36px;}
+
+  .about{display:grid;grid-template-columns:.8fr 1.2fr;gap:44px;align-items:center;}
+  .about > *{min-width:0;}
+
+  /* TiltedCard — vanilla port do componente React Bits (reactbits.dev).
+     Mesmo comportamento, reescrito sem React/Motion porque este é um site
+     estático sem build. Usa gsap.quickTo (GSAP já carregado pro
+     DepthCarousel) pro amortecimento tipo "spring"; em telas sem hover
+     (touch) o tilt não é ativado e a foto fica estática, sem aviso. */
+  .about-photo{
+    position:relative;perspective:800px;
+    aspect-ratio:1;border-radius:var(--radius);background:var(--bg-card);
+    box-shadow:0 0 0 4px rgba(155,92,255,.14), 0 30px 60px -25px rgba(255,47,143,.35);
+  }
+  .tilted-card-inner{position:absolute;inset:0;transform-style:preserve-3d;}
+  .tilted-card-inner img{
+    position:absolute;inset:0;width:100%;height:100%;
+    object-fit:cover;object-position:center 30%;border-radius:var(--radius);
+    will-change:transform;backface-visibility:hidden;
+  }
+  .tilted-card-caption{
+    pointer-events:none;position:absolute;left:0;top:0;
+    border-radius:6px;background:var(--ink);padding:5px 12px;
+    font-family:var(--font-mono);font-size:.72rem;font-weight:600;color:#0a0710;
+    opacity:0;z-index:3;white-space:nowrap;
+  }
+  .stats{display:flex;gap:28px;margin-top:22px;flex-wrap:wrap;}
+  .stat b{display:block;font-family:var(--font-mono);font-size:1.3rem;color:var(--lime);text-shadow:0 0 16px rgba(215,255,62,.35);}
+  .stat span{font-family:var(--font-mono);font-size:.72rem;letter-spacing:.05em;text-transform:uppercase;color:var(--ink-faint);}
+  .about p{font-size:1.03rem;color:var(--ink-soft);max-width:62ch;margin:0 0 18px;}
+  .about strong{color:var(--ink);font-weight:600;}
+
+  .audience-eyebrow{margin-top:28px;}
+  .tag{
+    display:inline-block;white-space:nowrap;font-family:var(--font-mono);font-size:.78rem;color:var(--ink);
+    background:rgba(155,92,255,.12);border:1px solid rgba(155,92,255,.4);
+    padding:7px 14px;border-radius:999px;
+  }
+
+  /* LogoLoop — vanilla port do componente React Bits (reactbits.dev).
+     Sem dependência externa (só requestAnimationFrame), então é uma
+     tradução quase 1:1: mede a largura de uma sequência de tags e clona
+     cópias suficientes pra preencher o container + 2 de folga, criando
+     um loop contínuo sem emenda visível. Usa tags de texto em vez de
+     logos de imagem (não há logos aqui, só categorias de cliente). */
+  .logoloop{position:relative;min-width:0;margin-top:10px;overflow:hidden;-webkit-mask-image:linear-gradient(to right,transparent,#000 40px,#000 calc(100% - 40px),transparent);mask-image:linear-gradient(to right,transparent,#000 40px,#000 calc(100% - 40px),transparent);}
+  .logoloop__track{display:flex;width:max-content;will-change:transform;}
+  .logoloop__item{flex:0 0 auto;margin-right:14px;}
+
+  .colab-loop-wrap{margin-top:36px;}
+  .colab-loop-wrap .logoloop{-webkit-mask-image:linear-gradient(to right,transparent,#000 60px,#000 calc(100% - 60px),transparent);mask-image:linear-gradient(to right,transparent,#000 60px,#000 calc(100% - 60px),transparent);}
+  .colab-loop-wrap .logoloop__item{margin-right:20px;}
+  .trust-card{
+    width:340px;flex-shrink:0;
+    background:var(--bg-card);border:1px solid var(--line);border-radius:var(--radius);
+    padding:24px;display:flex;gap:16px;align-items:flex-start;
+    transition:transform .18s ease, border-color .18s ease;
+  }
+  .trust-card:hover{transform:translateY(-4px);border-color:var(--pink);}
+  .trust-avatar{
+    width:44px;height:44px;border-radius:50%;flex-shrink:0;
+    object-fit:cover;border:1px solid var(--line);
+  }
+  .trust-body a.trust-name{color:var(--ink);text-decoration:none;font-weight:700;font-size:.98rem;}
+  .trust-body a.trust-name:hover{color:var(--lime);}
+  .trust-handle{display:block;font-family:var(--font-mono);font-size:.74rem;color:var(--ink-faint);margin:2px 0 8px;}
+  .trust-quote{color:var(--ink-soft);font-size:.88rem;margin:0;}
+
+  /* DriftWall — vanilla port do componente React Bits (reactbits.dev).
+     Colunas de fotos deslizando em loop, com tilt 3D que segue o mouse e
+     lift + cor ao passar por cima. Sem dependência externa (só CSS 3D +
+     requestAnimationFrame), então a estrutura das colunas/tiles é toda
+     montada via JS (mesma lógica de distribuição round-robin do original). */
+  .portfolio-driftwall-wrap{height:460px;margin-top:40px;}
+  @media (max-width:820px){ .portfolio-driftwall-wrap{height:380px;} }
+  @media (max-width:520px){ .portfolio-driftwall-wrap{height:320px;} }
+  .drift-wall{
+    position:relative;width:100%;height:100%;overflow:hidden;border-radius:var(--radius);
+    perspective:var(--dw-perspective,1200px);perspective-origin:50% 50%;
+    --dw-tile-w:170px;--dw-tile-h:210px;--dw-gap:16px;--dw-radius:14px;
+    --dw-lift:50px;--dw-dim:.55;--dw-gray:0;--dw-overlay:#0a0710;--dw-edge:74%;
+    -webkit-mask-image:radial-gradient(ellipse 78% 82% at 50% 46%,#000 var(--dw-edge),transparent 100%),
+      linear-gradient(to top,#000 var(--dw-edge),transparent 100%);
+    -webkit-mask-composite:source-in;
+    mask-image:radial-gradient(ellipse 78% 82% at 50% 46%,#000 var(--dw-edge),transparent 100%),
+      linear-gradient(to top,#000 var(--dw-edge),transparent 100%);
+    mask-composite:intersect;
+  }
+  .drift-wall__plane{
+    position:absolute;top:50%;left:50%;display:flex;flex-direction:row;
+    transform-style:preserve-3d;cursor:pointer;transform-origin:50% 50%;will-change:transform;
+  }
+  .drift-wall__col{position:relative;width:calc(var(--dw-tile-w) + var(--dw-gap));transform-style:preserve-3d;}
+  .drift-wall__track{display:flex;flex-direction:column;will-change:transform;transform-style:preserve-3d;}
+  .drift-wall__tile{
+    position:relative;display:block;width:100%;height:calc(var(--dw-tile-h) + var(--dw-gap));
+    flex:0 0 auto;outline:none;transform-style:preserve-3d;
+  }
+  .drift-wall__inner{
+    position:absolute;inset:calc(var(--dw-gap) / 2);display:block;border-radius:var(--dw-radius);
+    overflow:hidden;background:var(--bg-card);opacity:var(--dw-dim);transform:translateZ(0);
+    pointer-events:none;
+    transition:transform .42s cubic-bezier(.22,1,.36,1),opacity .42s cubic-bezier(.22,1,.36,1),box-shadow .42s cubic-bezier(.22,1,.36,1);
+  }
+  .drift-wall__tile img{
+    width:100%;height:100%;object-fit:cover;display:block;
+    filter:grayscale(var(--dw-gray)) saturate(.92);
+    transition:filter .42s cubic-bezier(.22,1,.36,1);
+    user-select:none;-webkit-user-drag:none;
+  }
+  .drift-wall__overlay{position:absolute;inset:0;background:var(--dw-overlay);opacity:.42;pointer-events:none;transition:opacity .42s cubic-bezier(.22,1,.36,1);}
+  .drift-wall__tile.is-active .drift-wall__inner,
+  .drift-wall__tile:focus-visible .drift-wall__inner{
+    opacity:1;transform:translateZ(var(--dw-lift));box-shadow:0 24px 60px -18px rgba(0,0,0,.7);
+  }
+  .drift-wall__tile.is-active img,
+  .drift-wall__tile:focus-visible img{filter:grayscale(0) saturate(1.05);}
+  .drift-wall__tile.is-active .drift-wall__overlay,
+  .drift-wall__tile:focus-visible .drift-wall__overlay{opacity:0;}
+  .drift-wall__tile:focus-visible .drift-wall__inner{box-shadow:0 24px 60px -18px rgba(0,0,0,.7), 0 0 0 2px rgba(255,255,255,.9);}
+  @media (prefers-reduced-motion: reduce){ .drift-wall__plane, .drift-wall__track{will-change:auto;} }
+  @media (max-width:820px){
+    .drift-wall{
+      --dw-tile-w:130px; --dw-tile-h:162px; --dw-gap:12px; --dw-dim:.9;
+      -webkit-mask-image:none; mask-image:none;
+      -webkit-mask-composite:source-over; mask-composite:add;
+    }
+  }
+
+  .icon-badge{
+    width:50px;height:50px;border-radius:14px;
+    display:flex;align-items:center;justify-content:center;margin-bottom:18px;
+    background:rgba(255,47,143,.1);border:1px solid rgba(255,47,143,.35);
+  }
+  .icon-badge.lime{background:rgba(215,255,62,.08);border-color:rgba(215,255,62,.35);}
+  .icon-badge.violet{background:rgba(155,92,255,.12);border-color:rgba(155,92,255,.4);}
+  .process-num{
+    display:inline-block;font-family:var(--font-mono);font-size:.7rem;color:var(--ink-faint);
+    letter-spacing:.08em;text-transform:uppercase;margin-bottom:10px;
+  }
+
+  /* ScrollStack — vanilla port do componente React Bits (reactbits.dev).
+     useWindowScroll:true (igual ao demo original) — os cards empilham
+     conforme a PÁGINA rola, via scroll nativo (sem Lenis — ver o
+     comentário no script). O padding-bottom aqui é só a folga pro
+     último card soltar o pin suavemente; um valor grande demais (o
+     demo original usa 50rem) deixa uma área morta enorme depois que o
+     3º card libera e antes da próxima seção aparecer. */
+  .scroll-stack-wrap{margin-top:8px;}
+  .scroll-stack-scroller{position:relative;width:100%;}
+  .scroll-stack-inner{padding:2rem 0 5rem;}
+  @media (max-width:820px){ .scroll-stack-inner{padding:1.5rem 0 4rem;} }
+  .scroll-stack-card{
+    transform-origin:top center;backface-visibility:hidden;
+    box-shadow:0 30px 60px -20px rgba(0,0,0,.6);
+    height:340px;width:100%;box-sizing:border-box;position:relative;overflow:hidden;
+    border-radius:var(--radius);background:var(--bg-card);border:1px solid var(--line);
+  }
+  .scroll-stack-end{width:100%;height:1px;}
+  .process-visual-card{padding:44px 44px;display:flex;flex-direction:column;justify-content:center;}
+  .process-visual-card .process-ghost-num{
+    position:absolute;top:-30px;right:6px;font-family:var(--font-display);font-weight:700;
+    font-size:11rem;line-height:1;color:rgba(255,255,255,.045);pointer-events:none;user-select:none;
+  }
+  .process-visual-card.pink{border-top:4px solid var(--pink);}
+  .process-visual-card.violet{border-top:4px solid var(--violet);}
+  .process-visual-card.lime{border-top:4px solid var(--lime);}
+  .process-visual-card .icon-badge{width:64px;height:64px;border-radius:18px;margin-bottom:22px;}
+  .process-visual-card .process-num{font-size:.8rem;margin-bottom:14px;}
+  .process-visual-card h3{margin:0 0 14px;font-size:1.7rem;font-weight:700;}
+  .process-visual-card p{margin:0;color:var(--ink-soft);font-size:1.05rem;max-width:52ch;}
+  @media (max-width:520px){
+    .scroll-stack-card{height:400px;}
+    .process-visual-card{padding:32px 28px;}
+    .process-visual-card h3{font-size:1.4rem;}
+    .process-visual-card p{font-size:.96rem;}
+    .process-visual-card .process-ghost-num{font-size:7rem;}
+  }
+
+  /* Bloco principal de contato — WhatsApp como CTA único e dominante,
+     com o email como sub-item discreto embaixo (em vez de dois painéis
+     "ou" competindo em pé de igualdade). */
+  .contact-primary{
+    background:var(--bg-card);border:1px solid var(--line);border-radius:var(--radius);
+    padding:48px 32px;text-align:center;box-shadow:inset 0 0 0 1.5px rgba(255,47,143,.35);
+  }
+  .contact-primary h3{font-size:1.3rem;margin:0 0 10px;}
+  .contact-primary-sub{color:var(--ink-soft);font-size:.98rem;margin:0 0 26px;max-width:42ch;margin-inline:auto;}
+  .contact-primary .btn{font-size:1.02rem;padding:15px 36px;}
+  .contact-alt{margin:22px 0 0;color:var(--ink-faint);font-size:.88rem;}
+  .contact-alt a{color:var(--ink-soft);text-decoration:underline;text-underline-offset:3px;}
+  .contact-alt a:hover{color:var(--lime);}
+  .flow-priority-badge{
+    display:inline-block;font-family:var(--font-mono);font-size:.66rem;font-weight:700;
+    letter-spacing:.06em;text-transform:uppercase;color:var(--pink);
+    background:rgba(255,47,143,.1);border:1px solid rgba(255,47,143,.4);
+    padding:4px 10px;border-radius:999px;margin-bottom:14px;
+  }
+
+  /* CTA de fechamento — só em Como funciona e Colaborações (não em toda
+     seção: já tentamos isso e ficou repetitivo). */
+  .section-cta{
+    margin-top:44px;padding:20px 26px;border-radius:var(--radius);
+    background:var(--bg-card);border:1px solid var(--line);
+    display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;
+  }
+  .section-cta span{font-family:var(--font-display);font-weight:600;font-size:1.05rem;color:var(--ink);}
+  @media (max-width:520px){
+    .section-cta{flex-direction:column;align-items:stretch;text-align:center;}
+    .section-cta .btn{width:100%;text-align:center;}
+  }
+  @media (max-width:820px){
+    .hero .wrap{grid-template-columns:1fr;}
+    .trust-grid{grid-template-columns:1fr;}
+    .about{grid-template-columns:1fr;}
+  }
+
+  /* Formulário de orçamento — sem backend (site estático), então o
+     submit monta uma mensagem formatada e abre o WhatsApp já
+     preenchido, em vez de enviar pra um servidor. */
+  .quote-form-card{
+    margin-top:40px;background:var(--bg-card);border:1px solid var(--line);
+    border-radius:var(--radius);padding:36px;
+  }
+  .quote-form-card h3{margin:0 0 6px;font-size:1.2rem;font-weight:700;}
+  .quote-form-card .form-sub{color:var(--ink-soft);font-size:.92rem;margin:0 0 28px;}
+  .quote-form{display:grid;grid-template-columns:1fr 1fr;gap:18px 20px;}
+  .form-field{display:flex;flex-direction:column;gap:7px;}
+  .form-field.full{grid-column:1/-1;}
+  .form-field label{
+    font-family:var(--font-mono);font-size:.72rem;letter-spacing:.05em;
+    text-transform:uppercase;color:var(--ink-faint);
+  }
+  .form-field input,
+  .form-field select{
+    background:var(--bg-alt);border:1px solid var(--line);border-radius:10px;
+    padding:11px 14px;color:var(--ink);font-family:var(--font-body);font-size:.95rem;
+    line-height:1.4;outline:none;transition:border-color .15s ease;color-scheme:dark;
+  }
+  .form-field select{
+    padding-right:40px;appearance:none;-webkit-appearance:none;-moz-appearance:none;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8' fill='none'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%238b80a8' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-repeat:no-repeat;background-position:right 14px center;
+  }
+  .form-field input::placeholder{color:var(--ink-faint);}
+  .form-field input:focus,
+  .form-field select:focus{border-color:var(--violet);}
+  .checkbox-group{display:flex;flex-wrap:wrap;gap:10px;}
+  .checkbox-chip{
+    position:relative;display:inline-flex;align-items:center;gap:7px;
+    border:1px solid var(--line);border-radius:999px;padding:8px 14px;
+    font-size:.86rem;color:var(--ink-soft);cursor:pointer;
+    transition:border-color .15s ease, color .15s ease, background .15s ease;
+  }
+  .checkbox-chip input{position:absolute;opacity:0;width:0;height:0;}
+  .checkbox-chip:has(input:checked){border-color:var(--pink);color:var(--ink);background:rgba(255,47,143,.1);}
+  .quote-form .btn{margin-top:6px;width:100%;text-align:center;border:none;cursor:pointer;}
+  @media (max-width:640px){
+    .quote-form{grid-template-columns:1fr;}
+    .quote-form-card{padding:26px 22px;}
+  }
+
+  footer{padding:40px 0;text-align:center;color:var(--ink-faint);font-size:.9rem;border-top:1px solid var(--line);}
+  footer a{color:var(--lime);text-decoration:none;font-weight:600;}
+  footer a:hover{color:var(--pink);}
+  .footer-links{margin-bottom:14px;}
+  .footer-links a{margin:0 10px;}
+</style>
+</head>
+<body>
+
+<a class="skip-link" href="#top" data-i18n="skip_link">Pular para o conteúdo</a>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="#top">Joel <span>Croquis de Moda</span></a>
+    <nav class="site">
+      <a href="#processo" data-i18n="nav_processo">Como funciona</a>
+      <a href="#sobre" data-i18n="nav_sobre">Sobre</a>
+      <a href="#colaboracoes" data-i18n="nav_colab">Colaborações</a>
+      <a href="#portfolio" data-i18n="nav_portfolio">Portfólio</a>
+      <a href="#contato" data-i18n="nav_contato">Contato</a>
+      <div class="lang-switch" data-lang-switch>
+        <button type="button" class="lang-trigger" aria-haspopup="true" aria-expanded="false" aria-label="Idioma">
+          <span class="lang-flag" data-flag aria-hidden="true">🇧🇷</span><span data-code>PT</span>
+          <svg class="lang-caret" width="10" height="6" viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <ul class="lang-menu" role="menu">
+          <li role="none"><button type="button" role="menuitem" data-lang="pt"><span class="lang-flag" aria-hidden="true">🇧🇷</span>Português</button></li>
+          <li role="none"><button type="button" role="menuitem" data-lang="en"><span class="lang-flag" aria-hidden="true">🇺🇸</span>English</button></li>
+          <li role="none"><button type="button" role="menuitem" data-lang="es"><span class="lang-flag" aria-hidden="true">🇪🇸</span>Español</button></li>
+        </ul>
+      </div>
+    </nav>
+    <a class="btn small header-cta" data-i18n="cta_whatsapp_header" href="https://wa.me/5585999962897?text=Oi%20Joel%2C%20vim%20pela%20sua%20p%C3%A1gina%20de%20ilustra%C3%A7%C3%A3o.%20Quero%20conversar%20sobre%20um%20projeto." target="_blank" rel="noopener">Falar no WhatsApp</a>
+    <button class="sm-toggle" id="sm-toggle" type="button" aria-label="Abrir menu" data-i18n-aria="mobile_menu_aria" aria-expanded="false" aria-controls="mobile-nav">
+      <span class="sm-icon" aria-hidden="true"><span></span><span></span><span></span></span>
+      <span data-i18n="mobile_menu_label">Menu</span>
+    </button>
+  </div>
+</header>
+
+<nav class="mobile-nav" id="mobile-nav" aria-label="Menu principal">
+  <a href="#sobre" data-i18n="nav_sobre">Sobre</a>
+  <a href="#colaboracoes" data-i18n="nav_colab">Colaborações</a>
+  <a href="#portfolio" data-i18n="nav_portfolio">Portfólio</a>
+  <a href="#processo" data-i18n="nav_processo">Como funciona</a>
+  <a href="#contato" data-i18n="nav_contato">Contato</a>
+  <a class="btn" data-i18n="cta_whatsapp_header" href="https://wa.me/5585999962897?text=Oi%20Joel%2C%20vim%20pela%20sua%20p%C3%A1gina%20de%20ilustra%C3%A7%C3%A3o.%20Quero%20conversar%20sobre%20um%20projeto." target="_blank" rel="noopener">Falar no WhatsApp</a>
+  <div class="lang-switch" data-lang-switch>
+    <button type="button" class="lang-trigger" aria-haspopup="true" aria-expanded="false" aria-label="Idioma">
+      <span class="lang-flag" data-flag aria-hidden="true">🇧🇷</span><span data-code>PT</span>
+      <svg class="lang-caret" width="10" height="6" viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <ul class="lang-menu" role="menu">
+      <li role="none"><button type="button" role="menuitem" data-lang="pt"><span class="lang-flag" aria-hidden="true">🇧🇷</span>Português</button></li>
+      <li role="none"><button type="button" role="menuitem" data-lang="en"><span class="lang-flag" aria-hidden="true">🇺🇸</span>English</button></li>
+      <li role="none"><button type="button" role="menuitem" data-lang="es"><span class="lang-flag" aria-hidden="true">🇪🇸</span>Español</button></li>
+    </ul>
+  </div>
+</nav>
+
+<main id="top" tabindex="-1">
+
+  <section class="hero">
+    <div class="wrap">
+      <div class="reveal">
+        <div class="eyebrow" data-i18n="hero_eyebrow">Ilustração de moda sob encomenda</div>
+        <h1 data-i18n-html="hero_h1">Transformo sua ideia em <em>ilustração de moda</em>.</h1>
+        <p class="lead" data-i18n="hero_lead">Trabalho sob encomenda para estilistas e marcas que precisam tirar um look do papel com agilidade, com o acabamento de quem já passou por capa, palco e campanha.</p>
+        <div class="hero-actions">
+          <a class="btn" data-i18n="cta_whatsapp_header" href="https://wa.me/5585999962897?text=Oi%20Joel%2C%20vim%20pela%20sua%20p%C3%A1gina%20de%20ilustra%C3%A7%C3%A3o.%20Quero%20conversar%20sobre%20um%20projeto." target="_blank" rel="noopener">Falar no WhatsApp</a>
+          <a class="btn ghost" data-copy-email="joel.estilista@gmail.com" data-i18n="cta_email" href="mailto:joel.estilista@gmail.com?subject=Projeto%20de%20ilustra%C3%A7%C3%A3o">Escrever por e-mail</a>
+        </div>
+        <p class="hero-note" data-i18n="hero_note">Disponível para projetos pontuais e parcerias contínuas com equipes de estilo.</p>
+      </div>
+      <div class="hero-visual showcase-carousel reveal" id="hero-carousel">
+        <img class="active" data-i18n-alt="carousel_alt" src="assets/carrossel/hero-02.webp" alt="Croqui de Joel Coveero ao lado da peça já executada">
+        <img data-i18n-alt="carousel_alt" src="assets/carrossel/hero-01.webp" alt="Croqui de Joel Coveero ao lado da peça já executada">
+        <img data-i18n-alt="carousel_alt" src="assets/carrossel/hero-03.webp" alt="Croqui de Joel Coveero ao lado da peça já executada">
+        <img data-i18n-alt="carousel_alt" src="assets/carrossel/hero-04.webp" alt="Croqui de Joel Coveero ao lado da peça já executada">
+        <img data-i18n-alt="carousel_alt" src="assets/carrossel/hero-05.webp" alt="Croqui de Joel Coveero ao lado da peça já executada">
+        <img data-i18n-alt="carousel_alt" src="assets/carrossel/hero-06.webp" alt="Croqui de Joel Coveero ao lado da peça já executada">
+        <img data-i18n-alt="carousel_alt" src="assets/carrossel/hero-07.webp" alt="Croqui de Joel Coveero ao lado da peça já executada">
+        <img data-i18n-alt="carousel_alt" src="assets/carrossel/hero-08.webp" alt="Croqui de Joel Coveero ao lado da peça já executada">
+        <img data-i18n-alt="carousel_alt" src="assets/carrossel/hero-09.webp" alt="Croqui de Joel Coveero ao lado da peça já executada">
+      </div>
+    </div>
+  </section>
+
+  <section class="alt" id="processo">
+    <div class="wrap">
+      <div class="eyebrow" data-i18n="proc_eyebrow">Como funciona</div>
+      <h2 data-i18n="proc_h2">Do briefing à arte final</h2>
+      <p class="section-lead" data-i18n="proc_lead">Três etapas, escopo e prazo combinados antes de começar.</p>
+      <div class="scroll-stack-wrap reveal">
+        <div class="scroll-stack-scroller" id="process-stack">
+          <div class="scroll-stack-inner">
+            <div class="scroll-stack-card process-visual-card pink">
+              <span class="process-ghost-num" aria-hidden="true">01</span>
+              <div class="icon-badge">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--pink)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H9l-4 4v-4H4a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z"/></svg>
+              </div>
+              <span class="process-num">01</span>
+              <h3 data-i18n="step1_title">Briefing</h3>
+              <p data-i18n="step1_p">Conversa sobre a peça, o projeto (coleção, marca ou artista) e o momento (palco, campanha ou editorial) pra entender exatamente o que a ilustração precisa comunicar.</p>
+            </div>
+            <div class="scroll-stack-card process-visual-card violet">
+              <span class="process-ghost-num" aria-hidden="true">02</span>
+              <div class="icon-badge violet">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--violet)" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r="1" fill="var(--violet)" stroke="none"/></svg>
+              </div>
+              <span class="process-num">02</span>
+              <h3 data-i18n="step2_title">Direção</h3>
+              <p data-i18n="step2_p">Joel traduz a referência em conceito visual e ajusta com você até a ideia fechar, antes de partir pro traço final.</p>
+            </div>
+            <div class="scroll-stack-card process-visual-card lime">
+              <span class="process-ghost-num" aria-hidden="true">03</span>
+              <div class="icon-badge lime">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--lime)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.5 2.5 5-5"/></svg>
+              </div>
+              <span class="process-num">03</span>
+              <h3 data-i18n="step3_title">Ilustração final</h3>
+              <p data-i18n="step3_p">Entrega em alta resolução, pronta pra guiar a produção da peça ou pra apresentação ao cliente.</p>
+            </div>
+            <div class="scroll-stack-end"></div>
+          </div>
+        </div>
+      </div>
+      <div class="section-cta reveal">
+        <span data-i18n="section_cta_processo">Vamos começar o seu projeto?</span>
+        <a class="btn small" data-i18n="cta_whatsapp_header" href="https://wa.me/5585999962897?text=Oi%20Joel%2C%20vim%20pela%20sua%20p%C3%A1gina%20de%20ilustra%C3%A7%C3%A3o.%20Quero%20conversar%20sobre%20um%20projeto." target="_blank" rel="noopener">Falar no WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre">
+    <div class="wrap about">
+      <div class="about-photo reveal" id="joel-tilt">
+        <div class="tilted-card-inner">
+          <img src="assets/joel-foto-ilustracao.webp" alt="Joel Pinheiro (@joelcoveero)" loading="lazy" decoding="async">
+        </div>
+        <div class="tilted-card-caption" aria-hidden="true">@joelcoveero</div>
+      </div>
+      <div class="reveal">
+        <div class="eyebrow" data-i18n="sobre_eyebrow">Do papel à passarela</div>
+        <h2>Joel Pinheiro (@joelcoveero)</h2>
+        <p data-i18n-html="sobre_p1">Joel é estilista e ilustrador de moda, de Fortaleza - CE 🇧🇷. <strong>Seu traço já deu forma a ícones da cultura pop e marcas de vanguarda</strong>, repertório de quem entende o mercado de luxo e do entretenimento.</p>
+        <p data-i18n="sobre_p2">Não é ilustração genérica de referência. É a tradução de uma ideia (um figurino, um momento de palco, uma campanha) em imagem pronta pra guiar a produção.</p>
+        <div class="stats">
+          <div class="stat"><b data-i18n="stat_num_followers">6,2 mil+</b><span data-i18n="stat_followers_label">seguidores nas redes sociais</span></div>
+        </div>
+        <div class="eyebrow audience-eyebrow" data-i18n="audience_eyebrow">Atendo</div>
+        <div class="logoloop" id="audience-loop" role="region" aria-label="Atendo">
+          <div class="logoloop__track" id="audience-loop-track">
+            <span class="logoloop__item"><span class="tag" data-i18n="tag_marcas">Marcas de moda</span></span>
+            <span class="logoloop__item"><span class="tag" data-i18n="tag_estilistas">Estilistas</span></span>
+            <span class="logoloop__item"><span class="tag" data-i18n="tag_artistas">Artistas &amp; cantores</span></span>
+            <span class="logoloop__item"><span class="tag" data-i18n="tag_producoes">Produções de palco</span></span>
+            <span class="logoloop__item"><span class="tag" data-i18n="tag_campanhas">Campanhas</span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt" id="colaboracoes">
+    <div class="wrap">
+      <div class="eyebrow" data-i18n="colab_eyebrow">Colaborações de elite</div>
+      <h2 data-i18n="colab_h2">Trabalhos famosos que já saíram do papel</h2>
+      <p class="section-lead" data-i18n="colab_lead">E foram parar em capa, palco e campanha.</p>
+      <div class="colab-loop-wrap reveal">
+        <div class="logoloop" id="colab-loop" role="region" aria-label="Colaborações">
+          <div class="logoloop__track" id="colab-loop-track">
+            <div class="logoloop__item">
+              <div class="trust-card">
+                <img class="trust-avatar" src="assets/trust/ludmilla.webp" alt="Ludmilla" loading="lazy" decoding="async">
+                <div class="trust-body">
+                  <a class="trust-name" href="https://www.instagram.com/ludmilla/" target="_blank" rel="noopener">Ludmilla</a>
+                  <span class="trust-handle">@ludmilla · Grammy Winner</span>
+                  <p class="trust-quote" data-i18n="colab_ludmilla_quote">Croquis para os visuais do álbum "Fragmentos" e outros projetos.</p>
+                </div>
+              </div>
+            </div>
+            <div class="logoloop__item">
+              <div class="trust-card">
+                <img class="trust-avatar" src="assets/trust/katseye.webp" alt="KATSEYE" loading="lazy" decoding="async">
+                <div class="trust-body">
+                  <a class="trust-name" href="https://www.instagram.com/katseyeworld/" target="_blank" rel="noopener">KATSEYE</a>
+                  <span class="trust-handle">@katseyeworld</span>
+                  <p class="trust-quote" data-i18n="colab_katseye_quote">Croquis para a apresentação do grupo no Festival Estéreo Picnic, na Colômbia.</p>
+                </div>
+              </div>
+            </div>
+            <div class="logoloop__item">
+              <div class="trust-card">
+                <img class="trust-avatar" src="assets/trust/ssjheni.webp" alt="ssjheni" loading="lazy" decoding="async">
+                <div class="trust-body">
+                  <a class="trust-name" href="https://www.instagram.com/ssjheni/" target="_blank" rel="noopener">ssjheni</a>
+                  <span class="trust-handle">@ssjheni</span>
+                  <p class="trust-quote" data-i18n="colab_ssjheni_quote">Croquis looks de festivais para artistas com direção criativa da estilista.</p>
+                </div>
+              </div>
+            </div>
+            <div class="logoloop__item">
+              <div class="trust-card">
+                <img class="trust-avatar" src="assets/trust/quermar.webp" alt="Quermar Wear" loading="lazy" decoding="async">
+                <div class="trust-body">
+                  <a class="trust-name" href="https://www.instagram.com/quermarwear/" target="_blank" rel="noopener">Quermar Wear</a>
+                  <span class="trust-handle">@quermarwear</span>
+                  <p class="trust-quote" data-i18n="colab_quermar_quote">Croquis de looks de coleção beachwear para a marca.</p>
+                </div>
+              </div>
+            </div>
+            <div class="logoloop__item">
+              <div class="trust-card">
+                <img class="trust-avatar" src="assets/trust/juanduarte.webp" alt="Juan Duarte" loading="lazy" decoding="async">
+                <div class="trust-body">
+                  <a class="trust-name" href="https://www.instagram.com/juanduarte/" target="_blank" rel="noopener">Juan Duarte</a>
+                  <span class="trust-handle">@juanduarte · Estilista</span>
+                  <p class="trust-quote" data-i18n="colab_juanduarte_quote">Diversos looks para artistas nacionais, para eventos e passarela.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-cta reveal">
+        <span data-i18n="section_cta_colab">Quer um resultado assim pro seu projeto?</span>
+        <a class="btn small" data-i18n="cta_whatsapp_header" href="https://wa.me/5585999962897?text=Oi%20Joel%2C%20vim%20pela%20sua%20p%C3%A1gina%20de%20ilustra%C3%A7%C3%A3o.%20Quero%20conversar%20sobre%20um%20projeto." target="_blank" rel="noopener">Falar no WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <div class="wrap">
+      <div class="eyebrow" data-i18n="port_eyebrow">O traço do Joel</div>
+      <h2 data-i18n="port_h2">Portfólio</h2>
+      <p class="section-lead" data-i18n="port_lead">Uma amostra do nível de acabamento que você pode esperar: peças e bastidores do trabalho pessoal do Joel.</p>
+    </div>
+    <div class="portfolio-driftwall-wrap reveal">
+      <div class="drift-wall" id="portfolio-driftwall" role="group" aria-label="Portfólio"></div>
+    </div>
+  </section>
+
+  <section id="contato">
+    <div class="wrap">
+      <div class="eyebrow" data-i18n="contato_eyebrow">Contato</div>
+      <h2 data-i18n="contato_h2">Vamos conversar?</h2>
+      <p class="section-lead" data-i18n="contato_lead">WhatsApp pra resposta mais rápida, email se preferir escrever com calma.</p>
+      <div class="contact-primary reveal">
+        <span class="flow-priority-badge" data-i18n="contact_priority_badge">Resposta mais rápida</span>
+        <h3 data-i18n="contact_whatsapp_title">WhatsApp</h3>
+        <p class="contact-primary-sub" data-i18n="contact_whatsapp_sub">Pra quem já quer conversar e fechar um projeto agora.</p>
+        <a class="btn" data-i18n="cta_whatsapp_contact" href="https://wa.me/5585999962897?text=Oi%20Joel%2C%20vim%20pela%20sua%20p%C3%A1gina%20de%20ilustra%C3%A7%C3%A3o.%20Quero%20conversar%20sobre%20um%20projeto." target="_blank" rel="noopener">Chamar no WhatsApp</a>
+        <p class="contact-alt" data-i18n-html="contact_email_alt">ou escreva pra <a href="mailto:joel.estilista@gmail.com?subject=Projeto%20de%20ilustra%C3%A7%C3%A3o" data-copy-email="joel.estilista@gmail.com">joel.estilista@gmail.com</a></p>
+      </div>
+
+      <div class="quote-form-card reveal">
+        <h3 data-i18n="quote_h3">Quer um orçamento? Me conta os detalhes</h3>
+        <p class="form-sub" data-i18n="quote_sub">Preencha o formulário: ele monta uma mensagem com tudo e abre no seu WhatsApp, prontinha pra enviar.</p>
+        <form class="quote-form" id="quote-form">
+          <div class="form-field">
+            <label for="qf-nome" data-i18n="quote_label_nome">Nome</label>
+            <input id="qf-nome" name="nome" type="text" required data-i18n-placeholder="quote_placeholder_nome" placeholder="Seu nome">
+          </div>
+          <div class="form-field">
+            <label for="qf-empresa" data-i18n="quote_label_empresa">Tamanho da empresa</label>
+            <select id="qf-empresa" name="empresa" required>
+              <option value="" data-i18n="quote_select_placeholder">Selecione</option>
+              <option value="Autônomo(a) / Freelancer" data-i18n="quote_empresa_opt1">Autônomo(a) / Freelancer</option>
+              <option value="Pequena empresa" data-i18n="quote_empresa_opt2">Pequena empresa</option>
+              <option value="Média empresa" data-i18n="quote_empresa_opt3">Média empresa</option>
+              <option value="Grande empresa / Marca" data-i18n="quote_empresa_opt4">Grande empresa / Marca</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="qf-telefone" data-i18n="quote_label_telefone">Telefone</label>
+            <input id="qf-telefone" name="telefone" type="tel" required data-i18n-placeholder="quote_placeholder_telefone" placeholder="(DDD) 00000-0000">
+          </div>
+          <div class="form-field">
+            <label for="qf-email" data-i18n="quote_label_email">Email</label>
+            <input id="qf-email" name="email" type="email" required data-i18n-placeholder="quote_placeholder_email" placeholder="voce@email.com">
+          </div>
+          <div class="form-field">
+            <label for="qf-pecas" data-i18n="quote_label_pecas">Número de peças</label>
+            <input id="qf-pecas" name="pecas" type="number" min="1" step="1" required data-i18n-placeholder="quote_placeholder_pecas" placeholder="Ex.: 5">
+          </div>
+          <div class="form-field">
+            <label for="qf-prazo" data-i18n="quote_label_prazo">Prazo de entrega</label>
+            <select id="qf-prazo" name="prazo" required>
+              <option value="" data-i18n="quote_select_placeholder">Selecione</option>
+              <option value="Urgentíssimo (24-48h)" data-i18n="quote_prazo_opt0">Urgentíssimo (24-48h)</option>
+              <option value="Urgente (até 1 semana)" data-i18n="quote_prazo_opt1">Urgente (até 1 semana)</option>
+              <option value="2 a 3 semanas" data-i18n="quote_prazo_opt2">2 a 3 semanas</option>
+              <option value="1 mês" data-i18n="quote_prazo_opt3">1 mês</option>
+              <option value="Sem pressa" data-i18n="quote_prazo_opt4">Sem pressa</option>
+            </select>
+          </div>
+          <div class="form-field full">
+            <label data-i18n="quote_label_tipo">Tipo de peça</label>
+            <div class="checkbox-group" id="qf-tipo-group">
+              <label class="checkbox-chip"><input type="checkbox" name="tipo" value="Apresentação"><span data-i18n="quote_tipo_opt1">Apresentação</span></label>
+              <label class="checkbox-chip"><input type="checkbox" name="tipo" value="Coleção beachwear"><span data-i18n="quote_tipo_opt2">Coleção beachwear</span></label>
+              <label class="checkbox-chip"><input type="checkbox" name="tipo" value="Evento"><span data-i18n="quote_tipo_opt3">Evento</span></label>
+              <label class="checkbox-chip"><input type="checkbox" name="tipo" value="Coleção underwear"><span data-i18n="quote_tipo_opt4">Coleção underwear</span></label>
+              <label class="checkbox-chip"><input type="checkbox" name="tipo" value="Coleção"><span data-i18n="quote_tipo_opt5">Coleção</span></label>
+              <label class="checkbox-chip"><input type="checkbox" name="tipo" value="Editorial"><span data-i18n="quote_tipo_opt6">Editorial</span></label>
+              <label class="checkbox-chip"><input type="checkbox" name="tipo" value="Campanha"><span data-i18n="quote_tipo_opt7">Campanha</span></label>
+              <label class="checkbox-chip"><input type="checkbox" name="tipo" value="Outro"><span data-i18n="quote_tipo_opt8">Outro</span></label>
+            </div>
+          </div>
+          <div class="form-field full">
+            <button type="submit" class="btn" data-i18n="quote_submit">Enviar pelo WhatsApp</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-links">
+      <a href="https://www.instagram.com/joelcoveero/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://wa.me/5585999962897" target="_blank" rel="noopener">WhatsApp</a>
+      <a href="privacidade.html" data-i18n="footer_privacy">Privacidade</a>
+    </div>
+    <p>&copy; <span id="year"></span> <span data-i18n="footer_copy">Joel Pinheiro: Ilustração de Moda. Todos os direitos reservados.</span></p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+<script>
+  (function () {
+    var toggle = document.getElementById("sm-toggle");
+    var nav = document.getElementById("mobile-nav");
+    if (!toggle || !nav) return;
+    function close() {
+      nav.classList.remove("is-open");
+      toggle.setAttribute("aria-expanded", "false");
+    }
+    toggle.addEventListener("click", function () {
+      var open = nav.classList.toggle("is-open");
+      toggle.setAttribute("aria-expanded", open ? "true" : "false");
+    });
+    nav.querySelectorAll("a").forEach(function (a) {
+      a.addEventListener("click", close);
+    });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") close();
+    });
+  })();
+</script>
+<script>
+  (function () {
+    var carousel = document.getElementById("hero-carousel");
+    if (!carousel) return;
+    var imgs = Array.prototype.slice.call(carousel.querySelectorAll("img"));
+    var n = imgs.length;
+    if (n < 2) return;
+    var active = 0;
+
+    function render() {
+      imgs.forEach(function (img, i) {
+        img.classList.remove("active", "near-prev", "near-next", "far-prev", "far-next", "hidden");
+        var offset = (i - active + n) % n;
+        if (offset === 0) img.classList.add("active");
+        else if (offset === 1) img.classList.add("near-next");
+        else if (offset === n - 1) img.classList.add("near-prev");
+        else if (offset === 2) img.classList.add("far-next");
+        else if (offset === n - 2) img.classList.add("far-prev");
+        else img.classList.add("hidden");
+      });
+    }
+
+    imgs.forEach(function (img, i) {
+      img.addEventListener("click", function () {
+        if (i === active) return;
+        active = i;
+        render();
+        resetTimer();
+      });
+    });
+
+    var timer;
+    function resetTimer() {
+      clearInterval(timer);
+      timer = setInterval(function () {
+        active = (active + 1) % n;
+        render();
+      }, 4000);
+    }
+
+    render();
+    resetTimer();
+  })();
+</script>
+<script>
+  (function () {
+    var els = document.querySelectorAll(".reveal");
+    if (!("IntersectionObserver" in window) || !els.length) {
+      els.forEach(function (el) { el.classList.add("is-visible"); });
+      return;
+    }
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: "0px 0px -8% 0px" });
+    els.forEach(function (el) { io.observe(el); });
+  })();
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script>
+  // DriftWall — vanilla port of the React Bits component (reactbits.dev).
+  // No external dependency (CSS 3D + requestAnimationFrame), so this is a
+  // close 1:1 translation — same round-robin column distribution, drift
+  // loop, pointer-parallax tilt and hover/focus lift logic as the source.
+  (function () {
+    var root = document.getElementById("portfolio-driftwall");
+    if (!root) return;
+
+    var items = [];
+    for (var i = 1; i <= 23; i++) {
+      var n = i < 10 ? "0" + i : "" + i;
+      items.push({ image: "assets/portfolio/port-" + n + ".webp" });
+    }
+
+    var CFG = {
+      columns: 6,
+      tileWidth: 170,
+      tileHeight: 210,
+      gap: 16,
+      tilt: 14,
+      turn: -10,
+      roll: 0,
+      perspective: 1200,
+      depth: 100,
+      speed: 34,
+      direction: "up",
+      variance: 0.4,
+      parallax: 0.5,
+      pauseOnHover: false,
+      lift: 50
+    };
+
+    var reduced = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    function columnFactor(index, variance) {
+      var pseudo = ((index * 0.6180339887 + 0.35) % 1) * 2 - 1;
+      return 1 + variance * pseudo;
+    }
+
+    var columnItems = [];
+    for (var c0 = 0; c0 < CFG.columns; c0++) columnItems.push([]);
+    items.forEach(function (item, idx) { columnItems[idx % CFG.columns].push(item); });
+
+    var containerHeight = root.clientHeight || 460;
+    var unit = CFG.tileHeight + CFG.gap;
+
+    function computeMeta() {
+      return columnItems.map(function (col) {
+        var copyHeight = Math.max(unit, col.length * unit);
+        var copies = Math.max(2, Math.ceil((containerHeight * 1.6) / copyHeight) + 1);
+        return { copyHeight: copyHeight, copies: copies };
+      });
+    }
+    var columnMeta = computeMeta();
+
+    var dirSign = CFG.direction === "up" ? 1 : -1;
+    var baseVelocities = columnItems.map(function (_, c) {
+      var altSign = c % 2 === 0 ? 1 : -1;
+      return CFG.speed * columnFactor(c, CFG.variance) * dirSign * altSign;
+    });
+
+    var plane = document.createElement("div");
+    plane.className = "drift-wall__plane";
+    var trackEls = [];
+    var tileId = 0;
+    columnItems.forEach(function (col, c) {
+      var colEl = document.createElement("div");
+      colEl.className = "drift-wall__col";
+      var track = document.createElement("div");
+      track.className = "drift-wall__track";
+      var meta = columnMeta[c];
+      for (var copyIndex = 0; copyIndex < meta.copies; copyIndex++) {
+        col.forEach(function (item) {
+          var tile = document.createElement("div");
+          tile.className = "drift-wall__tile";
+          tile.dataset.tileId = String(tileId++);
+          tile.dataset.col = String(c);
+
+          var inner = document.createElement("span");
+          inner.className = "drift-wall__inner";
+          var img = document.createElement("img");
+          img.src = item.image;
+          img.alt = "Ilustração de moda do portfólio de Joel Coveero";
+          img.setAttribute("data-i18n-alt", "port_alt");
+          // loading="lazy" doesn't mix well with heavy 3D transforms/
+          // perspective: the browser's on-screen check misjudges these
+          // tiles, so some never load (or load very late) even though
+          // they're visibly part of the drifting wall from the start.
+          img.decoding = "async";
+          img.draggable = false;
+          var overlay = document.createElement("span");
+          overlay.className = "drift-wall__overlay";
+          overlay.setAttribute("aria-hidden", "true");
+
+          inner.appendChild(img);
+          inner.appendChild(overlay);
+          tile.appendChild(inner);
+          track.appendChild(tile);
+        });
+      }
+      colEl.appendChild(track);
+      plane.appendChild(colEl);
+      trackEls.push(track);
+    });
+    root.appendChild(plane);
+
+    root.style.setProperty("--dw-tile-w", CFG.tileWidth + "px");
+    root.style.setProperty("--dw-tile-h", CFG.tileHeight + "px");
+    root.style.setProperty("--dw-gap", CFG.gap + "px");
+    root.style.setProperty("--dw-perspective", CFG.perspective + "px");
+    root.style.setProperty("--dw-lift", CFG.lift + "px");
+
+    var offsets = columnMeta.map(function (meta, c) { return meta.copyHeight * ((c * 0.37) % 1); });
+    var velocities = columnItems.map(function () { return 0; });
+    var hoveredCol = -1;
+    var wallHovered = false;
+    var activeId = null;
+    var pointer = { x: 0, y: 0 };
+    var pointerDamped = { x: 0, y: 0 };
+    var lastTs = null;
+
+    function updateActiveClass() {
+      var tiles = plane.querySelectorAll(".drift-wall__tile");
+      for (var t = 0; t < tiles.length; t++) {
+        tiles[t].classList.toggle("is-active", tiles[t].dataset.tileId === activeId);
+      }
+    }
+    function activate(id, colIndex) {
+      if (id === activeId) return;
+      activeId = id;
+      hoveredCol = colIndex;
+      updateActiveClass();
+    }
+    function release() {
+      activeId = null;
+      hoveredCol = -1;
+      updateActiveClass();
+    }
+
+    function applyPlaneTransform(px, py) {
+      plane.style.transform =
+        "translate(-50%, -50%) scale(1.18) rotateX(" + (CFG.tilt + py) + "deg) rotateY(" + (CFG.turn + px) + "deg) rotateZ(" + CFG.roll + "deg) translateZ(" + (-CFG.depth) + "px)";
+    }
+
+    root.addEventListener("pointermove", function (e) {
+      var rect = root.getBoundingClientRect();
+      if (CFG.parallax > 0 && !reduced) {
+        pointer.x = (e.clientX - rect.left) / rect.width - 0.5;
+        pointer.y = (e.clientY - rect.top) / rect.height - 0.5;
+      }
+      var hit = document.elementFromPoint(e.clientX, e.clientY);
+      var tile = hit && hit.closest ? hit.closest("[data-tile-id]") : null;
+      if (!tile) return;
+      activate(tile.dataset.tileId, Number(tile.dataset.col));
+    });
+    root.addEventListener("pointerenter", function () { wallHovered = true; });
+    root.addEventListener("pointerleave", function () {
+      wallHovered = false;
+      pointer.x = 0; pointer.y = 0;
+      release();
+    });
+
+    if ("ResizeObserver" in window) {
+      var ro = new ResizeObserver(function (entries) {
+        containerHeight = entries[0].contentRect.height || containerHeight;
+        columnMeta = computeMeta();
+      });
+      ro.observe(root);
+    }
+
+    function loop(ts) {
+      if (lastTs === null) lastTs = ts;
+      var dt = Math.min(0.05, Math.max(0, ts - lastTs) / 1000);
+      lastTs = ts;
+
+      var maxTilt = CFG.parallax * 8;
+      var targetX = pointer.x * maxTilt;
+      var targetY = -pointer.y * maxTilt;
+      var damp = 1 - Math.exp(-dt / 0.12);
+      pointerDamped.x += (targetX - pointerDamped.x) * damp;
+      pointerDamped.y += (targetY - pointerDamped.y) * damp;
+      applyPlaneTransform(pointerDamped.x, pointerDamped.y);
+
+      if (!reduced) {
+        for (var c = 0; c < trackEls.length; c++) {
+          var meta = columnMeta[c];
+          if (!meta) continue;
+          var paused = wallHovered && CFG.pauseOnHover;
+          var factor = paused || hoveredCol === c ? 0 : 1;
+          var target = baseVelocities[c] * factor;
+          var ease = 1 - Math.exp(-dt / (target === 0 ? 0.16 : 0.28));
+          velocities[c] += (target - velocities[c]) * ease;
+          var next = (offsets[c] || 0) + velocities[c] * dt;
+          next = ((next % meta.copyHeight) + meta.copyHeight) % meta.copyHeight;
+          offsets[c] = next;
+          trackEls[c].style.transform = "translate3d(0, " + (-next) + "px, 0)";
+        }
+      }
+      requestAnimationFrame(loop);
+    }
+    requestAnimationFrame(loop);
+  })();
+</script>
+
+<script>
+  // LogoLoop — vanilla port of the React Bits component (reactbits.dev).
+  // No external dependency (just requestAnimationFrame), so this is a
+  // close 1:1 translation: measure one sequence's width, clone enough
+  // copies to fill the container plus a little headroom, and loop the
+  // whole track with translate3d — no seam, no dependency. initLogoLoop
+  // is called once per instance on the page (client categories under
+  // Sobre, collaboration cards under Colaborações) — same engine, just
+  // different content and speed.
+  (function () {
+    function initLogoLoop(rootId, trackId, speed) {
+      var root = document.getElementById(rootId);
+      var track = document.getElementById(trackId);
+      if (!root || !track) return;
+      var reduced = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+      var MIN_COPIES = 2;
+      var COPY_HEADROOM = 2;
+
+      var baseItems = Array.prototype.slice.call(track.children);
+      var seqWidth = 0;
+      var offset = 0;
+      var lastTs = null;
+
+      function layout() {
+        track.style.transform = "translate3d(0, 0, 0)";
+        track.innerHTML = "";
+        baseItems.forEach(function (item) { track.appendChild(item.cloneNode(true)); });
+        seqWidth = track.getBoundingClientRect().width;
+        if (seqWidth <= 0) return;
+        var containerWidth = root.clientWidth;
+        var copies = Math.max(MIN_COPIES, Math.ceil(containerWidth / seqWidth) + COPY_HEADROOM);
+        for (var c = 1; c < copies; c++) {
+          baseItems.forEach(function (item) { track.appendChild(item.cloneNode(true)); });
+        }
+      }
+
+      layout();
+      if ("ResizeObserver" in window) {
+        var ro = new ResizeObserver(function () { layout(); });
+        ro.observe(root);
+      } else {
+        window.addEventListener("resize", layout);
+      }
+
+      if (!reduced) {
+        requestAnimationFrame(function loop(ts) {
+          if (lastTs === null) lastTs = ts;
+          var dt = Math.min(0.05, Math.max(0, ts - lastTs) / 1000);
+          lastTs = ts;
+          if (seqWidth > 0) {
+            offset = (offset + speed * dt) % seqWidth;
+            track.style.transform = "translate3d(" + (-offset) + "px, 0, 0)";
+          }
+          requestAnimationFrame(loop);
+        });
+      }
+    }
+
+    initLogoLoop("audience-loop", "audience-loop-track", 40);
+    initLogoLoop("colab-loop", "colab-loop-track", 32);
+  })();
+</script>
+
+<script>
+  // TiltedCard — vanilla port of the React Bits component (reactbits.dev).
+  // Same behaviour, rewritten without React/Motion because this is a plain
+  // static site with no build step. Uses gsap.quickTo (GSAP already loaded
+  // for the DepthCarousel) for the spring-like smoothing; skips the tilt
+  // entirely on touch/coarse-pointer devices instead of showing a warning.
+  (function () {
+    var figure = document.getElementById("joel-tilt");
+    if (!figure) return;
+    var inner = figure.querySelector(".tilted-card-inner");
+    var caption = figure.querySelector(".tilted-card-caption");
+    if (!inner) return;
+
+    var isTouch = window.matchMedia && window.matchMedia("(hover: none), (pointer: coarse)").matches;
+    if (isTouch) return;
+
+    var hasGsap = typeof window.gsap !== "undefined";
+    if (!hasGsap) return;
+
+    var ROTATE_AMPLITUDE = 12;
+    var SCALE_ON_HOVER = 1.06;
+
+    var setRX = window.gsap.quickTo(inner, "rotateX", { duration: 0.5, ease: "power3.out" });
+    var setRY = window.gsap.quickTo(inner, "rotateY", { duration: 0.5, ease: "power3.out" });
+    var setScale = window.gsap.quickTo(inner, "scale", { duration: 0.5, ease: "power3.out" });
+    var setCX = caption && window.gsap.quickTo(caption, "x", { duration: 0.22, ease: "power3.out" });
+    var setCY = caption && window.gsap.quickTo(caption, "y", { duration: 0.22, ease: "power3.out" });
+    var setCOpacity = caption && window.gsap.quickTo(caption, "opacity", { duration: 0.3 });
+
+    figure.addEventListener("mousemove", function (e) {
+      var rect = figure.getBoundingClientRect();
+      var offsetX = e.clientX - rect.left - rect.width / 2;
+      var offsetY = e.clientY - rect.top - rect.height / 2;
+      setRX((offsetY / (rect.height / 2)) * -ROTATE_AMPLITUDE);
+      setRY((offsetX / (rect.width / 2)) * ROTATE_AMPLITUDE);
+      if (setCX) setCX(e.clientX - rect.left);
+      if (setCY) setCY(e.clientY - rect.top);
+    });
+    figure.addEventListener("mouseenter", function () {
+      setScale(SCALE_ON_HOVER);
+      if (setCOpacity) setCOpacity(1);
+    });
+    figure.addEventListener("mouseleave", function () {
+      setScale(1);
+      setRX(0);
+      setRY(0);
+      if (setCOpacity) setCOpacity(0);
+    });
+  })();
+</script>
+
+<script>
+  // Formulário de orçamento — sem backend (site estático): o submit monta
+  // uma mensagem formatada (sempre em português, pro Joel, independente
+  // do idioma selecionado na página) e abre o WhatsApp com o texto já
+  // preenchido, em vez de enviar pra um servidor.
+  (function () {
+    var form = document.getElementById("quote-form");
+    if (!form) return;
+    var WHATSAPP_NUMBER = "5585999962897";
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var data = new FormData(form);
+      var tipos = data.getAll("tipo");
+      var lines = [
+        "Oi Joel! Quero um orçamento de ilustração de moda.",
+        "",
+        "Nome: " + data.get("nome"),
+        "Empresa: " + data.get("empresa"),
+        "Telefone: " + data.get("telefone"),
+        "Email: " + data.get("email"),
+        "Nº de peças: " + data.get("pecas"),
+        "Tipo de peça: " + (tipos.length ? tipos.join(", ") : "-"),
+        "Prazo desejado: " + data.get("prazo")
+      ];
+      var text = encodeURIComponent(lines.join("\n"));
+      window.open("https://wa.me/" + WHATSAPP_NUMBER + "?text=" + text, "_blank", "noopener");
+    });
+  })();
+</script>
+
+<script>
+  // Clique pra copiar o email — em vez de só abrir o mailto:, copia o
+  // endereço pra área de transferência e mostra feedback rápido no
+  // próprio elemento. Usa delegação de evento no document porque esses
+  // links vivem dentro de um elemento reescrito via innerHTML pelo motor
+  // de i18n (data-i18n-html) toda vez que o idioma muda — um listener
+  // anexado direto no <a> seria destruído nessa troca.
+  (function () {
+    var FEEDBACK_MS = 1800;
+    var FEEDBACK_TEXT = { pt: "Copiado!", en: "Copied!", es: "¡Copiado!" };
+    var STORAGE_KEY = "joel_ilustracao_lang";
+
+    document.addEventListener("click", function (e) {
+      var el = e.target.closest && e.target.closest("[data-copy-email]");
+      if (!el) return;
+      var email = el.getAttribute("data-copy-email");
+      if (!navigator.clipboard || !navigator.clipboard.writeText) return;
+      e.preventDefault();
+      navigator.clipboard.writeText(email).then(function () {
+        var lang = "pt";
+        try { lang = localStorage.getItem(STORAGE_KEY) || "pt"; } catch (err) {}
+        if (el._copyTimer) clearTimeout(el._copyTimer);
+        if (el._originalText == null) el._originalText = el.textContent;
+        el.textContent = FEEDBACK_TEXT[lang] || FEEDBACK_TEXT.pt;
+        el._copyTimer = setTimeout(function () {
+          el.textContent = el._originalText;
+          el._originalText = null;
+          el._copyTimer = null;
+        }, FEEDBACK_MS);
+      }, function () {
+        window.location.href = el.getAttribute("href");
+      });
+    });
+  })();
+</script>
+
+<script>
+  // ScrollStack — vanilla port of the React Bits component (reactbits.dev).
+  // useWindowScroll:true, matching the original demo — the cards stack as
+  // the PAGE scrolls (not a bounded inner box). An earlier version used a
+  // contained scroller to avoid touching the whole site's scroll feel, but
+  // that hid the effect entirely: scrolling the page normally never
+  // "entered" the box, so the component looked absent. A later version
+  // added Lenis to smooth the whole window's scroll (matching the original
+  // demo's dependency), but that made scrolling feel hijacked/sticky for
+  // some users — removed. This now drives purely off native scroll, so
+  // scrolling always feels normal; the pin/scale effect still runs via a
+  // rAF-throttled scroll listener.
+  (function () {
+    var scroller = document.getElementById("process-stack");
+    if (!scroller) return;
+    var cards = Array.prototype.slice.call(scroller.querySelectorAll(".scroll-stack-card"));
+    if (!cards.length) return;
+    var endEl = scroller.querySelector(".scroll-stack-end");
+
+    var CFG = {
+      itemDistance: 80,
+      itemScale: 0.04,
+      itemStackDistance: 26,
+      stackPosition: "18%",
+      scaleEndPosition: "10%",
+      baseScale: 0.86
+    };
+
+    var lastTransforms = {};
+    var updating = false;
+
+    function parsePercentage(value, containerHeight) {
+      if (typeof value === "string" && value.indexOf("%") > -1) {
+        return (parseFloat(value) / 100) * containerHeight;
+      }
+      return parseFloat(value);
+    }
+
+    function calcProgress(scrollTop, start, end) {
+      if (scrollTop < start) return 0;
+      if (scrollTop > end) return 1;
+      return (scrollTop - start) / (end - start);
+    }
+
+    // offsetTop walked up the offsetParent chain — unlike
+    // getBoundingClientRect(), this is never affected by a transform
+    // already applied to the element (or an ancestor), so re-measuring
+    // every frame can't drift once cards start moving. Cached once on
+    // load/resize instead of re-read on every scroll tick.
+    function cumulativeOffsetTop(el) {
+      var top = 0;
+      while (el) {
+        top += el.offsetTop || 0;
+        el = el.offsetParent;
+      }
+      return top;
+    }
+
+    var cardTops = [];
+    var endElementTop = 0;
+    function measure() {
+      cardTops = cards.map(cumulativeOffsetTop);
+      endElementTop = endEl ? cumulativeOffsetTop(endEl) : 0;
+    }
+
+    function update() {
+      if (updating) return;
+      updating = true;
+      var scrollTop = window.scrollY;
+      var containerHeight = window.innerHeight;
+      var stackPositionPx = parsePercentage(CFG.stackPosition, containerHeight);
+      var scaleEndPositionPx = parsePercentage(CFG.scaleEndPosition, containerHeight);
+
+      cards.forEach(function (card, i) {
+        var cardTop = cardTops[i];
+        var triggerStart = cardTop - stackPositionPx - CFG.itemStackDistance * i;
+        var triggerEnd = cardTop - scaleEndPositionPx;
+        var pinStart = cardTop - stackPositionPx - CFG.itemStackDistance * i;
+        var pinEnd = endElementTop - containerHeight / 2;
+
+        var scaleProgress = calcProgress(scrollTop, triggerStart, triggerEnd);
+        var targetScale = CFG.baseScale + i * CFG.itemScale;
+        var scale = 1 - scaleProgress * (1 - targetScale);
+
+        var translateY = 0;
+        var isPinned = scrollTop >= pinStart && scrollTop <= pinEnd;
+        if (isPinned) {
+          translateY = scrollTop - cardTop + stackPositionPx + CFG.itemStackDistance * i;
+        } else if (scrollTop > pinEnd) {
+          translateY = pinEnd - cardTop + stackPositionPx + CFG.itemStackDistance * i;
+        }
+
+        var t = {
+          translateY: Math.round(translateY * 100) / 100,
+          scale: Math.round(scale * 1000) / 1000
+        };
+        var last = lastTransforms[i];
+        if (!last || Math.abs(last.translateY - t.translateY) > 0.1 || Math.abs(last.scale - t.scale) > 0.001) {
+          card.style.transform = "translate3d(0, " + t.translateY + "px, 0) scale(" + t.scale + ")";
+          lastTransforms[i] = t;
+        }
+      });
+      updating = false;
+    }
+
+    cards.forEach(function (card, i) {
+      if (i < cards.length - 1) card.style.marginBottom = CFG.itemDistance + "px";
+      card.style.willChange = "transform";
+      card.style.transformOrigin = "top center";
+      card.style.backfaceVisibility = "hidden";
+      card.style.position = "relative";
+    });
+
+    var ticking = false;
+    function onScroll() {
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(function () {
+        update();
+        ticking = false;
+      });
+    }
+    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("resize", function () {
+      measure();
+      update();
+    });
+
+    measure();
+    update();
+  })();
+</script>
+
+<!-- ==================== i18n: PT / EN / ES ====================
+     Troca client-side, sem build e sem URLs separadas por idioma.
+     data-i18n define textContent, data-i18n-html define innerHTML
+     (pra frases com <em>/<strong> dentro), data-i18n-alt define o
+     atributo alt de imagens, data-i18n-aria define aria-label,
+     data-i18n-placeholder define o placeholder de inputs.
+     Preferencia salva em localStorage; padrao e sempre PT. -->
+<script>
+  (function () {
+    var STRINGS = {
+      pt: {
+        skip_link: "Pular para o conteúdo",
+        nav_sobre: "Sobre",
+        nav_colab: "Colaborações",
+        nav_portfolio: "Portfólio",
+        nav_processo: "Como funciona",
+        nav_contato: "Contato",
+        cta_whatsapp_header: "Falar no WhatsApp",
+        cta_whatsapp_contact: "Chamar no WhatsApp",
+        cta_email: "Escrever por e-mail",
+        mobile_menu_label: "Menu",
+        mobile_menu_aria: "Abrir menu",
+        hero_eyebrow: "Ilustração de moda sob encomenda",
+        hero_h1: 'Transformo sua ideia em <em>ilustração de moda</em>.',
+        hero_lead: "Trabalho sob encomenda para estilistas e marcas que precisam tirar um look do papel com agilidade, com o acabamento de quem já passou por capa, palco e campanha.",
+        hero_note: "Disponível para projetos pontuais e parcerias contínuas com equipes de estilo.",
+        stat_label_colabs: "Colabs de elite",
+        stat_label_followers: "Seguidores",
+        stat_num_followers: "6,2 mil+",
+        carousel_alt: "Croqui de Joel Coveero ao lado da peça já executada",
+        sobre_eyebrow: "Do papel à passarela",
+        sobre_p1: 'Joel é estilista e ilustrador de moda, de Fortaleza - CE 🇧🇷. <strong>Seu traço já deu forma a ícones da cultura pop e marcas de vanguarda</strong>, repertório de quem entende o mercado de luxo e do entretenimento.',
+        sobre_p2: "Não é ilustração genérica de referência. É a tradução de uma ideia (um figurino, um momento de palco, uma campanha) em imagem pronta pra guiar a produção.",
+        stat_followers_label: "seguidores nas redes sociais",
+        audience_eyebrow: "Atendo",
+        tag_marcas: "Marcas de moda",
+        tag_estilistas: "Estilistas",
+        tag_artistas: "Artistas & cantores",
+        tag_producoes: "Produções de palco",
+        tag_campanhas: "Campanhas",
+        colab_eyebrow: "Colaborações de elite",
+        colab_h2: "Trabalhos famosos que já saíram do papel",
+        colab_lead: "E foram parar em capa, palco e campanha.",
+        colab_ludmilla_quote: 'Croquis para os visuais do álbum "Fragmentos" e outros projetos.',
+        colab_katseye_quote: 'Croquis para a apresentação do grupo no Festival Estéreo Picnic, na Colômbia.',
+        colab_ssjheni_quote: "Croquis looks de festivais para artistas com direção criativa da estilista.",
+        colab_quermar_quote: "Croquis de looks de coleção beachwear para a marca.",
+        colab_juanduarte_quote: "Diversos looks para artistas nacionais, para eventos e passarela.",
+        port_eyebrow: "O traço do Joel",
+        port_h2: "Portfólio",
+        port_lead: "Uma amostra do nível de acabamento que você pode esperar: peças e bastidores do trabalho pessoal do Joel.",
+        port_alt: "Ilustração de moda do portfólio de Joel Coveero",
+        proc_eyebrow: "Como funciona",
+        proc_h2: "Do briefing à arte final",
+        proc_lead: "Três etapas, escopo e prazo combinados antes de começar.",
+        step1_title: "Briefing",
+        step1_p: "Conversa sobre a peça, o projeto (coleção, marca ou artista) e o momento (palco, campanha ou editorial) pra entender exatamente o que a ilustração precisa comunicar.",
+        step2_title: "Direção",
+        step2_p: "Joel traduz a referência em conceito visual e ajusta com você até a ideia fechar, antes de partir pro traço final.",
+        step3_title: "Ilustração final",
+        step3_p: "Entrega em alta resolução, pronta pra guiar a produção da peça ou pra apresentação ao cliente.",
+        section_cta_processo: "Vamos começar o seu projeto?",
+        section_cta_colab: "Quer um resultado assim pro seu projeto?",
+        contato_eyebrow: "Contato",
+        contato_h2: "Vamos conversar?",
+        contato_lead: "WhatsApp pra resposta mais rápida, email se preferir escrever com calma.",
+        contact_priority_badge: "Resposta mais rápida",
+        contact_whatsapp_title: "WhatsApp",
+        contact_whatsapp_sub: "Pra quem já quer conversar e fechar um projeto agora.",
+        contact_email_alt: 'ou escreva pra <a href="mailto:joel.estilista@gmail.com?subject=Projeto%20de%20ilustra%C3%A7%C3%A3o" data-copy-email="joel.estilista@gmail.com">joel.estilista@gmail.com</a>',
+        quote_h3: "Quer um orçamento? Me conta os detalhes",
+        quote_sub: "Preencha o formulário: ele monta uma mensagem com tudo e abre no seu WhatsApp, prontinha pra enviar.",
+        quote_select_placeholder: "Selecione",
+        quote_label_nome: "Nome",
+        quote_placeholder_nome: "Seu nome",
+        quote_label_empresa: "Tamanho da empresa",
+        quote_empresa_opt1: "Autônomo(a) / Freelancer",
+        quote_empresa_opt2: "Pequena empresa",
+        quote_empresa_opt3: "Média empresa",
+        quote_empresa_opt4: "Grande empresa / Marca",
+        quote_label_telefone: "Telefone",
+        quote_placeholder_telefone: "(DDD) 00000-0000",
+        quote_label_email: "Email",
+        quote_placeholder_email: "voce@email.com",
+        quote_label_pecas: "Número de peças",
+        quote_placeholder_pecas: "Ex.: 5",
+        quote_label_prazo: "Prazo de entrega",
+        quote_prazo_opt0: "Urgentíssimo (24-48h)",
+        quote_prazo_opt1: "Urgente (até 1 semana)",
+        quote_prazo_opt2: "2 a 3 semanas",
+        quote_prazo_opt3: "1 mês",
+        quote_prazo_opt4: "Sem pressa",
+        quote_label_tipo: "Tipo de peça",
+        quote_tipo_opt1: "Apresentação",
+        quote_tipo_opt2: "Coleção beachwear",
+        quote_tipo_opt3: "Evento",
+        quote_tipo_opt4: "Coleção underwear",
+        quote_tipo_opt5: "Coleção",
+        quote_tipo_opt6: "Editorial",
+        quote_tipo_opt7: "Campanha",
+        quote_tipo_opt8: "Outro",
+        quote_submit: "Enviar pelo WhatsApp",
+        footer_privacy: "Privacidade",
+        footer_copy: "Joel Pinheiro: Ilustração de Moda. Todos os direitos reservados."
+      },
+      en: {
+        skip_link: "Skip to content",
+        nav_sobre: "About",
+        nav_colab: "Collaborations",
+        nav_portfolio: "Portfolio",
+        nav_processo: "How it works",
+        nav_contato: "Contact",
+        cta_whatsapp_header: "Message on WhatsApp",
+        cta_whatsapp_contact: "Chat on WhatsApp",
+        cta_email: "Write an email",
+        mobile_menu_label: "Menu",
+        mobile_menu_aria: "Open menu",
+        hero_eyebrow: "Bespoke fashion illustration",
+        hero_h1: 'I turn your idea into <em>fashion illustration</em>.',
+        hero_lead: "Commissioned work for stylists and brands who need to bring a look off the page fast, with the finish of someone who has already been through covers, stages and campaigns.",
+        hero_note: "Available for one-off projects and ongoing partnerships with style teams.",
+        stat_label_colabs: "Elite collabs",
+        stat_label_followers: "Followers",
+        stat_num_followers: "6.2K+",
+        carousel_alt: "Croqui by Joel Coveero next to the finished garment",
+        sobre_eyebrow: "From paper to runway",
+        sobre_p1: 'Joel is a fashion stylist and illustrator from Fortaleza, Brazil 🇧🇷. <strong>His line work has already shaped pop culture icons and forward-thinking brands</strong>, the range of someone who understands the luxury and entertainment markets.',
+        sobre_p2: "This isn't generic reference art. It's the translation of an idea (an outfit, a stage moment, a campaign) into an image ready to guide production.",
+        stat_followers_label: "followers across social media",
+        audience_eyebrow: "I work with",
+        tag_marcas: "Fashion brands",
+        tag_estilistas: "Stylists",
+        tag_artistas: "Artists & singers",
+        tag_producoes: "Stage productions",
+        tag_campanhas: "Campaigns",
+        colab_eyebrow: "Elite collaborations",
+        colab_h2: "Famous work that's already left the page",
+        colab_lead: "And ended up on covers, stages and campaigns.",
+        colab_ludmilla_quote: 'Sketches for the "Fragmentos" album visuals and other projects.',
+        colab_katseye_quote: "Fashion sketches for the group's performance at the Estéreo Picnic Festival, in Colombia.",
+        colab_ssjheni_quote: "Festival-look sketches for artists, under the stylist's creative direction.",
+        colab_quermar_quote: "Fashion sketches for the brand's beachwear collection looks.",
+        colab_juanduarte_quote: "Various looks for national artists, for events and runway shows.",
+        port_eyebrow: "Joel's line work",
+        port_h2: "Portfolio",
+        port_lead: "A sample of the finish level you can expect: pieces and behind-the-scenes from Joel's personal work.",
+        port_alt: "Fashion illustration from Joel Coveero's portfolio",
+        proc_eyebrow: "How it works",
+        proc_h2: "From briefing to final art",
+        proc_lead: "Three steps, scope and timeline agreed before starting.",
+        step1_title: "Briefing",
+        step1_p: "A conversation about the piece, the project (collection, brand or artist) and the moment (stage, campaign or editorial) to understand exactly what the illustration needs to communicate.",
+        step2_title: "Direction",
+        step2_p: "Joel translates the reference into a visual concept and refines it with you until the idea is locked, before moving to the final line work.",
+        step3_title: "Final illustration",
+        step3_p: "Delivered in high resolution, ready to guide the piece's production or for a client presentation.",
+        section_cta_processo: "Ready to start your project?",
+        section_cta_colab: "Want a result like this for your project?",
+        contato_eyebrow: "Contact",
+        contato_h2: "Let's talk?",
+        contato_lead: "WhatsApp for the fastest reply, email if you'd rather write it out.",
+        contact_priority_badge: "Fastest response",
+        contact_whatsapp_title: "WhatsApp",
+        contact_whatsapp_sub: "For anyone ready to talk and close a project now.",
+        contact_email_alt: 'or write to <a href="mailto:joel.estilista@gmail.com?subject=Projeto%20de%20ilustra%C3%A7%C3%A3o" data-copy-email="joel.estilista@gmail.com">joel.estilista@gmail.com</a>',
+        quote_h3: "Want a quote? Tell me the details",
+        quote_sub: "Fill in the form: it builds a message with everything and opens your WhatsApp, ready to send.",
+        quote_select_placeholder: "Select",
+        quote_label_nome: "Name",
+        quote_placeholder_nome: "Your name",
+        quote_label_empresa: "Company size",
+        quote_empresa_opt1: "Freelancer / Independent",
+        quote_empresa_opt2: "Small business",
+        quote_empresa_opt3: "Mid-size business",
+        quote_empresa_opt4: "Large company / Brand",
+        quote_label_telefone: "Phone",
+        quote_placeholder_telefone: "+1 000 000 0000",
+        quote_label_email: "Email",
+        quote_placeholder_email: "you@email.com",
+        quote_label_pecas: "Number of pieces",
+        quote_placeholder_pecas: "E.g.: 5",
+        quote_label_prazo: "Delivery deadline",
+        quote_prazo_opt0: "Extremely urgent (24-48h)",
+        quote_prazo_opt1: "Urgent (within 1 week)",
+        quote_prazo_opt2: "2 to 3 weeks",
+        quote_prazo_opt3: "1 month",
+        quote_prazo_opt4: "No rush",
+        quote_label_tipo: "Piece type",
+        quote_tipo_opt1: "Presentation",
+        quote_tipo_opt2: "Beachwear collection",
+        quote_tipo_opt3: "Event",
+        quote_tipo_opt4: "Underwear collection",
+        quote_tipo_opt5: "Collection",
+        quote_tipo_opt6: "Editorial",
+        quote_tipo_opt7: "Campaign",
+        quote_tipo_opt8: "Other",
+        quote_submit: "Send via WhatsApp",
+        footer_privacy: "Privacy",
+        footer_copy: "Joel Pinheiro: Fashion Illustration. All rights reserved."
+      },
+      es: {
+        skip_link: "Saltar al contenido",
+        nav_sobre: "Sobre mí",
+        nav_colab: "Colaboraciones",
+        nav_portfolio: "Portafolio",
+        nav_processo: "Cómo funciona",
+        nav_contato: "Contacto",
+        cta_whatsapp_header: "Hablar por WhatsApp",
+        cta_whatsapp_contact: "Escribir por WhatsApp",
+        cta_email: "Escribir un correo",
+        mobile_menu_label: "Menú",
+        mobile_menu_aria: "Abrir menú",
+        hero_eyebrow: "Ilustración de moda por encargo",
+        hero_h1: 'Transformo tu idea en <em>ilustración de moda</em>.',
+        hero_lead: "Trabajo por encargo para estilistas y marcas que necesitan sacar un look del papel con agilidad, con el acabado de quien ya pasó por portadas, escenarios y campañas.",
+        hero_note: "Disponible para proyectos puntuales y colaboraciones continuas con equipos de estilo.",
+        stat_label_colabs: "Colabs de élite",
+        stat_label_followers: "Seguidores",
+        stat_num_followers: "6,2 mil+",
+        carousel_alt: "Croqui de Joel Coveero junto a la prenda ya confeccionada",
+        sobre_eyebrow: "Del papel a la pasarela",
+        sobre_p1: 'Joel es estilista e ilustrador de moda, de Fortaleza, Brasil 🇧🇷. <strong>Su trazo ya le dio forma a íconos de la cultura pop y marcas de vanguardia</strong>, el repertorio de quien entiende el mercado de lujo y del entretenimiento.',
+        sobre_p2: "No es una ilustración genérica de referencia. Es la traducción de una idea (un vestuario, un momento de escenario, una campaña) en una imagen lista para guiar la producción.",
+        stat_followers_label: "seguidores en redes sociales",
+        audience_eyebrow: "Atiendo a",
+        tag_marcas: "Marcas de moda",
+        tag_estilistas: "Estilistas",
+        tag_artistas: "Artistas & cantantes",
+        tag_producoes: "Producciones de escenario",
+        tag_campanhas: "Campañas",
+        colab_eyebrow: "Colaboraciones de élite",
+        colab_h2: "Trabajos famosos que ya salieron del papel",
+        colab_lead: "Y terminaron en portadas, escenarios y campañas.",
+        colab_ludmilla_quote: 'Croquis para los visuales del álbum "Fragmentos" y otros proyectos.',
+        colab_katseye_quote: 'Croquis para la presentación del grupo en el Festival Estéreo Picnic, en Colombia.',
+        colab_ssjheni_quote: "Croquis de looks de festivales para artistas, bajo la dirección creativa de la estilista.",
+        colab_quermar_quote: "Croquis de looks de la colección beachwear para la marca.",
+        colab_juanduarte_quote: "Varios looks para artistas nacionales, para eventos y pasarela.",
+        port_eyebrow: "El trazo de Joel",
+        port_h2: "Portafolio",
+        port_lead: "Una muestra del nivel de acabado que puedes esperar: piezas y detrás de cámaras del trabajo personal de Joel.",
+        port_alt: "Ilustración de moda del portafolio de Joel Coveero",
+        proc_eyebrow: "Cómo funciona",
+        proc_h2: "Del briefing al arte final",
+        proc_lead: "Tres etapas, alcance y plazo acordados antes de empezar.",
+        step1_title: "Briefing",
+        step1_p: "Una conversación sobre la pieza, el proyecto (colección, marca o artista) y el momento (escenario, campaña o editorial) para entender exactamente qué necesita comunicar la ilustración.",
+        step2_title: "Dirección",
+        step2_p: "Joel traduce la referencia en un concepto visual y lo ajusta contigo hasta cerrar la idea, antes de pasar al trazo final.",
+        step3_title: "Ilustración final",
+        step3_p: "Entrega en alta resolución, lista para guiar la producción de la pieza o para la presentación al cliente.",
+        section_cta_processo: "¿Vamos a empezar tu proyecto?",
+        section_cta_colab: "¿Quieres un resultado así para tu proyecto?",
+        contato_eyebrow: "Contacto",
+        contato_h2: "¿Hablamos?",
+        contato_lead: "WhatsApp para la respuesta más rápida, email si prefieres escribir con calma.",
+        contact_priority_badge: "Respuesta más rápida",
+        contact_whatsapp_title: "WhatsApp",
+        contact_whatsapp_sub: "Para quien ya quiere conversar y cerrar un proyecto ahora.",
+        contact_email_alt: 'o escribe a <a href="mailto:joel.estilista@gmail.com?subject=Projeto%20de%20ilustra%C3%A7%C3%A3o" data-copy-email="joel.estilista@gmail.com">joel.estilista@gmail.com</a>',
+        quote_h3: "¿Quieres un presupuesto? Cuéntame los detalles",
+        quote_sub: "Completa el formulario: arma un mensaje con todo y abre tu WhatsApp, listo para enviar.",
+        quote_select_placeholder: "Selecciona",
+        quote_label_nome: "Nombre",
+        quote_placeholder_nome: "Tu nombre",
+        quote_label_empresa: "Tamaño de la empresa",
+        quote_empresa_opt1: "Autónomo(a) / Freelance",
+        quote_empresa_opt2: "Empresa pequeña",
+        quote_empresa_opt3: "Empresa mediana",
+        quote_empresa_opt4: "Empresa grande / Marca",
+        quote_label_telefone: "Teléfono",
+        quote_placeholder_telefone: "+00 000 000 000",
+        quote_label_email: "Email",
+        quote_placeholder_email: "tu@email.com",
+        quote_label_pecas: "Número de piezas",
+        quote_placeholder_pecas: "Ej.: 5",
+        quote_label_prazo: "Plazo de entrega",
+        quote_prazo_opt1: "Urgente (hasta 1 semana)",
+        quote_prazo_opt2: "2 a 3 semanas",
+        quote_prazo_opt3: "1 mes",
+        quote_prazo_opt4: "Sin prisa",
+        quote_label_tipo: "Tipo de pieza",
+        quote_tipo_opt1: "Presentación",
+        quote_tipo_opt2: "Colección beachwear",
+        quote_tipo_opt3: "Evento",
+        quote_tipo_opt4: "Colección underwear",
+        quote_tipo_opt5: "Colección",
+        quote_tipo_opt6: "Editorial",
+        quote_tipo_opt7: "Campaña",
+        quote_tipo_opt8: "Otro",
+        quote_submit: "Enviar por WhatsApp",
+        footer_privacy: "Privacidad",
+        footer_copy: "Joel Pinheiro: Ilustración de Moda. Todos los derechos reservados."
+      }
+    };
+
+    var HTML_LANG = { pt: "pt-BR", en: "en", es: "es" };
+    var FLAGS = { pt: "🇧🇷", en: "🇺🇸", es: "🇪🇸" };
+    var STORAGE_KEY = "joel_ilustracao_lang";
+
+    function closeLangSwitches() {
+      document.querySelectorAll("[data-lang-switch].open").forEach(function (sw) {
+        sw.classList.remove("open");
+        sw.querySelector(".lang-trigger").setAttribute("aria-expanded", "false");
+      });
+    }
+
+    function applyLang(lang) {
+      var dict = STRINGS[lang] || STRINGS.pt;
+
+      document.querySelectorAll("[data-i18n]").forEach(function (el) {
+        var key = el.getAttribute("data-i18n");
+        if (dict[key] != null) el.textContent = dict[key];
+      });
+      document.querySelectorAll("[data-i18n-html]").forEach(function (el) {
+        var key = el.getAttribute("data-i18n-html");
+        if (dict[key] != null) el.innerHTML = dict[key];
+      });
+      document.querySelectorAll("[data-i18n-alt]").forEach(function (el) {
+        var key = el.getAttribute("data-i18n-alt");
+        if (dict[key] != null) el.setAttribute("alt", dict[key]);
+      });
+      document.querySelectorAll("[data-i18n-aria]").forEach(function (el) {
+        var key = el.getAttribute("data-i18n-aria");
+        if (dict[key] != null) el.setAttribute("aria-label", dict[key]);
+      });
+      document.querySelectorAll("[data-i18n-placeholder]").forEach(function (el) {
+        var key = el.getAttribute("data-i18n-placeholder");
+        if (dict[key] != null) el.setAttribute("placeholder", dict[key]);
+      });
+
+      document.documentElement.setAttribute("lang", HTML_LANG[lang] || "pt-BR");
+      document.title = dict.hero_eyebrow
+        ? "Joel Pinheiro | " + dict.hero_eyebrow.replace(/^./, function (c) { return c.toUpperCase(); })
+        : document.title;
+
+      document.querySelectorAll("[data-lang-switch]").forEach(function (sw) {
+        sw.querySelectorAll("[data-flag]").forEach(function (el) { el.textContent = FLAGS[lang] || FLAGS.pt; });
+        sw.querySelectorAll("[data-code]").forEach(function (el) { el.textContent = lang.toUpperCase(); });
+        sw.querySelectorAll(".lang-menu li").forEach(function (li) {
+          var btn = li.querySelector("button");
+          li.style.display = btn.getAttribute("data-lang") === lang ? "none" : "";
+        });
+      });
+
+      try { localStorage.setItem(STORAGE_KEY, lang); } catch (e) {}
+    }
+
+    document.querySelectorAll("[data-lang-switch]").forEach(function (sw) {
+      var trigger = sw.querySelector(".lang-trigger");
+      trigger.addEventListener("click", function (e) {
+        e.stopPropagation();
+        var isOpen = sw.classList.contains("open");
+        closeLangSwitches();
+        if (!isOpen) {
+          sw.classList.add("open");
+          trigger.setAttribute("aria-expanded", "true");
+        }
+      });
+      sw.querySelectorAll(".lang-menu button").forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          applyLang(btn.getAttribute("data-lang"));
+          closeLangSwitches();
+        });
+      });
+    });
+    document.addEventListener("click", closeLangSwitches);
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") closeLangSwitches();
+    });
+
+    var saved = "pt";
+    try { saved = localStorage.getItem(STORAGE_KEY) || "pt"; } catch (e) {}
+    applyLang(saved);
+  })();
+</script>
+
+</body>
+</html>
