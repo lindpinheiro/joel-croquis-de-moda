@@ -2,3 +2,6 @@ User-agent: *
 Allow: /
 
 Sitemap: https://joelcroquis.com.br/sitemap.xml
+
+# Resumo do site em texto para modelos de linguagem:
+# https://joelcroquis.com.br/llms.txt
