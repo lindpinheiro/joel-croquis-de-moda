@@ -4,6 +4,20 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<!-- Trafego interno: abrir o site com ?ga_off=1 desliga a medicao neste
+     navegador (fica salvo); ?ga_on=1 religa. Melhor que excluir por IP,
+     porque funciona tambem no celular, onde o IP muda. -->
+<script>
+(function () {
+  var ID = "G-QP1PR1LTYF";
+  try {
+    var q = location.search;
+    if (q.indexOf("ga_off=1") > -1) localStorage.setItem("ga_opt_out", "1");
+    if (q.indexOf("ga_on=1") > -1) localStorage.removeItem("ga_opt_out");
+    if (localStorage.getItem("ga_opt_out") === "1") window["ga-disable-" + ID] = true;
+  } catch (e) {}
+})();
+</script>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-QP1PR1LTYF"></script>
 <script>

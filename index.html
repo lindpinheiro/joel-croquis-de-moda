@@ -22,6 +22,20 @@ src="https://www.facebook.com/tr?id=4493762200768979&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
 
+<!-- Trafego interno: abrir o site com ?ga_off=1 desliga a medicao neste
+     navegador (fica salvo); ?ga_on=1 religa. Melhor que excluir por IP,
+     porque funciona tambem no celular, onde o IP muda. -->
+<script>
+(function () {
+  var ID = "G-QP1PR1LTYF";
+  try {
+    var q = location.search;
+    if (q.indexOf("ga_off=1") > -1) localStorage.setItem("ga_opt_out", "1");
+    if (q.indexOf("ga_on=1") > -1) localStorage.removeItem("ga_opt_out");
+    if (localStorage.getItem("ga_opt_out") === "1") window["ga-disable-" + ID] = true;
+  } catch (e) {}
+})();
+</script>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-QP1PR1LTYF"></script>
 <script>
@@ -1683,6 +1697,17 @@ src="https://www.facebook.com/tr?id=4493762200768979&ev=PageView&noscript=1"
       }
       if (window.fbq) fbq("track", "Lead", data, { eventID: eventId });
 
+
+      // GA4 — mesmo lead, medido tambem no Google Analytics. Vai so o
+      // contexto do projeto (origem, empresa, prazo); nome, email e
+      // telefone nao sao enviados, igual ao que ja vale pro Pixel.
+      if (typeof window.gtag === "function") {
+        window.gtag("event", "gerar_lead", {
+          metodo: source,
+          empresa: (customData && customData.empresa) || undefined,
+          prazo: (customData && customData.prazo) || undefined
+        });
+      }
       // CAPI (server-side, via Cloudflare Worker) — mesmo eventId do Pixel
       // acima, pra Meta deduplicar os dois lados do mesmo evento.
       function sendCapi(hashedEm, hashedPh) {
