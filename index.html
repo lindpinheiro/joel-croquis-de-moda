@@ -51,11 +51,149 @@ src="https://www.facebook.com/tr?id=4493762200768979&ev=PageView&noscript=1"
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Service",
-  "serviceType": "Ilustração de moda sob encomenda",
-  "provider": { "@type": "Person", "name": "Joel Pinheiro", "alternateName": "@joelcoveero" },
-  "areaServed": "BR",
-  "description": "Ilustração de moda sob encomenda para marcas, estilistas e artistas: croqui personalizado do briefing à arte final."
+  "@graph": [
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://joelcroquis.com.br/#business",
+      "name": "Joel Estilista - Croqui e Ilustração de Moda",
+      "alternateName": ["Joel Croquis de Moda", "Joel Pinheiro Ilustração de Moda"],
+      "url": "https://joelcroquis.com.br/",
+      "description": "Croqui e ilustração de moda sob encomenda para marcas, estilistas, artistas e produções de palco. De Fortaleza (CE) para o Brasil e o mundo, 100% remoto.",
+      "image": "https://joelcroquis.com.br/assets/joel-foto-ilustracao.webp",
+      "telephone": "+55-85-99996-2897",
+      "email": "joel.estilista@gmail.com",
+      "priceRange": "$$",
+      "foundingDate": "2022-06-23",
+      "founder": { "@id": "https://joelcroquis.com.br/#joel" },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Fortaleza",
+        "addressRegion": "CE",
+        "addressCountry": "BR"
+      },
+      "areaServed": [
+        { "@type": "City", "name": "Fortaleza" },
+        { "@type": "State", "name": "Ceará" },
+        { "@type": "Country", "name": "Brasil" },
+        { "@type": "Place", "name": "Atendimento remoto internacional" }
+      ],
+      "sameAs": [
+        "https://www.instagram.com/joelcoveero/",
+        "https://wa.me/5585999962897"
+      ],
+      "knowsAbout": [
+        "Croqui de moda",
+        "Ilustração de moda",
+        "Desenho de moda",
+        "Moodboard de coleção",
+        "Desenvolvimento de coleção",
+        "Moda beachwear",
+        "Moda underwear",
+        "Alfaiataria",
+        "Looks de palco para artistas"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Serviços de ilustração de moda",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Croqui de moda sob encomenda", "description": "Croqui personalizado de peça ou look, do briefing à arte final em alta resolução." } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Croquis de coleção", "description": "Cartela de croquis para coleção completa: beachwear, underwear, alfaiataria, fitness, feminina, masculina e infantil." } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ilustração de looks de palco e campanha", "description": "Ilustração de figurino para shows, festivais, clipes, editoriais e campanhas." } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Moodboard e conceito criativo de coleção", "description": "Direção visual, moodboard e conceito para guiar o desenvolvimento da coleção." } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ilustração de moda urgente (24-48h)", "description": "Entrega expressa para apresentação, pitch ou produção com prazo curto." } }
+        ]
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "vendas",
+        "telephone": "+55-85-99996-2897",
+        "email": "joel.estilista@gmail.com",
+        "availableLanguage": ["pt-BR", "en", "es"]
+      }
+    },
+
+    {
+      "@type": "Person",
+      "@id": "https://joelcroquis.com.br/#joel",
+      "name": "Joel Pinheiro",
+      "alternateName": "@joelcoveero",
+      "jobTitle": ["Estilista", "Ilustrador de moda"],
+      "description": "Estilista e ilustrador de moda de Fortaleza (CE). Croquis para marcas de moda, estilistas e artistas - do beachwear à alfaiataria, do papel à passarela.",
+      "url": "https://joelcroquis.com.br/",
+      "image": "https://joelcroquis.com.br/assets/joel-foto-ilustracao.webp",
+      "worksFor": { "@id": "https://joelcroquis.com.br/#business" },
+      "homeLocation": { "@type": "Place", "name": "Fortaleza, Ceará, Brasil" },
+      "sameAs": ["https://www.instagram.com/joelcoveero/"]
+    },
+
+    {
+      "@type": "WebSite",
+      "@id": "https://joelcroquis.com.br/#website",
+      "url": "https://joelcroquis.com.br/",
+      "name": "Joel Pinheiro | Ilustração de Moda Sob Encomenda",
+      "inLanguage": "pt-BR",
+      "publisher": { "@id": "https://joelcroquis.com.br/#business" }
+    },
+
+    {
+      "@type": "FAQPage",
+      "@id": "https://joelcroquis.com.br/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Quanto custa um croqui de moda?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Cada projeto tem um valor diferente, dependendo do número de peças, da complexidade e do prazo. Preencha o formulário no site com os detalhes e Joel retorna com um orçamento sob medida." }
+        },
+        {
+          "@type": "Question",
+          "name": "Qual o prazo de entrega de uma ilustração de moda?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Depende da demanda do momento e da opção escolhida no formulário - de urgentíssimo (24 a 48 horas) até sem pressa, priorizando mais tempo para revisão e acabamento." }
+        },
+        {
+          "@type": "Question",
+          "name": "Atende estilistas independentes e autônomos ou só marcas grandes?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Atende de autônomos e estilistas independentes a marcas e produções de grande porte. O processo é o mesmo, só o escopo é ajustado ao projeto." }
+        },
+        {
+          "@type": "Question",
+          "name": "Em que formato eu recebo a ilustração?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Os arquivos são entregues em alta resolução, prontos para apresentação, portfólio ou produção, no formato combinado conforme o uso." }
+        },
+        {
+          "@type": "Question",
+          "name": "Posso pedir ajustes depois de ver o croqui?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Sim. O processo inclui uma rodada de ajustes para alinhar os detalhes do look antes da entrega final." }
+        },
+        {
+          "@type": "Question",
+          "name": "Atende clientes fora do Brasil?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Sim. Todo o processo roda por WhatsApp e e-mail, então funciona de forma remota para qualquer lugar do mundo." }
+        },
+        {
+          "@type": "Question",
+          "name": "Como funciona o pagamento?",
+          "acceptedAnswer": { "@type": "Answer", "text": "A forma de pagamento é combinada diretamente pelo WhatsApp depois de fechar o orçamento, de acordo com o tamanho do projeto." }
+        },
+        {
+          "@type": "Question",
+          "name": "Quem é Joel Pinheiro?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Joel Pinheiro (@joelcoveero) é estilista e ilustrador de moda de Fortaleza, Ceará. Seu traço já assinou croquis para artistas como Ludmilla e o grupo KATSEYE, além de marcas de beachwear e alfaiataria." }
+        }
+      ]
+    },
+
+    {
+      "@type": "HowTo",
+      "@id": "https://joelcroquis.com.br/#comofunciona",
+      "name": "Como encomendar um croqui de moda com Joel Pinheiro",
+      "description": "Do briefing à arte final em três etapas, com escopo e prazo combinados antes de começar.",
+      "step": [
+        { "@type": "HowToStep", "position": 1, "name": "Briefing", "text": "Conversa sobre a peça, o projeto (coleção, marca ou artista) e o momento (palco, campanha ou editorial) para entender o que a ilustração precisa comunicar." },
+        { "@type": "HowToStep", "position": 2, "name": "Direção", "text": "Joel traduz a referência em conceito visual e ajusta com você até a ideia fechar, antes do traço final." },
+        { "@type": "HowToStep", "position": 3, "name": "Ilustração final", "text": "Entrega em alta resolução, pronta para guiar a produção da peça ou a apresentação ao cliente." }
+      ]
+    }
+  ]
 }
 </script>
 <style>
