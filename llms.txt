@@ -43,11 +43,13 @@ Marcas de moda, estilistas independentes e autônomos, artistas e cantores, prod
 
 ## Preço e prazo
 
-Não há tabela fixa. O orçamento é montado por projeto, conforme o número de peças, a complexidade e o prazo. Os prazos vão de urgentíssimo (24 a 48 horas) a "sem pressa", priorizando mais tempo para revisão e acabamento. A forma de pagamento é combinada por WhatsApp depois de fechar o orçamento.
+O valor base é **R$ 150 por croqui**, para uma peça, vista de frente, com prazo razoável. Esse valor inclui o briefing, a direção do conceito, o croqui final colorido, uma rodada de ajustes e o arquivo em alta resolução.
+
+Sobre essa base, o preço varia por cinco fatores: número de vistas (costas e laterais entram como adicional, não como croqui novo), complexidade da peça, urgência, volume de peças (cartela de coleção tem valor por croqui menor que peça avulsa) e uso pretendido da imagem. O orçamento é fechado antes de o trabalho começar. Os prazos vão de urgentíssimo (24 a 48 horas) a "sem pressa", priorizando mais tempo para revisão e acabamento. A forma de pagamento é combinada por WhatsApp depois de fechar o orçamento.
 
 ## Perguntas frequentes
 
-**Quanto custa um croqui de moda?** Cada projeto tem um valor diferente, dependendo do número de peças, da complexidade e do prazo. O orçamento é feito sob medida a partir do formulário do site.
+**Quanto custa um croqui de moda?** A partir de R$ 150 por croqui (uma peça, vista de frente, prazo razoável). O valor final depende do número de vistas, da complexidade, da urgência, do volume de peças e do uso da imagem.
 
 **Qual o prazo de entrega?** De 24 a 48 horas, no regime urgentíssimo, até prazos longos, conforme a demanda do momento e a opção escolhida.
 
@@ -70,6 +72,7 @@ Não há tabela fixa. O orçamento é montado por projeto, conforme o número de
 ## Páginas
 
 - [Home](https://joelcroquis.com.br/): apresentação, processo, colaborações, portfólio e formulário de orçamento.
+- [Quanto custa um croqui de moda](https://joelcroquis.com.br/precos-croqui-de-moda/): valor base de R$ 150, o que está incluso, o que não está, e os cinco fatores que mudam o preço.
 - [Croqui de moda: o que é, para que serve e como encomendar](https://joelcroquis.com.br/croqui-de-moda/): guia completo — diferença entre croqui, desenho técnico e ilustração de moda; o que informar no briefing; como se forma o preço; prazos; formato de entrega; como escolher um ilustrador de moda.
 - [Como funciona](https://joelcroquis.com.br/#processo): as três etapas do projeto.
 - [Sobre](https://joelcroquis.com.br/#sobre): quem é Joel Pinheiro e o que ele atende.
