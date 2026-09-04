@@ -527,9 +527,14 @@ src="https://www.facebook.com/tr?id=4493762200768979&ev=PageView&noscript=1"
     transition:transform .18s ease, border-color .18s ease;
   }
   .trust-card:hover{transform:translateY(-4px);border-color:var(--pink);}
+  /* Monograma no lugar de foto: a secao credita trabalho, nao exibe
+     imagem de terceiro. */
   .trust-avatar{
     width:44px;height:44px;border-radius:50%;flex-shrink:0;
-    object-fit:cover;border:1px solid var(--line);
+    border:1px solid var(--line);display:flex;align-items:center;
+    justify-content:center;font-family:var(--font-display);font-weight:700;
+    font-size:1rem;color:var(--ink);line-height:1;
+    background:linear-gradient(135deg,rgba(255,47,143,.30),rgba(155,92,255,.30));
   }
   .trust-body a.trust-name{color:var(--ink);text-decoration:none;font-weight:700;font-size:.98rem;}
   .trust-body a.trust-name:hover{color:var(--lime);}
@@ -829,15 +834,16 @@ src="https://www.facebook.com/tr?id=4493762200768979&ev=PageView&noscript=1"
         <p class="hero-note" data-i18n="hero_note">Disponível para projetos pontuais e parcerias contínuas com equipes de estilo.</p>
       </div>
       <div class="hero-visual showcase-carousel reveal" id="hero-carousel">
-        <img class="active" data-i18n-alt="carousel_alt" src="assets/carrossel/hero-02.webp" alt="Croqui de Joel Coveero ao lado da peça já executada">
-        <img data-i18n-alt="carousel_alt" src="assets/carrossel/hero-01.webp" alt="Croqui de Joel Coveero ao lado da peça já executada">
-        <img data-i18n-alt="carousel_alt" src="assets/carrossel/hero-03.webp" alt="Croqui de Joel Coveero ao lado da peça já executada">
-        <img data-i18n-alt="carousel_alt" src="assets/carrossel/hero-04.webp" alt="Croqui de Joel Coveero ao lado da peça já executada">
-        <img data-i18n-alt="carousel_alt" src="assets/carrossel/hero-05.webp" alt="Croqui de Joel Coveero ao lado da peça já executada">
-        <img data-i18n-alt="carousel_alt" src="assets/carrossel/hero-06.webp" alt="Croqui de Joel Coveero ao lado da peça já executada">
-        <img data-i18n-alt="carousel_alt" src="assets/carrossel/hero-07.webp" alt="Croqui de Joel Coveero ao lado da peça já executada">
-        <img data-i18n-alt="carousel_alt" src="assets/carrossel/hero-08.webp" alt="Croqui de Joel Coveero ao lado da peça já executada">
-        <img data-i18n-alt="carousel_alt" src="assets/carrossel/hero-09.webp" alt="Croqui de Joel Coveero ao lado da peça já executada">
+        <img class="active" data-i18n-alt="carousel_alt" src="assets/carrossel/croqui-01.jpg" alt="Croqui de moda ilustrado por Joel Pinheiro">
+        <img data-i18n-alt="carousel_alt" loading="lazy" src="assets/carrossel/croqui-02.jpg" alt="Croqui de moda ilustrado por Joel Pinheiro">
+        <img data-i18n-alt="carousel_alt" loading="lazy" src="assets/carrossel/croqui-03.jpg" alt="Croqui de moda ilustrado por Joel Pinheiro">
+        <img data-i18n-alt="carousel_alt" loading="lazy" src="assets/carrossel/croqui-04.jpg" alt="Croqui de moda ilustrado por Joel Pinheiro">
+        <img data-i18n-alt="carousel_alt" loading="lazy" src="assets/carrossel/croqui-05.jpg" alt="Croqui de moda ilustrado por Joel Pinheiro">
+        <img data-i18n-alt="carousel_alt" loading="lazy" src="assets/carrossel/croqui-06.jpg" alt="Croqui de moda ilustrado por Joel Pinheiro">
+        <img data-i18n-alt="carousel_alt" loading="lazy" src="assets/carrossel/croqui-07.jpg" alt="Croqui de moda ilustrado por Joel Pinheiro">
+        <img data-i18n-alt="carousel_alt" loading="lazy" src="assets/carrossel/croqui-08.jpg" alt="Croqui de moda ilustrado por Joel Pinheiro">
+        <img data-i18n-alt="carousel_alt" loading="lazy" src="assets/carrossel/croqui-09.jpg" alt="Croqui de moda ilustrado por Joel Pinheiro">
+        <img data-i18n-alt="carousel_alt" loading="lazy" src="assets/carrossel/croqui-10.jpg" alt="Croqui de moda ilustrado por Joel Pinheiro">
       </div>
     </div>
   </section>
@@ -928,7 +934,7 @@ src="https://www.facebook.com/tr?id=4493762200768979&ev=PageView&noscript=1"
           <div class="logoloop__track" id="colab-loop-track">
             <div class="logoloop__item">
               <div class="trust-card">
-                <img class="trust-avatar" src="assets/trust/ludmilla.webp" alt="Ludmilla" loading="lazy" decoding="async">
+                <span class="trust-avatar" aria-hidden="true">L</span>
                 <div class="trust-body">
                   <a class="trust-name" href="https://www.instagram.com/ludmilla/" target="_blank" rel="noopener">Ludmilla</a>
                   <span class="trust-handle">@ludmilla · Grammy Winner</span>
@@ -938,7 +944,7 @@ src="https://www.facebook.com/tr?id=4493762200768979&ev=PageView&noscript=1"
             </div>
             <div class="logoloop__item">
               <div class="trust-card">
-                <img class="trust-avatar" src="assets/trust/katseye.webp" alt="KATSEYE" loading="lazy" decoding="async">
+                <span class="trust-avatar" aria-hidden="true">K</span>
                 <div class="trust-body">
                   <a class="trust-name" href="https://www.instagram.com/katseyeworld/" target="_blank" rel="noopener">KATSEYE</a>
                   <span class="trust-handle">@katseyeworld</span>
@@ -948,7 +954,7 @@ src="https://www.facebook.com/tr?id=4493762200768979&ev=PageView&noscript=1"
             </div>
             <div class="logoloop__item">
               <div class="trust-card">
-                <img class="trust-avatar" src="assets/trust/ssjheni.webp" alt="ssjheni" loading="lazy" decoding="async">
+                <span class="trust-avatar" aria-hidden="true">S</span>
                 <div class="trust-body">
                   <a class="trust-name" href="https://www.instagram.com/ssjheni/" target="_blank" rel="noopener">ssjheni</a>
                   <span class="trust-handle">@ssjheni</span>
@@ -958,7 +964,7 @@ src="https://www.facebook.com/tr?id=4493762200768979&ev=PageView&noscript=1"
             </div>
             <div class="logoloop__item">
               <div class="trust-card">
-                <img class="trust-avatar" src="assets/trust/quermar.webp" alt="Quermar Wear" loading="lazy" decoding="async">
+                <span class="trust-avatar" aria-hidden="true">Q</span>
                 <div class="trust-body">
                   <a class="trust-name" href="https://www.instagram.com/quermarwear/" target="_blank" rel="noopener">Quermar Wear</a>
                   <span class="trust-handle">@quermarwear</span>
@@ -968,7 +974,7 @@ src="https://www.facebook.com/tr?id=4493762200768979&ev=PageView&noscript=1"
             </div>
             <div class="logoloop__item">
               <div class="trust-card">
-                <img class="trust-avatar" src="assets/trust/juanduarte.webp" alt="Juan Duarte" loading="lazy" decoding="async">
+                <span class="trust-avatar" aria-hidden="true">J</span>
                 <div class="trust-body">
                   <a class="trust-name" href="https://www.instagram.com/juanduarte/" target="_blank" rel="noopener">Juan Duarte</a>
                   <span class="trust-handle">@juanduarte · Estilista</span>
