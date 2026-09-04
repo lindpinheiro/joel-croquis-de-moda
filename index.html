@@ -87,9 +87,17 @@ src="https://www.facebook.com/tr?id=4493762200768979&ev=PageView&noscript=1"
         "Desenho de moda",
         "Moodboard de coleção",
         "Desenvolvimento de coleção",
-        "Moda beachwear",
-        "Moda underwear",
+        "Moda feminina",
+        "Moda masculina",
+        "Moda infantil",
+        "Jeanswear",
+        "Streetwear",
         "Alfaiataria",
+        "Moda festa",
+        "Moda casual",
+        "Moda praia e beachwear",
+        "Moda fitness",
+        "Underwear",
         "Looks de palco para artistas"
       ],
       "hasOfferCatalog": {
@@ -97,7 +105,7 @@ src="https://www.facebook.com/tr?id=4493762200768979&ev=PageView&noscript=1"
         "name": "Serviços de ilustração de moda",
         "itemListElement": [
           { "@type": "Offer", "url": "https://joelcroquis.com.br/precos-croqui-de-moda/", "priceSpecification": { "@type": "PriceSpecification", "priceCurrency": "BRL", "minPrice": "150" }, "itemOffered": { "@type": "Service", "name": "Croqui de moda sob encomenda", "description": "Croqui personalizado de peça ou look, do briefing à arte final em alta resolução. A partir de R$ 150 por croqui (uma peça, vista de frente, prazo razoável)." } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Croquis de coleção", "description": "Cartela de croquis para coleção completa: beachwear, underwear, alfaiataria, fitness, feminina, masculina e infantil." } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Croquis de coleção", "description": "Cartela de croquis para coleção completa, em qualquer categoria: jeanswear, streetwear, alfaiataria, moda festa, casual, moda praia, fitness, underwear, feminina, masculina e infantil." } },
           { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ilustração de looks de palco e campanha", "description": "Ilustração de figurino para shows, festivais, clipes, editoriais e campanhas." } },
           { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Moodboard e conceito criativo de coleção", "description": "Direção visual, moodboard e conceito para guiar o desenvolvimento da coleção." } },
           { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ilustração de moda urgente (24-48h)", "description": "Entrega expressa para apresentação, pitch ou produção com prazo curto." } }
@@ -118,7 +126,7 @@ src="https://www.facebook.com/tr?id=4493762200768979&ev=PageView&noscript=1"
       "name": "Joel Pinheiro",
       "alternateName": "@joelcoveero",
       "jobTitle": ["Estilista", "Ilustrador de moda"],
-      "description": "Estilista e ilustrador de moda de Fortaleza (CE). Croquis para marcas de moda, estilistas e artistas - do beachwear à alfaiataria, do papel à passarela.",
+      "description": "Estilista e ilustrador de moda de Fortaleza (CE). Croquis para marcas de moda, estilistas e artistas em todas as categorias - jeanswear, streetwear, alfaiataria, festa, moda praia, fitness e underwear -, do papel à passarela.",
       "url": "https://joelcroquis.com.br/",
       "image": "https://joelcroquis.com.br/assets/joel-foto-ilustracao.webp",
       "worksFor": { "@id": "https://joelcroquis.com.br/#business" },
@@ -173,11 +181,6 @@ src="https://www.facebook.com/tr?id=4493762200768979&ev=PageView&noscript=1"
           "@type": "Question",
           "name": "Como funciona o pagamento?",
           "acceptedAnswer": { "@type": "Answer", "text": "A forma de pagamento é combinada diretamente pelo WhatsApp depois de fechar o orçamento, de acordo com o tamanho do projeto." }
-        },
-        {
-          "@type": "Question",
-          "name": "Quem é Joel Pinheiro?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Joel Pinheiro (@joelcoveero) é estilista e ilustrador de moda de Fortaleza, Ceará. Seu traço já assinou croquis para artistas como Ludmilla e o grupo KATSEYE, além de marcas de beachwear e alfaiataria." }
         }
       ]
     },
@@ -1079,7 +1082,7 @@ src="https://www.facebook.com/tr?id=4493762200768979&ev=PageView&noscript=1"
       <a href="https://wa.me/5585999962897" target="_blank" rel="noopener">WhatsApp</a>
       <a href="croqui-de-moda/" data-i18n="footer_guide">O que é croqui de moda</a>
       <a href="precos-croqui-de-moda/" data-i18n="footer_prices">Preços</a>
-      <a href="croqui-de-moda-fortaleza/" data-i18n="footer_local">Fortaleza</a>
+      <a href="croqui-de-moda-remoto/" data-i18n="footer_local">Atendimento remoto</a>
       <a href="privacidade.html" data-i18n="footer_privacy">Privacidade</a>
     </div>
     <p>&copy; <span id="year"></span> <span data-i18n="footer_copy">Joel Pinheiro: Ilustração de Moda. Todos os direitos reservados.</span></p>
@@ -1606,6 +1609,12 @@ src="https://www.facebook.com/tr?id=4493762200768979&ev=PageView&noscript=1"
         { content_name: "Formulário de orçamento", empresa: data.get("empresa"), prazo: data.get("prazo") },
         { email: data.get("email"), telefone: data.get("telefone") }
       );
+      // Leva a aba atual para a pagina de confirmacao: e ela que o Google
+      // Ads usa como pagina de conversao. O atraso da tempo do trackLead
+      // (hash assincrono) disparar antes da navegacao.
+      setTimeout(function () {
+        window.location.href = "orcamento-recebido/";
+      }, 1200);
     });
   })();
 </script>
@@ -1993,7 +2002,7 @@ src="https://www.facebook.com/tr?id=4493762200768979&ev=PageView&noscript=1"
         faq_a7: "Combinamos a forma de pagamento direto pelo WhatsApp depois de fechar o orçamento, de acordo com o tamanho do projeto.",
         footer_guide: "O que é croqui de moda",
         footer_prices: "Preços",
-        footer_local: "Fortaleza",
+        footer_local: "Atendimento remoto",
         footer_privacy: "Privacidade",
         footer_copy: "Joel Pinheiro: Ilustração de Moda. Todos os direitos reservados."
       },
@@ -2105,7 +2114,7 @@ src="https://www.facebook.com/tr?id=4493762200768979&ev=PageView&noscript=1"
         faq_a7: "We agree on the payment method directly over WhatsApp after the quote is set, based on the size of the project.",
         footer_guide: "What is a fashion sketch",
         footer_prices: "Pricing",
-        footer_local: "Fortaleza",
+        footer_local: "Atendimento remoto",
         footer_privacy: "Privacy",
         footer_copy: "Joel Pinheiro: Fashion Illustration. All rights reserved."
       },
@@ -2216,7 +2225,7 @@ src="https://www.facebook.com/tr?id=4493762200768979&ev=PageView&noscript=1"
         faq_a7: "Acordamos la forma de pago directamente por WhatsApp después de cerrar el presupuesto, según el tamaño del proyecto.",
         footer_guide: "Qué es un croquis de moda",
         footer_prices: "Precios",
-        footer_local: "Fortaleza",
+        footer_local: "Atendimento remoto",
         footer_privacy: "Privacidad",
         footer_copy: "Joel Pinheiro: Ilustración de Moda. Todos los derechos reservados."
       }
