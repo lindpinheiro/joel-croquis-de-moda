@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '4493762200768979');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=4493762200768979&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+<!-- Trafego interno: abrir o site com ?ga_off=1 desliga a medicao neste
+     navegador (fica salvo); ?ga_on=1 religa. Melhor que excluir por IP,
+     porque funciona tambem no celular, onde o IP muda. -->
+<script>
+(function () {
+  var ID = "G-QP1PR1LTYF";
+  try {
+    var q = location.search;
+    if (q.indexOf("ga_off=1") > -1) localStorage.setItem("ga_opt_out", "1");
+    if (q.indexOf("ga_on=1") > -1) localStorage.removeItem("ga_opt_out");
+    if (localStorage.getItem("ga_opt_out") === "1") window["ga-disable-" + ID] = true;
+  } catch (e) {}
+})();
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QP1PR1LTYF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QP1PR1LTYF');
+</script>
+<!-- End Google tag -->
+
+<title>Planos de criação de coleção: cápsula e coleção completa | Joel Pinheiro</title>
+<meta name="description" content="Planos para criar sua coleção do zero: planejamento, moodboard, cartela de cor, croquis finais e ficha técnica de cada peça. Cápsula de 3 ou 5 peças e coleção de 10 peças.">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Joel Pinheiro (@joelcoveero)">
+<meta name="theme-color" content="#0a0710">
+<link rel="canonical" href="https://joelcroquis.com.br/planos/">
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Joel Pinheiro | Ilustração">
+<meta property="og:title" content="Planos de criação de coleção: cápsula e coleção completa">
+<meta property="og:description" content="Do planejamento à ficha técnica: o que está incluso em cada plano, prazo, forma de pagamento e direitos de uso.">
+<meta property="og:image" content="https://joelcroquis.com.br/assets/joel-foto-ilustracao.webp">
+<meta property="og:url" content="https://joelcroquis.com.br/planos/">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Planos de criação de coleção: cápsula e coleção completa">
+<meta name="twitter:description" content="Do planejamento à ficha técnica: o que está incluso em cada plano, prazo e forma de pagamento.">
+<meta name="twitter:image" content="https://joelcroquis.com.br/assets/joel-foto-ilustracao.webp">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230a0710'/%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23ff2f8f'/%3E%3Cstop offset='1' stop-color='%239b5cff'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ctext x='32' y='43' font-family='Arial,sans-serif' font-weight='700' font-size='26' fill='url(%23g)' text-anchor='middle'%3EJC%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@700;800&family=Plus+Jakarta+Sans:wght@400;600;700&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../legal.css">
+
+<style>
+  /* Complementos desta pagina. A paleta e a tipografia vem de legal.css. */
+  .wrap{max-width:1000px;}
+  .crumb{font-family:var(--font-mono);font-size:.75rem;color:var(--ink-faint);margin:0 0 18px;}
+  .crumb a{color:var(--ink-soft);text-decoration:none;}
+  .crumb a:hover{color:var(--lime);}
+  .lede{font-size:1.06rem;color:var(--ink);margin:0 0 30px;max-width:62ch;}
+  h3{font-family:var(--font-display);font-size:1rem;font-weight:700;margin:26px 0 8px;}
+
+  .cta{
+    display:inline-block;font-family:var(--font-display);font-weight:700;font-size:.95rem;
+    background:linear-gradient(90deg,var(--pink),var(--violet));color:#fff;text-decoration:none;
+    padding:14px 26px;border-radius:999px;margin:6px 0;
+  }
+  .cta:hover{color:#fff;filter:brightness(1.12);}
+  .cta.ghost{background:none;border:1px solid var(--line);color:var(--ink);}
+  .cta.ghost:hover{border-color:var(--pink);color:var(--ink);filter:none;}
+  .cta-box{
+    background:var(--bg-card);border:1px solid var(--line);border-radius:var(--radius);
+    padding:28px;margin:40px 0;text-align:center;
+  }
+  .cta-box p{margin:0 0 16px;}
+
+  /* --- planos --- */
+  .planos{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:18px;margin:0 0 14px;align-items:stretch;
+  }
+  .plano{
+    background:var(--bg-card);border:1px solid var(--line);border-radius:var(--radius);
+    padding:24px 22px;display:flex;flex-direction:column;gap:14px;
+  }
+  .plano.destaque{border-color:var(--pink);box-shadow:0 0 0 1px rgba(255,47,143,.28);}
+  .plano .selo{
+    font-family:var(--font-mono);font-size:.66rem;letter-spacing:.13em;text-transform:uppercase;
+    color:var(--ink-faint);font-weight:600;
+  }
+  .plano.destaque .selo{color:var(--pink);}
+  .plano .nome{font-family:var(--font-display);font-weight:800;font-size:1.18rem;margin:0;line-height:1.2;}
+  .plano .qtd{font-size:.9rem;color:var(--ink-soft);margin:0;}
+  .plano .valor{
+    font-family:var(--font-display);font-weight:800;font-size:2rem;line-height:1;margin:6px 0 0;
+    background:linear-gradient(90deg,var(--pink),var(--violet));
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+  }
+  .plano .parcela{font-family:var(--font-mono);font-size:.78rem;color:var(--ink-faint);margin:6px 0 0;}
+  .plano ul{
+    margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:8px;
+    font-size:.9rem;color:var(--ink-soft);border-top:1px solid var(--line);padding-top:16px;
+  }
+  .plano ul li{padding-left:20px;position:relative;}
+  .plano ul li::before{
+    content:"";position:absolute;left:0;top:.52em;width:7px;height:7px;border-radius:50%;
+    background:var(--lime);
+  }
+  .plano .rodape{margin-top:auto;padding-top:6px;}
+  .plano .cta{width:100%;text-align:center;box-sizing:border-box;}
+
+  .addon{
+    background:var(--bg-card);border:1px solid var(--line);border-left:3px solid var(--lime);
+    border-radius:var(--radius);padding:22px 24px;margin:26px 0 40px;
+    display:flex;flex-wrap:wrap;gap:18px;align-items:center;justify-content:space-between;
+  }
+  .addon .txt{flex:1 1 340px;}
+  .addon .txt p{margin:0;color:var(--ink-soft);font-size:.94rem;}
+  .addon .txt b{color:var(--ink);}
+  .addon .preco{
+    font-family:var(--font-display);font-weight:800;font-size:1.5rem;color:var(--lime);
+    white-space:nowrap;
+  }
+
+  .box{
+    background:var(--bg-card);border:1px solid var(--line);border-left:3px solid var(--lime);
+    border-radius:var(--radius);padding:18px 20px;margin:24px 0;
+  }
+  .box p:last-child{margin-bottom:0;}
+  .box b{color:var(--ink);}
+
+  .etapas{list-style:none;margin:20px 0 30px;padding:0;display:flex;flex-direction:column;gap:0;}
+  .etapas li{
+    display:grid;grid-template-columns:34px 1fr;gap:14px;
+    padding:14px 0;border-bottom:1px solid var(--line);align-items:start;
+  }
+  .etapas li:first-child{border-top:1px solid var(--line);}
+  .etapas .n{font-family:var(--font-mono);font-weight:700;color:var(--pink);font-size:.82rem;padding-top:2px;}
+  .etapas .d{color:var(--ink-soft);font-size:.94rem;}
+  .etapas .d b{color:var(--ink);display:block;margin-bottom:2px;}
+
+  .duas{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;margin:22px 0 30px;}
+  .duas .col{
+    background:var(--bg-card);border:1px solid var(--line);border-radius:var(--radius);padding:20px 22px;
+  }
+  .duas h3{margin:0 0 12px;}
+  .duas ul{margin:0;padding-left:18px;display:flex;flex-direction:column;gap:7px;
+    font-size:.92rem;color:var(--ink-soft);}
+
+  .faq{margin:20px 0 30px;}
+  .faq details{
+    border-bottom:1px solid var(--line);padding:14px 0;
+  }
+  .faq summary{
+    cursor:pointer;font-weight:600;color:var(--ink);list-style:none;
+    display:flex;justify-content:space-between;gap:14px;align-items:center;
+  }
+  .faq summary::-webkit-details-marker{display:none;}
+  .faq summary::after{content:"+";font-family:var(--font-mono);color:var(--pink);font-size:1.1rem;}
+  .faq details[open] summary::after{content:"−";}
+  .faq details p{margin:12px 0 0;color:var(--ink-soft);font-size:.94rem;}
+  .faq summary:focus-visible{outline:2px solid var(--lime);outline-offset:3px;border-radius:4px;}
+
+  .obs{font-size:.86rem;color:var(--ink-faint);margin:0 0 30px;max-width:70ch;}
+</style>
+</head>
+<body>
+
+<header class="legal">
+  <div class="wrap">
+    <a class="brand" href="../index.html">Joel <span>Croquis de Moda</span></a>
+    <a class="back" href="../index.html">← voltar ao site</a>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+
+    <p class="crumb"><a href="../index.html">Início</a> / Planos</p>
+
+    <div class="eyebrow">Planos</div>
+    <h1>Sua coleção, do zero à ficha técnica</h1>
+    <p class="updated">Por Joel Pinheiro (@joelcoveero) · Atualizado em 4 de setembro de 2026</p>
+
+    <p class="lede">
+      Você não contrata desenho. Contrata o projeto inteiro da sua coleção: planejamento,
+      conceito, cartela de cor, croqui final de cada peça e a ficha técnica que a costureira
+      usa pra executar sem adivinhar.
+    </p>
+
+    <div class="planos">
+
+      <div class="plano">
+        <span class="selo">Para testar uma ideia</span>
+        <p class="nome">Mini cápsula</p>
+        <p class="qtd">3 peças</p>
+        <p class="valor">R$ 1.200</p>
+        <p class="parcela">2× de R$ 600 — metade no início, metade na entrega</p>
+        <ul>
+          <li>Planejamento e conceito</li>
+          <li>Moodboard e cartela de cor</li>
+          <li>Rascunho de cada peça, com aprovação</li>
+          <li>3 croquis finais em alta resolução</li>
+          <li>Ficha técnica de cada peça</li>
+          <li>1 reunião de alinhamento</li>
+          <li>1 rodada de ajustes</li>
+        </ul>
+        <div class="rodape">
+          <a class="cta ghost" href="https://wa.me/5585999962897?text=Oi%20Joel%2C%20quero%20falar%20sobre%20a%20Mini%20c%C3%A1psula%20de%203%20pe%C3%A7as." target="_blank" rel="noopener">Falar sobre esse plano</a>
+        </div>
+      </div>
+
+      <div class="plano destaque">
+        <span class="selo">Recomendado</span>
+        <p class="nome">Cápsula</p>
+        <p class="qtd">5 peças</p>
+        <p class="valor">R$ 1.900</p>
+        <p class="parcela">2× de R$ 950 — metade no início, metade na entrega</p>
+        <ul>
+          <li>Planejamento, público e faixa de preço</li>
+          <li>Moodboard, conceito e cartela de cor</li>
+          <li>Mix de produto: o que cada peça faz na coleção</li>
+          <li>Rascunho de cada peça, com aprovação</li>
+          <li>5 croquis finais em alta resolução</li>
+          <li>Ficha técnica de cada peça</li>
+          <li>2 reuniões de alinhamento</li>
+          <li>1 rodada de ajustes</li>
+        </ul>
+        <div class="rodape">
+          <a class="cta" href="https://wa.me/5585999962897?text=Oi%20Joel%2C%20quero%20falar%20sobre%20a%20C%C3%A1psula%20de%205%20pe%C3%A7as." target="_blank" rel="noopener">Falar sobre esse plano</a>
+        </div>
+      </div>
+
+      <div class="plano">
+        <span class="selo">Coleção de verdade</span>
+        <p class="nome">Coleção completa</p>
+        <p class="qtd">10 peças</p>
+        <p class="valor">R$ 3.500</p>
+        <p class="parcela">2× de R$ 1.750 — metade no início, metade na entrega</p>
+        <ul>
+          <li>Tudo o que tem na Cápsula</li>
+          <li>Pesquisa de referência e tendência</li>
+          <li>Mix de produto completo da cartela</li>
+          <li>10 croquis finais em alta resolução</li>
+          <li>Ficha técnica de cada peça</li>
+          <li>3 reuniões de alinhamento</li>
+          <li>2 rodadas de ajustes</li>
+        </ul>
+        <div class="rodape">
+          <a class="cta ghost" href="https://wa.me/5585999962897?text=Oi%20Joel%2C%20quero%20falar%20sobre%20a%20Cole%C3%A7%C3%A3o%20completa%20de%2010%20pe%C3%A7as." target="_blank" rel="noopener">Falar sobre esse plano</a>
+        </div>
+      </div>
+
+    </div>
+
+    <p class="obs">
+      Os valores acima cobrem o escopo padrão de cada plano. Peça com muitas vistas, complexidade
+      fora do comum ou prazo urgentíssimo é orçada sobre essa base — e sempre antes de começar,
+      nunca depois. Precisa de uma peça só? Veja o
+      <a href="../precos-croqui-de-moda/">croqui avulso, a partir de R$ 150</a>.
+    </p>
+
+    <div class="addon">
+      <div class="txt">
+        <p><b>Página da coleção no ar</b> — em vez de receber um monte de arquivo solto, você
+        recebe um link com a coleção inteira organizada: moodboard, inspiração, paleta de cor,
+        croqui de cada peça e a ficha técnica de todas. Abre no celular na frente do fornecedor,
+        manda pra costureira, mostra pro sócio.</p>
+      </div>
+      <div class="preco">+ R$ 200</div>
+    </div>
+
+    <h2>Como funciona</h2>
+    <ol class="etapas">
+      <li><span class="n">01</span><span class="d"><b>Conversa e orçamento</b>Você me conta o projeto pelo WhatsApp. Eu devolvo escopo, prazo e valor por escrito. Nada começa sem isso combinado.</span></li>
+      <li><span class="n">02</span><span class="d"><b>Planejamento</b>Definimos público, faixa de preço e quantas peças a coleção precisa de verdade.</span></li>
+      <li><span class="n">03</span><span class="d"><b>Conceito e cartela</b>Moodboard, inspiração e cartela de cor, pra coleção parecer uma coleção e não peças soltas.</span></li>
+      <li><span class="n">04</span><span class="d"><b>Rascunhos e aprovação</b>Você vê cada peça antes do traço final e aprova. É aqui que a gente ajusta, não depois.</span></li>
+      <li><span class="n">05</span><span class="d"><b>Arte final e ficha técnica</b>Croqui colorido em alta resolução e a ficha de cada peça, com medida, tecido e acabamento.</span></li>
+      <li><span class="n">06</span><span class="d"><b>Entrega</b>Arquivos em alta resolução. Com a página da coleção, tudo isso organizado num link só seu.</span></li>
+    </ol>
+
+    <h2>O que está e o que não está incluso</h2>
+    <div class="duas">
+      <div class="col">
+        <h3>Está incluso</h3>
+        <ul>
+          <li>Briefing e direção do conceito</li>
+          <li>Croqui final colorido, alta resolução</li>
+          <li>Ficha técnica de cada peça</li>
+          <li>Reuniões de alinhamento do plano</li>
+          <li>As rodadas de ajuste do plano</li>
+          <li>Uso comercial das peças pela sua marca</li>
+        </ul>
+      </div>
+      <div class="col">
+        <h3>Não está incluso</h3>
+        <ul>
+          <li>Modelagem e corte</li>
+          <li>Costura e peça piloto</li>
+          <li>Compra de tecido e aviamento</li>
+          <li>Fotografia e campanha</li>
+          <li>Registro de marca</li>
+          <li>Peças além do número contratado</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="box">
+      <p><b>Peça piloto:</b> dá pra fazer, com costureira parceira. O custo da costureira e do
+      material é repassado direto pra você, com uma taxa de coordenação combinada antes. Não entra
+      no valor dos planos porque varia demais de peça pra peça.</p>
+    </div>
+
+    <h2>Pagamento e prazo</h2>
+    <div class="duas">
+      <div class="col">
+        <h3>Pagamento</h3>
+        <ul>
+          <li><b>50%</b> na aprovação do escopo, pra reservar a agenda</li>
+          <li><b>50%</b> na entrega dos arquivos</li>
+          <li>Cartão, Pix ou boleto</li>
+          <li>Cliente fora do Brasil: combinamos o meio na conversa</li>
+        </ul>
+      </div>
+      <div class="col">
+        <h3>Prazo</h3>
+        <ul>
+          <li>Mini cápsula: cerca de 1 semana</li>
+          <li>Cápsula: 2 a 3 semanas</li>
+          <li>Coleção completa: 3 a 5 semanas</li>
+          <li>Urgência de 24 a 48h é possível e é orçada à parte</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2>Direitos de uso</h2>
+    <div class="box">
+      <p><b>O uso comercial das peças desenvolvidas fica com a sua marca</b>, nos termos combinados
+      no fechamento: você produz, vende e divulga sem pagar nada a mais por isso.</p>
+      <p>A autoria da ilustração permanece do ilustrador, que pode exibir o trabalho em portfólio —
+      salvo acordo de confidencialidade, que a gente combina antes de começar se for o seu caso.</p>
+    </div>
+
+    <h2>Perguntas antes de decidir</h2>
+    <div class="faq">
+      <details>
+        <summary>Não tenho marca ainda, só a ideia. Serve pra mim?</summary>
+        <p>Serve, e é justamente aí que o planejamento pesa mais. A gente começa definindo público, faixa de preço e quantas peças fazem sentido — antes de desenhar qualquer coisa. Já entreguei coleção completa pra quem chegou só com a ideia e nada no papel.</p>
+      </details>
+      <details>
+        <summary>E se eu precisar de mais peças no meio do caminho?</summary>
+        <p>Dá pra incluir. Peça adicional dentro de um plano em andamento entra com valor por peça menor que o croqui avulso, combinado na hora. O que não acontece é peça entrar sem a gente ajustar prazo e valor antes.</p>
+      </details>
+      <details>
+        <summary>E se eu não gostar do resultado?</summary>
+        <p>É pra isso que existe a etapa de rascunho. Você aprova cada peça antes do traço final, então a hora de dizer "não era isso" é ali, quando ainda é rápido de mudar. Depois da arte final, o plano ainda inclui as rodadas de ajuste.</p>
+      </details>
+      <details>
+        <summary>Por que não usar IA e economizar?</summary>
+        <p>IA gera imagem, não coleção. Ela não decide quantas peças você precisa, não monta cartela que se sustenta entre as peças, não escreve ficha técnica com medida e acabamento, e não senta com você pra ajustar. E costureira não costura imagem: costura ficha técnica.</p>
+      </details>
+      <details>
+        <summary>Você atende fora de Fortaleza?</summary>
+        <p>Todo o processo roda remoto, por WhatsApp, e-mail e chamada. Atendo o Brasil inteiro e clientes de fora do país. Em Fortaleza, o presencial é opcional.</p>
+      </details>
+      <details>
+        <summary>Quanto tempo a página da coleção fica no ar?</summary>
+        <p>Fica no ar por 12 meses, com link privado — só quem tem o endereço acessa. Passado esse prazo dá pra renovar, e os arquivos em alta resolução são seus pra sempre, independente da página.</p>
+      </details>
+    </div>
+
+    <div class="cta-box">
+      <p>Me conta o que você quer criar e eu te devolvo escopo, prazo e valor por escrito.</p>
+      <a class="cta" href="https://wa.me/5585999962897?text=Oi%20Joel%2C%20vim%20pela%20p%C3%A1gina%20de%20planos.%20Quero%20conversar%20sobre%20a%20cria%C3%A7%C3%A3o%20da%20minha%20cole%C3%A7%C3%A3o." target="_blank" rel="noopener">Falar no WhatsApp</a>
+    </div>
+
+  </div>
+</main>
+
+<footer class="legal">
+  <div class="wrap">
+    <p style="margin:0 0 8px;">
+      <a href="../index.html">Início</a> ·
+      <a href="../contratar-estilista/">Contratar estilista</a> ·
+      <a href="../precos-croqui-de-moda/">Preço do croqui avulso</a> ·
+      <a href="../croqui-de-moda/">O que é croqui de moda</a> ·
+      <a href="../croqui-de-moda-remoto/">Atendimento remoto</a> ·
+      <a href="https://www.instagram.com/joelcoveero/" target="_blank" rel="noopener">Instagram</a> ·
+      <a href="https://wa.me/5585999962897" target="_blank" rel="noopener">WhatsApp</a> ·
+      <a href="../privacidade.html">Privacidade</a>
+    </p>
+    <p style="margin:0;">&copy; <span id="year"></span> Joel Pinheiro: Ilustração de Moda. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
