@@ -118,7 +118,28 @@ src="https://www.facebook.com/tr?id=4493762200768979&ev=PageView&noscript=1"
     background:linear-gradient(90deg,var(--pink),var(--violet));
     -webkit-background-clip:text;background-clip:text;color:transparent;
   }
-  .plano .parcela{font-family:var(--font-mono);font-size:.78rem;color:var(--ink-faint);margin:6px 0 0;}
+  .plano .pagto{display:flex;flex-direction:column;gap:7px;margin:12px 0 0;}
+  .plano .pagto .par{
+    font-family:var(--font-mono);font-size:.86rem;color:var(--ink);font-weight:600;
+  }
+  .plano .pagto .par small{
+    display:block;font-family:var(--font-body);font-size:.76rem;color:var(--ink-faint);
+    font-weight:400;margin-top:2px;
+  }
+  .plano .pagto .av{
+    display:inline-flex;align-items:center;gap:8px;align-self:flex-start;
+    font-family:var(--font-mono);font-size:.84rem;font-weight:600;color:var(--lime);
+    background:rgba(215,255,62,.09);border:1px solid rgba(215,255,62,.32);
+    border-radius:999px;padding:6px 12px;
+  }
+  .plano .pagto .av b{
+    font-family:var(--font-display);font-size:.76rem;color:var(--bg);
+    background:var(--lime);border-radius:999px;padding:2px 7px;
+  }
+  .plano .pagto .meios{
+    font-family:var(--font-mono);font-size:.72rem;color:var(--ink-faint);
+    letter-spacing:.04em;
+  }
   .plano ul{
     margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:8px;
     font-size:.9rem;color:var(--ink-soft);border-top:1px solid var(--line);padding-top:16px;
@@ -145,11 +166,15 @@ src="https://www.facebook.com/tr?id=4493762200768979&ev=PageView&noscript=1"
     background:var(--bg);border:1px solid var(--line);border-left:2px solid var(--pink);
     border-radius:8px;font-size:.82rem;color:var(--ink-soft);
   }
+  /* Precisa do seletor de atributo: `.tip` sozinho e um seletor de classe e
+     venceria o `display:none` que o navegador aplica ao atributo hidden — foi
+     assim que os tooltips subiram abertos na primeira versao. */
+  .tip[hidden]{display:none;}
   /* No desktop abre so de passar o mouse (ou pelo teclado). No celular nao
-     existe hover, entao la vale o clique tratado no script do rodape. */
+     existe hover, entao la vale o toque tratado no script do rodape. */
   @media (hover:hover) and (pointer:fine){
-    .tip-btn:hover + .tip,
-    .tip-btn:focus-visible + .tip{display:block;}
+    .tip-btn:hover + .tip[hidden],
+    .tip-btn:focus-visible + .tip[hidden]{display:block;}
   }
 
   .plano .rodape{margin-top:auto;padding-top:6px;}
@@ -241,7 +266,11 @@ src="https://www.facebook.com/tr?id=4493762200768979&ev=PageView&noscript=1"
         <p class="nome">Mini cápsula</p>
         <p class="qtd">3 peças · pesquisa reduzida</p>
         <p class="valor">R$ 2.290</p>
-        <p class="parcela">2× de R$ 1.145 — metade no início, metade na entrega<br><b>R$ 2.060 à vista</b> (10% de desconto)</p>
+        <div class="pagto">
+          <span class="par">2× de R$ 1.145 <small>metade no início, metade na entrega</small></span>
+          <span class="av">ou R$ 2.060 à vista <b>−10%</b></span>
+          <span class="meios">Cartão, Pix ou boleto</span>
+        </div>
         <ul>
           <li>Planejamento e conceito</li>
           <li>Moodboard e cartela de cor, com pesquisa enxuta</li>
@@ -249,6 +278,7 @@ src="https://www.facebook.com/tr?id=4493762200768979&ev=PageView&noscript=1"
           <li>3 croquis finais em alta resolução</li>
           <li>Ficha técnica de cada peça</li>
           <li>1 reunião de alinhamento, com hora marcada</li>
+          <li>Canal de WhatsApp aberto em horário comercial durante todo o projeto</li>
           <li>3 ajustes por peça <button type="button" class="tip-btn" aria-expanded="false" aria-controls="tip-1">?</button>
             <span class="tip" id="tip-1" hidden>Precisou de mais? Cada bloco de 3 ajustes adicionais na mesma peça sai por R$ 90.</span>
           </li>
@@ -263,7 +293,11 @@ src="https://www.facebook.com/tr?id=4493762200768979&ev=PageView&noscript=1"
         <p class="nome">Cápsula</p>
         <p class="qtd">5 peças</p>
         <p class="valor">R$ 3.890</p>
-        <p class="parcela">2× de R$ 1.945 — metade no início, metade na entrega<br><b>R$ 3.490 à vista</b> (10% de desconto)</p>
+        <div class="pagto">
+          <span class="par">2× de R$ 1.945 <small>metade no início, metade na entrega</small></span>
+          <span class="av">ou R$ 3.490 à vista <b>−10%</b></span>
+          <span class="meios">Cartão, Pix ou boleto</span>
+        </div>
         <ul>
           <li>Planejamento, público e faixa de preço</li>
           <li>Moodboard, conceito e cartela de cor</li>
@@ -271,7 +305,7 @@ src="https://www.facebook.com/tr?id=4493762200768979&ev=PageView&noscript=1"
           <li>Rascunho de cada peça, com aprovação</li>
           <li>5 croquis finais em alta resolução</li>
           <li>Ficha técnica de cada peça</li>
-          <li>2 reuniões de alinhamento</li>
+          <li>2 reuniões de alinhamento, com hora marcada</li>
           <li>Canal de WhatsApp aberto em horário comercial durante todo o projeto</li>
           <li>3 ajustes por peça <button type="button" class="tip-btn" aria-expanded="false" aria-controls="tip-2">?</button>
             <span class="tip" id="tip-2" hidden>Precisou de mais? Cada bloco de 3 ajustes adicionais na mesma peça sai por R$ 90.</span>
@@ -287,14 +321,18 @@ src="https://www.facebook.com/tr?id=4493762200768979&ev=PageView&noscript=1"
         <p class="nome">Coleção completa</p>
         <p class="qtd">10 peças</p>
         <p class="valor">R$ 5.890</p>
-        <p class="parcela">2× de R$ 2.945 — metade no início, metade na entrega<br><b>R$ 5.290 à vista</b> (10% de desconto)</p>
+        <div class="pagto">
+          <span class="par">2× de R$ 2.945 <small>metade no início, metade na entrega</small></span>
+          <span class="av">ou R$ 5.290 à vista <b>−10%</b></span>
+          <span class="meios">Cartão, Pix ou boleto</span>
+        </div>
         <ul>
           <li>Tudo o que tem na Cápsula</li>
           <li>Pesquisa de referência e tendência</li>
           <li>Mix de produto completo da cartela</li>
           <li>10 croquis finais em alta resolução</li>
           <li>Ficha técnica de cada peça</li>
-          <li>4 reuniões de alinhamento</li>
+          <li>4 reuniões de alinhamento, com hora marcada</li>
           <li>Canal de WhatsApp aberto em horário comercial durante todo o projeto</li>
           <li>3 ajustes por peça <button type="button" class="tip-btn" aria-expanded="false" aria-controls="tip-3">?</button>
             <span class="tip" id="tip-3" hidden>Precisou de mais? Cada bloco de 3 ajustes adicionais na mesma peça sai por R$ 90.</span>
@@ -330,15 +368,13 @@ src="https://www.facebook.com/tr?id=4493762200768979&ev=PageView&noscript=1"
     <div class="addon">
       <div class="txt">
         <p><b>Peça piloto</b> — o croqui vira roupa de verdade antes de você mandar produzir em
-        escala. Eu coordeno a execução com modelista e costureira parceiras: levo a ficha técnica,
-        acompanho a prova, confiro caimento e acabamento e te devolvo a peça pronta com os ajustes
-        de ficha que a costura mostrou serem necessários.</p>
-        <p style="margin-top:10px;font-size:.88rem;color:var(--ink-faint)">Modelagem, material e
-        costura são orçados com as parceiras e repassados a você sem acréscimo. Sobre isso entra a
-        taxa de coordenação, <b style="color:var(--ink)">a partir de R$ 250 por peça</b>. Escolha
-        quais peças da coleção viram piloto — não precisa ser todas.</p>
+        escala, através de ateliês parceiros.</p>
+        <p style="margin-top:10px;font-size:.88rem;color:var(--ink-faint)">A viabilidade depende da
+        peça, do tecido e do momento, então esse adicional é avaliado projeto a projeto. Se fizer
+        sentido pro seu, a gente conversa durante o planejamento e você recebe o orçamento antes de
+        decidir. Não precisa valer pra coleção inteira.</p>
       </div>
-      <div class="preco">sob orçamento</div>
+      <div class="preco">sob consulta</div>
     </div>
 
     <h2>Como funciona</h2>
@@ -368,7 +404,7 @@ src="https://www.facebook.com/tr?id=4493762200768979&ev=PageView&noscript=1"
         <h3>Não está incluso</h3>
         <ul>
           <li>Modelagem e corte</li>
-          <li>Costura, modelagem e peça piloto (disponíveis como adicional)</li>
+          <li>Costura, modelagem e peça piloto</li>
           <li>Compra de tecido e aviamento</li>
           <li>Fotografia e campanha</li>
           <li>Registro de marca</li>
@@ -379,8 +415,8 @@ src="https://www.facebook.com/tr?id=4493762200768979&ev=PageView&noscript=1"
 
     <div class="box">
       <p><b>Costura e modelagem não entram nos planos</b> porque variam demais de peça pra peça —
-      tecido, complexidade e acabamento mudam tudo. Se você quiser a peça pronta, é o adicional de
-      <a href="#adicionais">peça piloto</a>, orçado à parte com as parceiras antes de começar.</p>
+      tecido, complexidade e acabamento mudam tudo. Se você quiser a peça pronta, dá pra avaliar o adicional de
+      <a href="#adicionais">peça piloto</a>, caso a caso.</p>
     </div>
 
     <h2>Pagamento e prazo</h2>
@@ -391,7 +427,7 @@ src="https://www.facebook.com/tr?id=4493762200768979&ev=PageView&noscript=1"
           <li><b>50%</b> na aprovação do escopo, pra reservar a agenda</li>
           <li><b>50%</b> na entrega dos arquivos</li>
           <li><b>10% de desconto</b> se preferir pagar tudo à vista na aprovação</li>
-          <li>Cartão, Pix ou boleto</li>
+          <li><b>Cartão</b> (crédito e débito), Pix ou boleto</li>
           <li>Adicionais entram na mesma proposta, cobrados antes de executar</li>
           <li>Cliente fora do Brasil: combinamos o meio na conversa</li>
         </ul>
@@ -399,10 +435,11 @@ src="https://www.facebook.com/tr?id=4493762200768979&ev=PageView&noscript=1"
       <div class="col">
         <h3>Prazo</h3>
         <ul>
-          <li>Mini cápsula: cerca de 1 semana</li>
-          <li>Cápsula: 2 a 3 semanas</li>
-          <li>Coleção completa: 3 a 5 semanas</li>
-          <li>Urgência de 24 a 48h é possível e é orçada à parte</li>
+          <li>Mini cápsula: 2 a 3 semanas <small>(38h de trabalho)</small></li>
+          <li>Cápsula: 3 a 4 semanas <small>(65h de trabalho)</small></li>
+          <li>Coleção completa: 5 a 7 semanas <small>(102h de trabalho)</small></li>
+          <li>O prazo conta a partir da aprovação do escopo e do primeiro pagamento</li>
+          <li>Urgência é possível e é orçada à parte</li>
         </ul>
       </div>
     </div>
@@ -435,7 +472,7 @@ src="https://www.facebook.com/tr?id=4493762200768979&ev=PageView&noscript=1"
       </details>
       <details>
         <summary>Como funciona a peça piloto na prática?</summary>
-        <p>Depois da ficha técnica aprovada, eu levo o projeto às parceiras e te devolvo o orçamento de modelagem, material e costura, com prazo. Você aprova antes de qualquer coisa começar. Eu acompanho a prova e confiro caimento e acabamento; se a costura mostrar que a ficha precisa mudar, eu atualizo a ficha sem custo. A execução é do ateliê parceiro, e o orçamento e o prazo são deles — eu coordeno e respondo por você em todas as conversas.</p>
+        <p>Primeiro a ficha técnica precisa estar fechada — sem ela, não há o que costurar. A partir daí a gente avalia se dá pra produzir piloto naquele projeto: depende da peça, do tecido e da disponibilidade dos ateliês no momento. Se for possível, você recebe orçamento e prazo antes de decidir, e a execução fica a cargo do ateliê. Se não for, a ficha técnica que você já tem em mãos serve pra qualquer confecção executar.</p>
       </details>
       <details>
         <summary>Você atende fora de Fortaleza?</summary>
@@ -475,7 +512,10 @@ src="https://www.facebook.com/tr?id=4493762200768979&ev=PageView&noscript=1"
 <script>
   // Tooltips dos ajustes adicionais. Delegacao no document porque sao tres
   // botoes iguais; cada um controla o <span> apontado por aria-controls.
+  // So em tela de toque: onde existe mouse, quem abre e o :hover do CSS.
+  var TEM_HOVER = window.matchMedia && window.matchMedia('(hover:hover) and (pointer:fine)').matches;
   document.addEventListener('click', function (e) {
+    if (TEM_HOVER) return;
     var btn = e.target.closest('.tip-btn');
     if (!btn) return;
     var alvo = document.getElementById(btn.getAttribute('aria-controls'));
