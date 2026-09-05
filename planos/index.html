@@ -128,6 +128,24 @@ src="https://www.facebook.com/tr?id=4493762200768979&ev=PageView&noscript=1"
     content:"";position:absolute;left:0;top:.52em;width:7px;height:7px;border-radius:50%;
     background:var(--lime);
   }
+  /* Tooltip de ajustes adicionais. Botao em vez de :hover porque no celular
+     nao existe hover — no toque o clique abre, e o foco do teclado tambem. */
+  .tip-btn{
+    display:inline-flex;align-items:center;justify-content:center;
+    width:17px;height:17px;padding:0;margin-left:5px;vertical-align:middle;
+    border:1px solid var(--line);border-radius:50%;background:var(--bg);
+    color:var(--ink-faint);font-family:var(--font-mono);font-size:.68rem;font-weight:700;
+    line-height:1;cursor:pointer;
+  }
+  .tip-btn:hover{border-color:var(--pink);color:var(--pink);}
+  .tip-btn:focus-visible{outline:2px solid var(--lime);outline-offset:2px;}
+  .tip-btn[aria-expanded="true"]{border-color:var(--pink);color:var(--pink);}
+  .tip{
+    display:block;margin:8px 0 0;padding:9px 11px;
+    background:var(--bg);border:1px solid var(--line);border-left:2px solid var(--pink);
+    border-radius:8px;font-size:.82rem;color:var(--ink-soft);
+  }
+
   .plano .rodape{margin-top:auto;padding-top:6px;}
   .plano .cta{width:100%;text-align:center;box-sizing:border-box;}
 
@@ -224,8 +242,10 @@ src="https://www.facebook.com/tr?id=4493762200768979&ev=PageView&noscript=1"
           <li>Rascunho de cada peça, com aprovação</li>
           <li>3 croquis finais em alta resolução</li>
           <li>Ficha técnica de cada peça</li>
-          <li>1 reunião de alinhamento</li>
-          <li>1 rodada de ajustes</li>
+          <li>1 reunião de alinhamento, com hora marcada</li>
+          <li>3 ajustes por peça <button type="button" class="tip-btn" aria-expanded="false" aria-controls="tip-1">?</button>
+            <span class="tip" id="tip-1" hidden>Precisou de mais? Cada bloco de 3 ajustes adicionais na mesma peça sai por R$ 100.</span>
+          </li>
         </ul>
         <div class="rodape">
           <a class="cta ghost" href="https://wa.me/5585999962897?text=Oi%20Joel%2C%20quero%20falar%20sobre%20a%20Mini%20c%C3%A1psula%20de%203%20pe%C3%A7as." target="_blank" rel="noopener">Falar sobre esse plano</a>
@@ -246,7 +266,10 @@ src="https://www.facebook.com/tr?id=4493762200768979&ev=PageView&noscript=1"
           <li>5 croquis finais em alta resolução</li>
           <li>Ficha técnica de cada peça</li>
           <li>2 reuniões de alinhamento</li>
-          <li>1 rodada de ajustes</li>
+          <li>Canal de WhatsApp aberto em horário comercial durante todo o projeto</li>
+          <li>3 ajustes por peça <button type="button" class="tip-btn" aria-expanded="false" aria-controls="tip-2">?</button>
+            <span class="tip" id="tip-2" hidden>Precisou de mais? Cada bloco de 3 ajustes adicionais na mesma peça sai por R$ 100.</span>
+          </li>
         </ul>
         <div class="rodape">
           <a class="cta" href="https://wa.me/5585999962897?text=Oi%20Joel%2C%20quero%20falar%20sobre%20a%20C%C3%A1psula%20de%205%20pe%C3%A7as." target="_blank" rel="noopener">Falar sobre esse plano</a>
@@ -265,8 +288,11 @@ src="https://www.facebook.com/tr?id=4493762200768979&ev=PageView&noscript=1"
           <li>Mix de produto completo da cartela</li>
           <li>10 croquis finais em alta resolução</li>
           <li>Ficha técnica de cada peça</li>
-          <li>3 reuniões de alinhamento</li>
-          <li>2 rodadas de ajustes</li>
+          <li>4 reuniões de alinhamento</li>
+          <li>Canal de WhatsApp aberto em horário comercial durante todo o projeto</li>
+          <li>3 ajustes por peça <button type="button" class="tip-btn" aria-expanded="false" aria-controls="tip-3">?</button>
+            <span class="tip" id="tip-3" hidden>Precisou de mais? Cada bloco de 3 ajustes adicionais na mesma peça sai por R$ 100.</span>
+          </li>
         </ul>
         <div class="rodape">
           <a class="cta ghost" href="https://wa.me/5585999962897?text=Oi%20Joel%2C%20quero%20falar%20sobre%20a%20Cole%C3%A7%C3%A3o%20completa%20de%2010%20pe%C3%A7as." target="_blank" rel="noopener">Falar sobre esse plano</a>
@@ -311,7 +337,7 @@ src="https://www.facebook.com/tr?id=4493762200768979&ev=PageView&noscript=1"
           <li>Croqui final colorido, alta resolução</li>
           <li>Ficha técnica de cada peça</li>
           <li>Reuniões de alinhamento do plano</li>
-          <li>As rodadas de ajuste do plano</li>
+          <li>3 ajustes por peça</li>
           <li>Uso comercial das peças pela sua marca</li>
         </ul>
       </div>
@@ -376,7 +402,7 @@ src="https://www.facebook.com/tr?id=4493762200768979&ev=PageView&noscript=1"
       </details>
       <details>
         <summary>E se eu não gostar do resultado?</summary>
-        <p>É pra isso que existe a etapa de rascunho. Você aprova cada peça antes do traço final, então a hora de dizer "não era isso" é ali, quando ainda é rápido de mudar. Depois da arte final, o plano ainda inclui as rodadas de ajuste.</p>
+        <p>É pra isso que existe a etapa de rascunho. Você aprova cada peça antes do traço final, então a hora de dizer "não era isso" é ali, quando ainda é rápido de mudar. Depois da arte final, cada peça ainda tem 3 ajustes inclusos.</p>
       </details>
       <details>
         <summary>Por que não usar IA e economizar?</summary>
@@ -417,5 +443,18 @@ src="https://www.facebook.com/tr?id=4493762200768979&ev=PageView&noscript=1"
 </footer>
 
 <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script>
+  // Tooltips dos ajustes adicionais. Delegacao no document porque sao tres
+  // botoes iguais; cada um controla o <span> apontado por aria-controls.
+  document.addEventListener('click', function (e) {
+    var btn = e.target.closest('.tip-btn');
+    if (!btn) return;
+    var alvo = document.getElementById(btn.getAttribute('aria-controls'));
+    if (!alvo) return;
+    var abrindo = btn.getAttribute('aria-expanded') !== 'true';
+    btn.setAttribute('aria-expanded', abrindo ? 'true' : 'false');
+    alvo.hidden = !abrindo;
+  });
+</script>
 </body>
 </html>
