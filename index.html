@@ -412,6 +412,31 @@ src="https://www.facebook.com/tr?id=4493762200768979&ev=PageView&noscript=1"
     .hero-actions{flex-direction:column;align-items:stretch;}
     .hero-actions .btn{width:100%;text-align:center;}
   }
+  .home-planos{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:16px;margin:32px 0 18px;
+  }
+  .hp-card{
+    display:flex;flex-direction:column;gap:6px;text-decoration:none;
+    background:var(--bg-card);border:1px solid var(--line);border-radius:var(--radius);
+    padding:22px 20px;transition:border-color .2s ease,transform .2s ease;
+  }
+  .hp-card:hover{border-color:var(--pink);transform:translateY(-3px);}
+  .hp-card:focus-visible{outline:2px solid var(--lime);outline-offset:3px;}
+  .hp-card.destaque{border-color:var(--pink);}
+  .hp-selo{
+    font-family:var(--font-mono);font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--pink);font-weight:600;
+  }
+  .hp-nome{font-family:var(--font-display);font-weight:700;font-size:1.05rem;color:var(--ink);}
+  .hp-meta{font-size:.85rem;color:var(--ink-soft);}
+  .hp-valor{
+    font-family:var(--font-display);font-weight:800;font-size:1.6rem;margin-top:6px;
+    background:linear-gradient(90deg,var(--pink),var(--violet));
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+  }
+  .hp-nota{font-family:var(--font-mono);font-size:.8rem;color:var(--ink-faint);margin:0 0 8px;}
+  @media (prefers-reduced-motion:reduce){.hp-card:hover{transform:none;}}
   .hero-note{font-family:var(--font-mono);font-size:.84rem;font-weight:600;color:var(--lime);margin:16px 0 0;}
 
   .stat-strip{display:flex;align-items:center;gap:22px;margin-top:30px;flex-wrap:wrap;}
@@ -776,6 +801,8 @@ src="https://www.facebook.com/tr?id=4493762200768979&ev=PageView&noscript=1"
     <a class="brand" href="#top">Joel <span>Croquis de Moda</span></a>
     <nav class="site">
       <a href="#processo" data-i18n="nav_processo">Como funciona</a>
+  <a href="#planos" data-i18n="nav_planos">Planos</a>
+      <a href="#planos" data-i18n="nav_planos">Planos</a>
       <a href="#sobre" data-i18n="nav_sobre">Sobre</a>
       <a href="#colaboracoes" data-i18n="nav_colab">Colaborações</a>
       <a href="#portfolio" data-i18n="nav_portfolio">Portfólio</a>
@@ -890,6 +917,40 @@ src="https://www.facebook.com/tr?id=4493762200768979&ev=PageView&noscript=1"
       <div class="section-cta reveal">
         <span data-i18n="section_cta_processo">Vamos começar o seu projeto?</span>
         <a class="btn small" data-i18n="cta_whatsapp_header" href="https://wa.me/5585999962897?text=Oi%20Joel%2C%20vim%20pela%20sua%20p%C3%A1gina%20de%20ilustra%C3%A7%C3%A3o.%20Quero%20conversar%20sobre%20um%20projeto." target="_blank" rel="noopener">Falar no WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="planos">
+    <div class="wrap">
+      <div class="eyebrow reveal" data-i18n="planos_eyebrow">Planos de coleção</div>
+      <h2 class="reveal" data-i18n="planos_h2">Sua coleção, do zero à ficha técnica</h2>
+      <p class="lead reveal" data-i18n="planos_lead">Além do croqui avulso, desenvolvo a coleção inteira: planejamento, moodboard, cartela de cor, croqui de cada peça e a ficha técnica que a costureira usa pra executar sem adivinhar.</p>
+
+      <div class="home-planos reveal">
+        <a class="hp-card" href="planos/">
+          <span class="hp-nome" data-i18n="hp1_nome">Mini cápsula</span>
+          <span class="hp-meta" data-i18n="hp1_meta">3 peças · 2 a 3 semanas</span>
+          <span class="hp-valor">R$ 2.290</span>
+        </a>
+        <a class="hp-card destaque" href="planos/">
+          <span class="hp-selo" data-i18n="hp_selo">Recomendado</span>
+          <span class="hp-nome" data-i18n="hp2_nome">Cápsula</span>
+          <span class="hp-meta" data-i18n="hp2_meta">5 peças · 3 a 4 semanas</span>
+          <span class="hp-valor">R$ 3.890</span>
+        </a>
+        <a class="hp-card" href="planos/">
+          <span class="hp-nome" data-i18n="hp3_nome">Coleção completa</span>
+          <span class="hp-meta" data-i18n="hp3_meta">10 peças · 5 a 7 semanas</span>
+          <span class="hp-valor">R$ 5.890</span>
+        </a>
+      </div>
+
+      <p class="hp-nota reveal" data-i18n="planos_nota">Parcelado em 2×, com 10% de desconto à vista. Cartão, Pix ou boleto.</p>
+
+      <div class="section-cta reveal">
+        <span data-i18n="planos_cta_txt">Escopo, prazo e o que está incluso em cada plano:</span>
+        <a class="btn small" href="planos/" data-i18n="planos_cta_btn">Ver os planos</a>
       </div>
     </div>
   </section>
@@ -1986,6 +2047,20 @@ src="https://www.facebook.com/tr?id=4493762200768979&ev=PageView&noscript=1"
         port_alt: "Ilustração de moda do portfólio de Joel Coveero",
         proc_eyebrow: "Como funciona",
         proc_h2: "Do briefing à arte final",
+        nav_planos: "Planos",
+        planos_eyebrow: "Planos de coleção",
+        planos_h2: "Sua coleção, do zero à ficha técnica",
+        planos_lead: "Além do croqui avulso, desenvolvo a coleção inteira: planejamento, moodboard, cartela de cor, croqui de cada peça e a ficha técnica que a costureira usa pra executar sem adivinhar.",
+        hp_selo: "Recomendado",
+        hp1_nome: "Mini cápsula",
+        hp1_meta: "3 peças · 2 a 3 semanas",
+        hp2_nome: "Cápsula",
+        hp2_meta: "5 peças · 3 a 4 semanas",
+        hp3_nome: "Coleção completa",
+        hp3_meta: "10 peças · 5 a 7 semanas",
+        planos_nota: "Parcelado em 2×, com 10% de desconto à vista. Cartão, Pix ou boleto.",
+        planos_cta_txt: "Escopo, prazo e o que está incluso em cada plano:",
+        planos_cta_btn: "Ver os planos",
         proc_lead: "Três etapas, escopo e prazo combinados antes de começar.",
         step1_title: "Briefing",
         step1_p: "Conversa sobre a peça, o projeto (coleção, marca ou artista) e o momento (palco, campanha ou editorial) pra entender exatamente o que a ilustração precisa comunicar.",
@@ -2099,6 +2174,20 @@ src="https://www.facebook.com/tr?id=4493762200768979&ev=PageView&noscript=1"
         port_alt: "Fashion illustration from Joel Coveero's portfolio",
         proc_eyebrow: "How it works",
         proc_h2: "From briefing to final art",
+        nav_planos: "Plans",
+        planos_eyebrow: "Collection plans",
+        planos_h2: "Your collection, from scratch to tech pack",
+        planos_lead: "Beyond single sketches, I develop the whole collection: planning, moodboard, colour palette, a final sketch for every piece and the tech pack your maker needs to build it without guessing.",
+        hp_selo: "Recommended",
+        hp1_nome: "Mini capsule",
+        hp1_meta: "3 pieces · 2 to 3 weeks",
+        hp2_nome: "Capsule",
+        hp2_meta: "5 pieces · 3 to 4 weeks",
+        hp3_nome: "Full collection",
+        hp3_meta: "10 pieces · 5 to 7 weeks",
+        planos_nota: "Split into 2 payments, or 10% off paying upfront. Card, Pix or bank slip.",
+        planos_cta_txt: "Scope, timeline and what each plan includes:",
+        planos_cta_btn: "See the plans",
         proc_lead: "Three steps, scope and timeline agreed before starting.",
         step1_title: "Briefing",
         step1_p: "A conversation about the piece, the project (collection, brand or artist) and the moment (stage, campaign or editorial) to understand exactly what the illustration needs to communicate.",
@@ -2212,6 +2301,20 @@ src="https://www.facebook.com/tr?id=4493762200768979&ev=PageView&noscript=1"
         port_alt: "Ilustración de moda del portafolio de Joel Coveero",
         proc_eyebrow: "Cómo funciona",
         proc_h2: "Del briefing al arte final",
+        nav_planos: "Planes",
+        planos_eyebrow: "Planes de colección",
+        planos_h2: "Tu colección, de cero a la ficha técnica",
+        planos_lead: "Además del figurín suelto, desarrollo la colección entera: planificación, moodboard, paleta de color, figurín de cada pieza y la ficha técnica que la costurera usa para ejecutar sin adivinar.",
+        hp_selo: "Recomendado",
+        hp1_nome: "Mini cápsula",
+        hp1_meta: "3 piezas · 2 a 3 semanas",
+        hp2_nome: "Cápsula",
+        hp2_meta: "5 piezas · 3 a 4 semanas",
+        hp3_nome: "Colección completa",
+        hp3_meta: "10 piezas · 5 a 7 semanas",
+        planos_nota: "En 2 pagos, o 10% de descuento al contado. Tarjeta, Pix o boleto.",
+        planos_cta_txt: "Alcance, plazo y qué incluye cada plan:",
+        planos_cta_btn: "Ver los planes",
         proc_lead: "Tres etapas, alcance y plazo acordados antes de empezar.",
         step1_title: "Briefing",
         step1_p: "Una conversación sobre la pieza, el proyecto (colección, marca o artista) y el momento (escenario, campaña o editorial) para entender exactamente qué necesita comunicar la ilustración.",
