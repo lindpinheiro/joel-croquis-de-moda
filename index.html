@@ -435,6 +435,23 @@ src="https://www.facebook.com/tr?id=4493762200768979&ev=PageView&noscript=1"
     background:linear-gradient(90deg,var(--pink),var(--violet));
     -webkit-background-clip:text;background-clip:text;color:transparent;
   }
+  .hp-avulso{
+    display:flex;flex-wrap:wrap;align-items:baseline;gap:10px 16px;text-decoration:none;
+    background:var(--bg-card);border:1px dashed var(--line);border-radius:var(--radius);
+    padding:16px 20px;margin:0 0 8px;transition:border-color .2s ease;
+  }
+  .hp-avulso:hover{border-color:var(--lime);}
+  .hp-avulso:focus-visible{outline:2px solid var(--lime);outline-offset:3px;}
+  .hp-avulso-txt{color:var(--ink);font-weight:600;font-size:.95rem;}
+  .hp-avulso-preco{
+    font-family:var(--font-mono);font-size:.9rem;color:var(--lime);font-weight:600;
+  }
+  .hp-avulso-link{
+    margin-left:auto;font-family:var(--font-mono);font-size:.8rem;color:var(--ink-soft);
+  }
+  .hp-avulso:hover .hp-avulso-link{color:var(--lime);}
+  @media (max-width:560px){.hp-avulso-link{margin-left:0;}}
+
   .hp-nota{font-family:var(--font-mono);font-size:.8rem;color:var(--ink-faint);margin:0 0 8px;}
   @media (prefers-reduced-motion:reduce){.hp-card:hover{transform:none;}}
   .hero-note{font-family:var(--font-mono);font-size:.84rem;font-weight:600;color:var(--lime);margin:16px 0 0;}
@@ -851,9 +868,9 @@ src="https://www.facebook.com/tr?id=4493762200768979&ev=PageView&noscript=1"
   <section class="hero">
     <div class="wrap">
       <div class="reveal">
-        <div class="eyebrow" data-i18n="hero_eyebrow">Ilustração de moda sob encomenda</div>
-        <h1 data-i18n-html="hero_h1">Transformo sua ideia em <em>ilustração de moda</em>.</h1>
-        <p class="lead" data-i18n="hero_lead">Trabalho sob encomenda para estilistas e marcas que precisam tirar um look do papel com agilidade, com o acabamento de quem já passou por capa, palco e campanha.</p>
+        <div class="eyebrow" data-i18n="hero_eyebrow">Croqui e desenvolvimento de coleção</div>
+        <h1 data-i18n-html="hero_h1">Do croqui à <em>coleção pronta</em> pra produção.</h1>
+        <p class="lead" data-i18n="hero_lead">Trabalho sob encomenda para estilistas e marcas: de um croqui avulso à coleção inteira, com planejamento, cartela de cor e ficha técnica pronta pro ateliê executar. Com o acabamento de quem já passou por capa, palco e campanha.</p>
         <div class="hero-actions">
           <a class="btn" data-i18n="cta_whatsapp_header" href="https://wa.me/5585999962897?text=Oi%20Joel%2C%20vim%20pela%20sua%20p%C3%A1gina%20de%20ilustra%C3%A7%C3%A3o.%20Quero%20conversar%20sobre%20um%20projeto." target="_blank" rel="noopener">Falar no WhatsApp</a>
           <a class="btn ghost" data-copy-email="joel.estilista@gmail.com" data-i18n="cta_email" href="mailto:joel.estilista@gmail.com?subject=Projeto%20de%20ilustra%C3%A7%C3%A3o">Escrever por e-mail</a>
@@ -947,6 +964,12 @@ src="https://www.facebook.com/tr?id=4493762200768979&ev=PageView&noscript=1"
       </div>
 
       <p class="hp-nota reveal" data-i18n="planos_nota">Parcelado em 2×, com 10% de desconto à vista. Cartão, Pix ou boleto.</p>
+
+      <a class="hp-avulso reveal" href="precos-croqui-de-moda/">
+        <span class="hp-avulso-txt" data-i18n="hp_avulso_txt">Precisa de um croqui só?</span>
+        <span class="hp-avulso-preco" data-i18n="hp_avulso_preco">A partir de R$ 150</span>
+        <span class="hp-avulso-link" data-i18n="hp_avulso_link">Ver o croqui avulso →</span>
+      </a>
 
       <div class="section-cta reveal">
         <span data-i18n="planos_cta_txt">Escopo, prazo e o que está incluso em cada plano:</span>
@@ -2015,9 +2038,12 @@ src="https://www.facebook.com/tr?id=4493762200768979&ev=PageView&noscript=1"
         cta_whatsapp_contact: "Chamar no WhatsApp",
         cta_email: "Escrever por e-mail",
         mobile_menu_aria: "Abrir menu",
-        hero_eyebrow: "Ilustração de moda sob encomenda",
-        hero_h1: 'Transformo sua ideia em <em>ilustração de moda</em>.',
-        hero_lead: "Trabalho sob encomenda para estilistas e marcas que precisam tirar um look do papel com agilidade, com o acabamento de quem já passou por capa, palco e campanha.",
+        hero_eyebrow: "Croqui e desenvolvimento de coleção",
+        hero_h1: "Do croqui à <em>coleção pronta</em> pra produção.",
+        hero_lead: "Trabalho sob encomenda para estilistas e marcas: de um croqui avulso à coleção inteira, com planejamento, cartela de cor e ficha técnica pronta pro ateliê executar. Com o acabamento de quem já passou por capa, palco e campanha.",
+        hp_avulso_txt: "Precisa de um croqui só?",
+        hp_avulso_preco: "A partir de R$ 150",
+        hp_avulso_link: "Ver o croqui avulso →",
         hero_note: "Disponível para projetos pontuais e parcerias contínuas com equipes de estilo.",
         stat_label_colabs: "Colabs de elite",
         stat_label_followers: "Seguidores",
@@ -2142,9 +2168,12 @@ src="https://www.facebook.com/tr?id=4493762200768979&ev=PageView&noscript=1"
         cta_whatsapp_contact: "Chat on WhatsApp",
         cta_email: "Write an email",
         mobile_menu_aria: "Open menu",
-        hero_eyebrow: "Bespoke fashion illustration",
-        hero_h1: 'I turn your idea into <em>fashion illustration</em>.',
-        hero_lead: "Commissioned work for stylists and brands who need to bring a look off the page fast, with the finish of someone who has already been through covers, stages and campaigns.",
+        hero_eyebrow: "Fashion sketching and collection development",
+        hero_h1: "From sketch to a <em>collection ready</em> for production.",
+        hero_lead: "Commissioned work for stylists and brands: from a single sketch to a whole collection, with planning, colour palette and a tech pack your atelier can build from. With the finish of someone who has already been through covers, stages and campaigns.",
+        hp_avulso_txt: "Just need one sketch?",
+        hp_avulso_preco: "From R$ 150",
+        hp_avulso_link: "See single sketch pricing →",
         hero_note: "Available for one-off projects and ongoing partnerships with style teams.",
         stat_label_colabs: "Elite collabs",
         stat_label_followers: "Followers",
@@ -2269,9 +2298,12 @@ src="https://www.facebook.com/tr?id=4493762200768979&ev=PageView&noscript=1"
         cta_whatsapp_contact: "Escribir por WhatsApp",
         cta_email: "Escribir un correo",
         mobile_menu_aria: "Abrir menú",
-        hero_eyebrow: "Ilustración de moda por encargo",
-        hero_h1: 'Transformo tu idea en <em>ilustración de moda</em>.',
-        hero_lead: "Trabajo por encargo para estilistas y marcas que necesitan sacar un look del papel con agilidad, con el acabado de quien ya pasó por portadas, escenarios y campañas.",
+        hero_eyebrow: "Figurín y desarrollo de colección",
+        hero_h1: "Del figurín a la <em>colección lista</em> para producción.",
+        hero_lead: "Trabajo por encargo para estilistas y marcas: de un figurín suelto a la colección entera, con planificación, paleta de color y ficha técnica lista para que el taller ejecute. Con el acabado de quien ya pasó por portadas, escenarios y campañas.",
+        hp_avulso_txt: "¿Necesitas un solo figurín?",
+        hp_avulso_preco: "Desde R$ 150",
+        hp_avulso_link: "Ver el figurín suelto →",
         hero_note: "Disponible para proyectos puntuales y colaboraciones continuas con equipos de estilo.",
         stat_label_colabs: "Colabs de élite",
         stat_label_followers: "Seguidores",
