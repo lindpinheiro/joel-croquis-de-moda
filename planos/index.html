@@ -145,6 +145,12 @@ src="https://www.facebook.com/tr?id=4493762200768979&ev=PageView&noscript=1"
     background:var(--bg);border:1px solid var(--line);border-left:2px solid var(--pink);
     border-radius:8px;font-size:.82rem;color:var(--ink-soft);
   }
+  /* No desktop abre so de passar o mouse (ou pelo teclado). No celular nao
+     existe hover, entao la vale o clique tratado no script do rodape. */
+  @media (hover:hover) and (pointer:fine){
+    .tip-btn:hover + .tip,
+    .tip-btn:focus-visible + .tip{display:block;}
+  }
 
   .plano .rodape{margin-top:auto;padding-top:6px;}
   .plano .cta{width:100%;text-align:center;box-sizing:border-box;}
