@@ -413,17 +413,19 @@ src="https://www.facebook.com/tr?id=4493762200768979&ev=PageView&noscript=1"
     .hero-actions .btn{width:100%;text-align:center;}
   }
   .home-planos{
-    display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:16px;margin:32px 0 18px;
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:16px;margin:32px 0 18px;align-items:stretch;
   }
   .hp-card{
-    display:flex;flex-direction:column;gap:6px;text-decoration:none;
+    display:flex;flex-direction:column;gap:6px;
     background:var(--bg-card);border:1px solid var(--line);border-radius:var(--radius);
-    padding:22px 20px;transition:border-color .2s ease,transform .2s ease;
+    padding:24px 22px;transition:border-color .2s ease,transform .2s ease;
   }
   .hp-card:hover{border-color:var(--pink);transform:translateY(-3px);}
-  .hp-card:focus-visible{outline:2px solid var(--lime);outline-offset:3px;}
-  .hp-card.destaque{border-color:var(--pink);}
+  .hp-card.destaque{
+    border-color:var(--pink);
+    box-shadow:0 0 0 1px var(--pink),0 24px 50px -30px rgba(255,47,143,.9);
+  }
   .hp-selo{
     font-family:var(--font-mono);font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;
     color:var(--pink);font-weight:600;
@@ -431,28 +433,50 @@ src="https://www.facebook.com/tr?id=4493762200768979&ev=PageView&noscript=1"
   .hp-nome{font-family:var(--font-display);font-weight:700;font-size:1.05rem;color:var(--ink);}
   .hp-meta{font-size:.85rem;color:var(--ink-soft);}
   .hp-valor{
-    font-family:var(--font-display);font-weight:800;font-size:1.6rem;margin-top:6px;
+    font-family:var(--font-display);font-weight:800;font-size:1.6rem;margin-top:6px;line-height:1.1;
     background:linear-gradient(90deg,var(--pink),var(--violet));
     -webkit-background-clip:text;background-clip:text;color:transparent;
   }
+  .hp-parcela{
+    font-family:var(--font-mono);font-size:.95rem;font-weight:600;color:var(--ink);
+    margin-top:6px;letter-spacing:-.01em;
+  }
+  .hp-sub{font-family:var(--font-mono);font-size:.74rem;color:var(--ink-faint);margin-top:4px;}
+  .hp-bullets{
+    list-style:none;margin:16px 0 0;padding:16px 0 0;border-top:1px solid var(--line);
+    display:flex;flex-direction:column;gap:8px;
+    font-size:.86rem;line-height:1.4;color:var(--ink-soft);
+  }
+  .hp-bullets li{position:relative;padding-left:15px;}
+  .hp-bullets li::before{
+    content:"";position:absolute;left:0;top:.6em;width:7px;height:1px;background:var(--pink);
+  }
+  .hp-bullets b{color:var(--ink);font-weight:600;}
+  .hp-acao{margin-top:auto;padding-top:18px;}
+  .hp-acao .btn{display:block;width:100%;text-align:center;}
+  .hp-card:not(.destaque) .hp-acao .btn{
+    background:transparent;border:1.5px solid var(--violet);color:var(--ink);box-shadow:none;
+  }
+  .hp-card:not(.destaque) .hp-acao .btn:hover{background:rgba(155,92,255,.14);box-shadow:none;}
+
   .hp-avulso{
-    display:flex;flex-wrap:wrap;align-items:baseline;gap:10px 16px;text-decoration:none;
-    background:var(--bg-card);border:1px dashed var(--line);border-radius:var(--radius);
-    padding:16px 20px;margin:0 0 8px;transition:border-color .2s ease;
+    display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 12px;text-decoration:none;
+    background:transparent;border:0;border-top:1px solid var(--line);border-radius:0;
+    padding:14px 2px 0;margin:0 0 4px;
   }
-  .hp-avulso:hover{border-color:var(--lime);}
   .hp-avulso:focus-visible{outline:2px solid var(--lime);outline-offset:3px;}
-  .hp-avulso-txt{color:var(--ink);font-weight:600;font-size:.95rem;}
-  .hp-avulso-preco{
-    font-family:var(--font-mono);font-size:.9rem;color:var(--lime);font-weight:600;
-  }
+  .hp-avulso-txt{color:var(--ink-soft);font-weight:400;font-size:.85rem;}
+  .hp-avulso-preco{font-family:var(--font-mono);font-size:.85rem;color:var(--ink-soft);font-weight:600;}
   .hp-avulso-link{
-    margin-left:auto;font-family:var(--font-mono);font-size:.8rem;color:var(--ink-soft);
+    margin-left:auto;font-family:var(--font-mono);font-size:.78rem;color:var(--ink-faint);
+    text-decoration:underline;text-underline-offset:3px;
   }
-  .hp-avulso:hover .hp-avulso-link{color:var(--lime);}
+  .hp-avulso:hover .hp-avulso-txt,
+  .hp-avulso:hover .hp-avulso-preco,
+  .hp-avulso:hover .hp-avulso-link{color:var(--ink);}
   @media (max-width:560px){.hp-avulso-link{margin-left:0;}}
 
-  .hp-nota{font-family:var(--font-mono);font-size:.8rem;color:var(--ink-faint);margin:0 0 8px;}
+  .hp-nota{font-family:var(--font-mono);font-size:.8rem;color:var(--ink-faint);margin:0 0 18px;line-height:1.6;}
   @media (prefers-reduced-motion:reduce){.hp-card:hover{transform:none;}}
   .hero-note{font-family:var(--font-mono);font-size:.84rem;font-weight:600;color:var(--lime);margin:16px 0 0;}
 
@@ -907,7 +931,7 @@ src="https://www.facebook.com/tr?id=4493762200768979&ev=PageView&noscript=1"
               </div>
               <span class="process-num">01</span>
               <h3 data-i18n="step1_title">Briefing</h3>
-              <p data-i18n="step1_p">Conversa sobre o projeto, o público e o momento. Numa coleção, é aqui que a gente define quantas peças fazem sentido e em que faixa de preço elas vão viver.</p>
+              <p data-i18n="step1_p">Conversa sobre o projeto, o público e o momento. Numa coleção, é aqui que a gente define quantas peças fazem sentido e para que ocasião cada uma existe.</p>
             </div>
             <div class="scroll-stack-card process-visual-card violet">
               <span class="process-ghost-num" aria-hidden="true">02</span>
@@ -945,25 +969,61 @@ src="https://www.facebook.com/tr?id=4493762200768979&ev=PageView&noscript=1"
       <p class="lead reveal" data-i18n="planos_lead">Além do croqui avulso, desenvolvo a coleção inteira: planejamento, moodboard, cartela de cor, croqui de cada peça e a ficha técnica que a costureira usa pra executar sem adivinhar.</p>
 
       <div class="home-planos reveal">
-        <a class="hp-card" href="planos/">
+        <div class="hp-card">
           <span class="hp-nome" data-i18n="hp1_nome">Mini cápsula</span>
           <span class="hp-meta" data-i18n="hp1_meta">3 peças · 2 a 3 semanas</span>
           <span class="hp-valor">R$ 2.290</span>
-        </a>
-        <a class="hp-card destaque" href="planos/">
+          <span class="hp-parcela" data-i18n="hp1_parcela">6× de R$ 382 sem juros</span>
+          <span class="hp-sub" data-i18n="hp1_sub">ou 12× de R$ 216</span>
+          <ul class="hp-bullets" data-i18n-html="hp1_itens">
+            <li><b>3 croquis finais</b> em alta resolução, com 3 ajustes cada</li>
+            <li>Moodboard e cartela de cor</li>
+            <li>Ficha técnica de cada peça</li>
+            <li>Reunião de alinhamento toda semana, com você ou sua equipe</li>
+            <li>WhatsApp direto comigo, sem intermediário</li>
+          </ul>
+          <div class="hp-acao">
+            <a class="btn small" href="https://wa.me/5585999962897?text=Oi%20Joel%2C%20vim%20pela%20sua%20p%C3%A1gina.%20Quero%20o%20plano%20Mini%20c%C3%A1psula%20(3%20pe%C3%A7as)." target="_blank" rel="noopener" data-i18n="hp_cta">Quero este plano</a>
+          </div>
+        </div>
+        <div class="hp-card destaque">
           <span class="hp-selo" data-i18n="hp_selo">Recomendado</span>
           <span class="hp-nome" data-i18n="hp2_nome">Cápsula</span>
           <span class="hp-meta" data-i18n="hp2_meta">5 peças · 3 a 4 semanas</span>
-          <span class="hp-valor">R$ 3.890</span>
-        </a>
-        <a class="hp-card" href="planos/">
+          <span class="hp-valor">R$ 3.490</span>
+          <span class="hp-parcela" data-i18n="hp2_parcela">6× de R$ 582 sem juros</span>
+          <span class="hp-sub" data-i18n="hp2_sub">ou 12× de R$ 330</span>
+          <ul class="hp-bullets" data-i18n-html="hp2_itens">
+            <li><b>5 croquis finais</b> em alta resolução, com 3 ajustes cada</li>
+            <li>Tudo da Mini + mix de produto e ocasião de uso</li>
+            <li>Ficha técnica de cada peça</li>
+            <li>Reunião de alinhamento toda semana, com você ou sua equipe</li>
+            <li>WhatsApp direto comigo, sem intermediário</li>
+          </ul>
+          <div class="hp-acao">
+            <a class="btn small" href="https://wa.me/5585999962897?text=Oi%20Joel%2C%20vim%20pela%20sua%20p%C3%A1gina.%20Quero%20o%20plano%20C%C3%A1psula%20(5%20pe%C3%A7as)." target="_blank" rel="noopener" data-i18n="hp_cta">Quero este plano</a>
+          </div>
+        </div>
+        <div class="hp-card">
           <span class="hp-nome" data-i18n="hp3_nome">Coleção completa</span>
           <span class="hp-meta" data-i18n="hp3_meta">10 peças · 5 a 7 semanas</span>
           <span class="hp-valor">R$ 5.890</span>
-        </a>
+          <span class="hp-parcela" data-i18n="hp3_parcela">6× de R$ 982 sem juros</span>
+          <span class="hp-sub" data-i18n="hp3_sub">ou 12× de R$ 556</span>
+          <ul class="hp-bullets" data-i18n-html="hp3_itens">
+            <li><b>10 croquis finais</b> em alta resolução, com 3 ajustes cada</li>
+            <li>Tudo da Cápsula + pesquisa de referência e tendência</li>
+            <li>Ficha técnica de cada peça</li>
+            <li>Reunião de alinhamento toda semana, com você ou sua equipe</li>
+            <li>WhatsApp direto comigo, sem intermediário</li>
+          </ul>
+          <div class="hp-acao">
+            <a class="btn small" href="https://wa.me/5585999962897?text=Oi%20Joel%2C%20vim%20pela%20sua%20p%C3%A1gina.%20Quero%20o%20plano%20Cole%C3%A7%C3%A3o%20completa%20(10%20pe%C3%A7as)." target="_blank" rel="noopener" data-i18n="hp_cta">Quero este plano</a>
+          </div>
+        </div>
       </div>
 
-      <p class="hp-nota reveal" data-i18n="planos_nota">Até 12× no cartão, com acréscimos. Ou 10% de desconto à vista, no Pix ou boleto.</p>
+      <p class="hp-nota reveal" data-i18n="planos_nota">Em até 6× sem juros. Nas parcelas acima disso, o acréscimo da maquininha já está no valor mostrado. Ou 10% de desconto à vista, no Pix ou boleto.</p>
 
       <a class="hp-avulso reveal" href="precos-croqui-de-moda/">
         <span class="hp-avulso-txt" data-i18n="hp_avulso_txt">Precisa de um croqui só?</span>
@@ -972,8 +1032,8 @@ src="https://www.facebook.com/tr?id=4493762200768979&ev=PageView&noscript=1"
       </a>
 
       <div class="section-cta reveal">
-        <span data-i18n="planos_cta_txt">Escopo, prazo e o que está incluso em cada plano:</span>
-        <a class="btn small" href="planos/" data-i18n="planos_cta_btn">Ver os planos</a>
+        <span data-i18n="planos_cta_txt">Quer ver o escopo completo, prazos e formas de pagamento?</span>
+        <a class="btn small ghost" href="planos/" data-i18n="planos_cta_btn">Ver escopo detalhado</a>
       </div>
     </div>
   </section>
@@ -2084,12 +2144,22 @@ src="https://www.facebook.com/tr?id=4493762200768979&ev=PageView&noscript=1"
         hp2_meta: "5 peças · 3 a 4 semanas",
         hp3_nome: "Coleção completa",
         hp3_meta: "10 peças · 5 a 7 semanas",
-        planos_nota: "Até 12× no cartão, com acréscimos. Ou 10% de desconto à vista, no Pix ou boleto.",
-        planos_cta_txt: "Escopo, prazo e o que está incluso em cada plano:",
-        planos_cta_btn: "Ver os planos",
+        hp1_parcela: "6× de R$ 382 sem juros",
+        hp2_parcela: "6× de R$ 582 sem juros",
+        hp3_parcela: "6× de R$ 982 sem juros",
+        hp1_sub: "ou 12× de R$ 216",
+        hp2_sub: "ou 12× de R$ 330",
+        hp3_sub: "ou 12× de R$ 556",
+        hp1_itens: "<li><b>3 croquis finais</b> em alta resolução, com 3 ajustes cada</li><li>Moodboard e cartela de cor</li><li>Ficha técnica de cada peça</li><li>Reunião de alinhamento toda semana, com você ou sua equipe</li><li>WhatsApp direto comigo, sem intermediário</li>",
+        hp2_itens: "<li><b>5 croquis finais</b> em alta resolução, com 3 ajustes cada</li><li>Tudo da Mini + mix de produto e ocasião de uso</li><li>Ficha técnica de cada peça</li><li>Reunião de alinhamento toda semana, com você ou sua equipe</li><li>WhatsApp direto comigo, sem intermediário</li>",
+        hp3_itens: "<li><b>10 croquis finais</b> em alta resolução, com 3 ajustes cada</li><li>Tudo da Cápsula + pesquisa de referência e tendência</li><li>Ficha técnica de cada peça</li><li>Reunião de alinhamento toda semana, com você ou sua equipe</li><li>WhatsApp direto comigo, sem intermediário</li>",
+        hp_cta: "Quero este plano",
+        planos_nota: "Em até 6× sem juros. Nas parcelas acima disso, o acréscimo da maquininha já está no valor mostrado. Ou 10% de desconto à vista, no Pix ou boleto.",
+        planos_cta_txt: "Quer ver o escopo completo, prazos e formas de pagamento?",
+        planos_cta_btn: "Ver escopo detalhado",
         proc_lead: "Três etapas, de um croqui avulso à coleção inteira. Escopo e prazo combinados antes de começar.",
         step1_title: "Briefing",
-        step1_p: "Conversa sobre o projeto, o público e o momento. Numa coleção, é aqui que a gente define quantas peças fazem sentido e em que faixa de preço elas vão viver.",
+        step1_p: "Conversa sobre o projeto, o público e o momento. Numa coleção, é aqui que a gente define quantas peças fazem sentido e para que ocasião cada uma existe.",
         step2_title: "Direção",
         step2_p: "Moodboard, cartela de cor e rascunho de cada peça. Você aprova antes do traço final, que é quando ainda é rápido mudar de ideia.",
         step3_title: "Arte final e ficha técnica",
@@ -2214,12 +2284,22 @@ src="https://www.facebook.com/tr?id=4493762200768979&ev=PageView&noscript=1"
         hp2_meta: "5 pieces · 3 to 4 weeks",
         hp3_nome: "Full collection",
         hp3_meta: "10 pieces · 5 to 7 weeks",
-        planos_nota: "Up to 12 card instalments, with interest. Or 10% off paying upfront by Pix or bank slip.",
-        planos_cta_txt: "Scope, timeline and what each plan includes:",
-        planos_cta_btn: "See the plans",
+        hp1_parcela: "6× R$ 382 interest-free",
+        hp2_parcela: "6× R$ 582 interest-free",
+        hp3_parcela: "6× R$ 982 interest-free",
+        hp1_sub: "or 12× R$ 216",
+        hp2_sub: "or 12× R$ 330",
+        hp3_sub: "or 12× R$ 556",
+        hp1_itens: "<li><b>3 final sketches</b> in high resolution, 3 revisions each</li><li>Moodboard and colour palette</li><li>Tech pack for every piece</li><li>A weekly alignment call with you or your team</li><li>Direct WhatsApp with me, no middleman</li>",
+        hp2_itens: "<li><b>5 final sketches</b> in high resolution, 3 revisions each</li><li>Everything in Mini + product mix and occasion of use</li><li>Tech pack for every piece</li><li>A weekly alignment call with you or your team</li><li>Direct WhatsApp with me, no middleman</li>",
+        hp3_itens: "<li><b>10 final sketches</b> in high resolution, 3 revisions each</li><li>Everything in Capsule + reference and trend research</li><li>Tech pack for every piece</li><li>A weekly alignment call with you or your team</li><li>Direct WhatsApp with me, no middleman</li>",
+        hp_cta: "I want this plan",
+        planos_nota: "Up to 6 instalments interest-free. Beyond that, the card fee is already included in the amount shown. Or 10% off paying upfront by Pix or bank slip.",
+        planos_cta_txt: "Want the full scope, timelines and payment terms?",
+        planos_cta_btn: "See detailed scope",
         proc_lead: "Three steps, from a single sketch to a whole collection. Scope and timeline agreed before starting.",
         step1_title: "Briefing",
-        step1_p: "A conversation about the project, the audience and the moment. On a collection, this is where we decide how many pieces make sense and what price bracket they live in.",
+        step1_p: "A conversation about the project, the audience and the moment. On a collection, this is where we decide how many pieces make sense and what occasion each one is for.",
         step2_title: "Direction",
         step2_p: "Moodboard, colour palette and a rough of every piece. You approve before the final line work, while changing your mind is still cheap.",
         step3_title: "Final art and tech pack",
@@ -2344,12 +2424,22 @@ src="https://www.facebook.com/tr?id=4493762200768979&ev=PageView&noscript=1"
         hp2_meta: "5 piezas · 3 a 4 semanas",
         hp3_nome: "Colección completa",
         hp3_meta: "10 piezas · 5 a 7 semanas",
-        planos_nota: "Hasta 12 cuotas con tarjeta, con recargo. O 10% de descuento al contado, por Pix o boleto.",
-        planos_cta_txt: "Alcance, plazo y qué incluye cada plan:",
-        planos_cta_btn: "Ver los planes",
+        hp1_parcela: "6 cuotas de R$ 382 sin interés",
+        hp2_parcela: "6 cuotas de R$ 582 sin interés",
+        hp3_parcela: "6 cuotas de R$ 982 sin interés",
+        hp1_sub: "o 12 cuotas de R$ 216",
+        hp2_sub: "o 12 cuotas de R$ 330",
+        hp3_sub: "o 12 cuotas de R$ 556",
+        hp1_itens: "<li><b>3 figurines finales</b> en alta resolución, con 3 ajustes cada uno</li><li>Moodboard y paleta de color</li><li>Ficha técnica de cada pieza</li><li>Reunión de alineación cada semana, contigo o con tu equipo</li><li>WhatsApp directo conmigo, sin intermediarios</li>",
+        hp2_itens: "<li><b>5 figurines finales</b> en alta resolución, con 3 ajustes cada uno</li><li>Todo lo de la Mini + mix de producto y ocasión de uso</li><li>Ficha técnica de cada pieza</li><li>Reunión de alineación cada semana, contigo o con tu equipo</li><li>WhatsApp directo conmigo, sin intermediarios</li>",
+        hp3_itens: "<li><b>10 figurines finales</b> en alta resolución, con 3 ajustes cada uno</li><li>Todo lo de la Cápsula + investigación de referencia y tendencia</li><li>Ficha técnica de cada pieza</li><li>Reunión de alineación cada semana, contigo o con tu equipo</li><li>WhatsApp directo conmigo, sin intermediarios</li>",
+        hp_cta: "Quiero este plan",
+        planos_nota: "Hasta 6 cuotas sin interés. En más cuotas, el recargo de la tarjeta ya está incluido en el valor mostrado. O 10% de descuento al contado, por Pix o boleto.",
+        planos_cta_txt: "¿Quieres ver el alcance completo, plazos y formas de pago?",
+        planos_cta_btn: "Ver alcance detallado",
         proc_lead: "Tres etapas, de un figurín suelto a la colección entera. Alcance y plazo acordados antes de empezar.",
         step1_title: "Briefing",
-        step1_p: "Una conversación sobre el proyecto, el público y el momento. En una colección, aquí definimos cuántas piezas tienen sentido y en qué rango de precio van a vivir.",
+        step1_p: "Una conversación sobre el proyecto, el público y el momento. En una colección, aquí definimos cuántas piezas tienen sentido y para qué ocasión existe cada una.",
         step2_title: "Dirección",
         step2_p: "Moodboard, paleta de color y boceto de cada pieza. Apruebas antes del trazo final, cuando todavía es rápido cambiar de idea.",
         step3_title: "Arte final y ficha técnica",
