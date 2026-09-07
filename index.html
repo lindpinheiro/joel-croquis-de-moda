@@ -427,9 +427,12 @@ src="https://www.facebook.com/tr?id=4493762200768979&ev=PageView&noscript=1"
     box-shadow:0 0 0 1px var(--pink),0 24px 50px -30px rgba(255,47,143,.9);
   }
   .hp-selo{
-    font-family:var(--font-mono);font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;
-    color:var(--pink);font-weight:600;
+    font-family:var(--font-mono);font-size:.62rem;line-height:1.5;letter-spacing:.14em;
+    text-transform:uppercase;color:var(--pink);font-weight:600;
   }
+  /* reserva a altura do selo nos cards sem destaque, pra que nome, preço e
+     parcela fiquem na mesma linha de base nos três cards */
+  .hp-selo.vazio{visibility:hidden;}
   .hp-nome{font-family:var(--font-display);font-weight:700;font-size:1.05rem;color:var(--ink);}
   .hp-meta{font-size:.85rem;color:var(--ink-soft);}
   .hp-valor{
@@ -453,16 +456,57 @@ src="https://www.facebook.com/tr?id=4493762200768979&ev=PageView&noscript=1"
   }
   .hp-bullets b{color:var(--ink);font-weight:600;}
   .hp-acao{margin-top:auto;padding-top:18px;}
+  .hp-saiba{
+    display:block;text-align:center;margin-top:11px;text-decoration:none;
+    font-family:var(--font-mono);font-size:.78rem;color:var(--ink-soft);
+  }
+  .hp-saiba:hover{color:var(--ink);text-decoration:underline;text-underline-offset:3px;}
   .hp-acao .btn{display:block;width:100%;text-align:center;}
   .hp-card:not(.destaque) .hp-acao .btn{
     background:transparent;border:1.5px solid var(--violet);color:var(--ink);box-shadow:none;
   }
   .hp-card:not(.destaque) .hp-acao .btn:hover{background:rgba(155,92,255,.14);box-shadow:none;}
 
+  /* Cada card vira um subgrid do .home-planos: nome, meta, valor, parcela,
+     bullets e botao caem sempre na mesma linha nos tres cards, mesmo quando
+     um nome ou um bullet ocupa duas linhas. */
+  @supports (grid-template-rows:subgrid){
+    .home-planos{grid-template-rows:repeat(8,auto);}
+    .hp-card{display:grid;grid-row:span 8;grid-template-rows:subgrid;gap:6px;}
+    .hp-bullets{margin-top:10px;}
+    .hp-acao{margin-top:0;align-self:end;}
+  }
+
+  .hp-cta{
+    display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;
+    gap:12px 20px;margin:0 0 22px;
+  }
+  .hp-cta-txt{font-size:.92rem;color:var(--ink-soft);margin:0;}
+  @media (max-width:560px){
+    .hp-cta .btn{width:100%;text-align:center;}
+  }
+
+  .hp-extra{
+    display:flex;flex-wrap:wrap;align-items:center;gap:9px 16px;text-decoration:none;
+    background:var(--bg-card);border:1px solid var(--line);border-radius:var(--radius);
+    padding:16px 20px;margin:0 0 14px;transition:border-color .2s ease;
+  }
+  .hp-extra:hover{border-color:var(--lime);}
+  .hp-extra:focus-visible{outline:2px solid var(--lime);outline-offset:3px;}
+  .hp-extra-tag{
+    font-family:var(--font-mono);font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--lime);font-weight:600;border:1px solid var(--lime);border-radius:999px;padding:3px 9px;
+  }
+  .hp-extra-nome{font-family:var(--font-display);font-weight:700;font-size:.97rem;color:var(--ink);}
+  .hp-extra-p{flex:1 1 240px;font-size:.85rem;line-height:1.45;color:var(--ink-soft);}
+  .hp-extra-preco{font-family:var(--font-mono);font-size:.85rem;color:var(--ink);font-weight:600;}
+  .hp-extra-link{font-family:var(--font-mono);font-size:.78rem;color:var(--ink-faint);}
+  .hp-extra:hover .hp-extra-link{color:var(--lime);}
+
   .hp-avulso{
     display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 12px;text-decoration:none;
     background:transparent;border:0;border-top:1px solid var(--line);border-radius:0;
-    padding:14px 2px 0;margin:0 0 4px;
+    padding:14px 2px 0;margin:0;
   }
   .hp-avulso:focus-visible{outline:2px solid var(--lime);outline-offset:3px;}
   .hp-avulso-txt{color:var(--ink-soft);font-weight:400;font-size:.85rem;}
@@ -970,6 +1014,7 @@ src="https://www.facebook.com/tr?id=4493762200768979&ev=PageView&noscript=1"
 
       <div class="home-planos reveal">
         <div class="hp-card">
+          <span class="hp-selo vazio" aria-hidden="true">&nbsp;</span>
           <span class="hp-nome" data-i18n="hp1_nome">Mini cápsula</span>
           <span class="hp-meta" data-i18n="hp1_meta">3 peças · 2 a 3 semanas</span>
           <span class="hp-valor">R$ 2.290</span>
@@ -984,6 +1029,7 @@ src="https://www.facebook.com/tr?id=4493762200768979&ev=PageView&noscript=1"
           </ul>
           <div class="hp-acao">
             <a class="btn small" href="https://wa.me/5585999962897?text=Oi%20Joel%2C%20vim%20pela%20sua%20p%C3%A1gina.%20Quero%20o%20plano%20Mini%20c%C3%A1psula%20(3%20pe%C3%A7as)." target="_blank" rel="noopener" data-i18n="hp_cta">Quero este plano</a>
+            <a class="hp-saiba" href="planos/" data-i18n="hp_saiba">Ver escopo completo →</a>
           </div>
         </div>
         <div class="hp-card destaque">
@@ -1002,9 +1048,11 @@ src="https://www.facebook.com/tr?id=4493762200768979&ev=PageView&noscript=1"
           </ul>
           <div class="hp-acao">
             <a class="btn small" href="https://wa.me/5585999962897?text=Oi%20Joel%2C%20vim%20pela%20sua%20p%C3%A1gina.%20Quero%20o%20plano%20C%C3%A1psula%20(5%20pe%C3%A7as)." target="_blank" rel="noopener" data-i18n="hp_cta">Quero este plano</a>
+            <a class="hp-saiba" href="planos/" data-i18n="hp_saiba">Ver escopo completo →</a>
           </div>
         </div>
         <div class="hp-card">
+          <span class="hp-selo vazio" aria-hidden="true">&nbsp;</span>
           <span class="hp-nome" data-i18n="hp3_nome">Coleção completa</span>
           <span class="hp-meta" data-i18n="hp3_meta">10 peças · 5 a 7 semanas</span>
           <span class="hp-valor">R$ 5.890</span>
@@ -1019,11 +1067,25 @@ src="https://www.facebook.com/tr?id=4493762200768979&ev=PageView&noscript=1"
           </ul>
           <div class="hp-acao">
             <a class="btn small" href="https://wa.me/5585999962897?text=Oi%20Joel%2C%20vim%20pela%20sua%20p%C3%A1gina.%20Quero%20o%20plano%20Cole%C3%A7%C3%A3o%20completa%20(10%20pe%C3%A7as)." target="_blank" rel="noopener" data-i18n="hp_cta">Quero este plano</a>
+            <a class="hp-saiba" href="planos/" data-i18n="hp_saiba">Ver escopo completo →</a>
           </div>
         </div>
       </div>
 
       <p class="hp-nota reveal" data-i18n="planos_nota">Em até 6× sem juros. Nas parcelas acima disso, o acréscimo da maquininha já está no valor mostrado. Ou 10% de desconto à vista, no Pix ou boleto.</p>
+
+      <div class="hp-cta reveal">
+        <p class="hp-cta-txt" data-i18n="planos_cta_txt">Quer ver o escopo completo, prazos e formas de pagamento?</p>
+        <a class="btn ghost" href="planos/" data-i18n="planos_cta_btn">Ver escopo detalhado</a>
+      </div>
+
+      <a class="hp-extra reveal" href="planos/#adicionais">
+        <span class="hp-extra-tag" data-i18n="hp_extra_tag">Adicional</span>
+        <span class="hp-extra-nome" data-i18n="hp_extra_nome">Página da coleção no ar</span>
+        <span class="hp-extra-p" data-i18n="hp_extra_p">Moodboard, paleta, croqui de cada peça e as fichas técnicas num link privado, que abre no celular do fornecedor.</span>
+        <span class="hp-extra-preco" data-i18n="hp_extra_preco">+ R$ 290</span>
+        <span class="hp-extra-link" data-i18n="hp_extra_link">Ver como funciona →</span>
+      </a>
 
       <a class="hp-avulso reveal" href="precos-croqui-de-moda/">
         <span class="hp-avulso-txt" data-i18n="hp_avulso_txt">Precisa de um croqui só?</span>
@@ -1031,10 +1093,6 @@ src="https://www.facebook.com/tr?id=4493762200768979&ev=PageView&noscript=1"
         <span class="hp-avulso-link" data-i18n="hp_avulso_link">Ver o croqui avulso →</span>
       </a>
 
-      <div class="section-cta reveal">
-        <span data-i18n="planos_cta_txt">Quer ver o escopo completo, prazos e formas de pagamento?</span>
-        <a class="btn small ghost" href="planos/" data-i18n="planos_cta_btn">Ver escopo detalhado</a>
-      </div>
     </div>
   </section>
 
@@ -2154,6 +2212,12 @@ src="https://www.facebook.com/tr?id=4493762200768979&ev=PageView&noscript=1"
         hp2_itens: "<li><b>5 croquis finais</b> em alta resolução, com 3 ajustes cada</li><li>Tudo da Mini + mix de produto e ocasião de uso</li><li>Ficha técnica de cada peça</li><li>Reunião de alinhamento toda semana, com você ou sua equipe</li><li>WhatsApp direto comigo, sem intermediário</li>",
         hp3_itens: "<li><b>10 croquis finais</b> em alta resolução, com 3 ajustes cada</li><li>Tudo da Cápsula + pesquisa de referência e tendência</li><li>Ficha técnica de cada peça</li><li>Reunião de alinhamento toda semana, com você ou sua equipe</li><li>WhatsApp direto comigo, sem intermediário</li>",
         hp_cta: "Quero este plano",
+        hp_saiba: "Ver escopo completo →",
+        hp_extra_tag: "Adicional",
+        hp_extra_nome: "Página da coleção no ar",
+        hp_extra_p: "Moodboard, paleta, croqui de cada peça e as fichas técnicas num link privado, que abre no celular do fornecedor.",
+        hp_extra_preco: "+ R$ 290",
+        hp_extra_link: "Ver como funciona →",
         planos_nota: "Em até 6× sem juros. Nas parcelas acima disso, o acréscimo da maquininha já está no valor mostrado. Ou 10% de desconto à vista, no Pix ou boleto.",
         planos_cta_txt: "Quer ver o escopo completo, prazos e formas de pagamento?",
         planos_cta_btn: "Ver escopo detalhado",
@@ -2294,6 +2358,12 @@ src="https://www.facebook.com/tr?id=4493762200768979&ev=PageView&noscript=1"
         hp2_itens: "<li><b>5 final sketches</b> in high resolution, 3 revisions each</li><li>Everything in Mini + product mix and occasion of use</li><li>Tech pack for every piece</li><li>A weekly alignment call with you or your team</li><li>Direct WhatsApp with me, no middleman</li>",
         hp3_itens: "<li><b>10 final sketches</b> in high resolution, 3 revisions each</li><li>Everything in Capsule + reference and trend research</li><li>Tech pack for every piece</li><li>A weekly alignment call with you or your team</li><li>Direct WhatsApp with me, no middleman</li>",
         hp_cta: "I want this plan",
+        hp_saiba: "See full scope →",
+        hp_extra_tag: "Add-on",
+        hp_extra_nome: "Your collection online",
+        hp_extra_p: "Moodboard, palette, a sketch of every piece and all the tech packs on one private link that opens on your maker's phone.",
+        hp_extra_preco: "+ R$ 290",
+        hp_extra_link: "See how it works →",
         planos_nota: "Up to 6 instalments interest-free. Beyond that, the card fee is already included in the amount shown. Or 10% off paying upfront by Pix or bank slip.",
         planos_cta_txt: "Want the full scope, timelines and payment terms?",
         planos_cta_btn: "See detailed scope",
@@ -2434,6 +2504,12 @@ src="https://www.facebook.com/tr?id=4493762200768979&ev=PageView&noscript=1"
         hp2_itens: "<li><b>5 figurines finales</b> en alta resolución, con 3 ajustes cada uno</li><li>Todo lo de la Mini + mix de producto y ocasión de uso</li><li>Ficha técnica de cada pieza</li><li>Reunión de alineación cada semana, contigo o con tu equipo</li><li>WhatsApp directo conmigo, sin intermediarios</li>",
         hp3_itens: "<li><b>10 figurines finales</b> en alta resolución, con 3 ajustes cada uno</li><li>Todo lo de la Cápsula + investigación de referencia y tendencia</li><li>Ficha técnica de cada pieza</li><li>Reunión de alineación cada semana, contigo o con tu equipo</li><li>WhatsApp directo conmigo, sin intermediarios</li>",
         hp_cta: "Quiero este plan",
+        hp_saiba: "Ver alcance completo →",
+        hp_extra_tag: "Adicional",
+        hp_extra_nome: "Página de la colección en línea",
+        hp_extra_p: "Moodboard, paleta, figurín de cada pieza y las fichas técnicas en un enlace privado, que abre en el celular del proveedor.",
+        hp_extra_preco: "+ R$ 290",
+        hp_extra_link: "Ver cómo funciona →",
         planos_nota: "Hasta 6 cuotas sin interés. En más cuotas, el recargo de la tarjeta ya está incluido en el valor mostrado. O 10% de descuento al contado, por Pix o boleto.",
         planos_cta_txt: "¿Quieres ver el alcance completo, plazos y formas de pago?",
         planos_cta_btn: "Ver alcance detallado",
