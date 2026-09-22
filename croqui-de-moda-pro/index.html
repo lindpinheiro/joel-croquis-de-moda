@@ -1361,7 +1361,7 @@
     <div class="strands-container" id="strands" aria-hidden="true"></div>
     <div class="wrap">
       <h2 style="text-align:center;">Garanta o seu</h2>
-      <p class="section-lead" style="margin-left:auto;margin-right:auto;text-align:center;">Lançamento em breve — entre na lista e seja avisado assim que abrir.</p>
+      <p class="section-lead" id="preco-lead" style="margin-left:auto;margin-right:auto;text-align:center;">Lançamento em breve — entre na lista e seja avisado assim que abrir.</p>
       <div class="border-glow-card price-glow reveal" data-border-glow>
         <span class="edge-light" aria-hidden="true"></span>
         <div class="border-glow-inner">
@@ -1388,16 +1388,41 @@
           <li>Entrega automática por e-mail</li>
           <li>Suporte via WhatsApp</li>
         </ul>
-        <!--
-          TODO(Joel/Lindberg): assim que o produto estiver cadastrado na Kiwify (ou Hotmart/Eduzz),
-          troque o href abaixo pelo link de checkout real. Até lá o botão abre o WhatsApp
-          para lista de espera do lançamento.
-        -->
         <a class="btn" id="checkout-btn"
            href="https://wa.me/5585999962897?text=Quero%20entrar%20na%20lista%20de%20espera%20do%20Croqui%20de%20Moda%20PRO!"
            target="_blank" rel="noopener">
           Entrar na lista de espera
         </a>
+        <script>
+        /* =======================================================================
+           ABRIR AS VENDAS — é só trocar a linha do CHECKOUT_URL aqui embaixo.
+
+           Cole entre as aspas o link de checkout do Hotmart (algo como
+           "https://pay.hotmart.com/XXXXXXXX") e salve. O botão vira "Comprar
+           agora", a chamada da seção e o selo mudam junto, e o link da lista de
+           espera some. Enquanto a linha estiver vazia, a página segue captando
+           lista de espera pelo WhatsApp — que é o certo, porque botão de compra
+           que não compra só queima o visitante.
+           ======================================================================= */
+        (function () {
+          var CHECKOUT_URL = "";
+
+          if (!CHECKOUT_URL) return;
+
+          var btn = document.getElementById("checkout-btn");
+          if (btn) {
+            btn.href = CHECKOUT_URL;
+            btn.removeAttribute("target");
+            btn.textContent = "Comprar agora · acesso imediato";
+          }
+          var lead = document.getElementById("preco-lead");
+          if (lead) {
+            lead.textContent = "Você recebe os arquivos por e-mail assim que o pagamento é confirmado.";
+          }
+          var badge = document.querySelector(".soon-badge");
+          if (badge) { badge.textContent = "Pagamento único · acesso imediato"; }
+        })();
+        </script>
         </div>
       </div>
         </div>
