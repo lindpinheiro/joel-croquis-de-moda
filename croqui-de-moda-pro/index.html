@@ -662,7 +662,14 @@
   }
   .price{font-family:var(--font-display);font-weight:700;font-size:2.8rem;margin:10px 0 0;
     background:linear-gradient(90deg,var(--lime),var(--pink));-webkit-background-clip:text;background-clip:text;color:transparent;}
+  .price-prefix{font-family:var(--font-body);font-size:1rem;color:var(--ink-soft);margin:14px 0 -8px;}
   .price-old{color:var(--ink-faint);font-size:1.02rem;margin:4px 0 0;}
+  .price-anchor{
+    margin:16px auto 0;max-width:430px;font-size:.93rem;color:var(--ink);
+    background:rgba(215,255,62,.07);border:1px solid rgba(215,255,62,.26);
+    border-radius:12px;padding:11px 15px;
+  }
+  .price-anchor strong{color:var(--lime);}
   .price-old s{text-decoration:line-through;}
   .price-math{
     font-family:var(--font-mono);font-size:.82rem;color:var(--ink-soft);
@@ -1031,7 +1038,7 @@
           <a class="btn" href="#preco">Garantir o meu</a>
           <a class="btn ghost" href="https://www.instagram.com/joelcoveero/" target="_blank" rel="noopener">Ver no Instagram</a>
         </div>
-        <p class="hero-price"><strong>R$ 97,50</strong> · em até 12x no cartão · dá <strong>R$ 3,61</strong> por modelo</p>
+        <p class="hero-price"><strong>12x de R$ 8,13</strong> · ou R$ 97,50 à vista · dá <strong>R$ 3,61</strong> por modelo</p>
         <div class="stat-strip">
           <div class="stat-item"><span class="stat-num" data-countup="75" data-suffix="+" data-duration="1.6">75+</span><span class="stat-label">Arquivos</span></div>
           <div class="stat-div"></div>
@@ -1098,7 +1105,7 @@
     <div class="wrap">
       <div class="cta-inline reveal">
         <a class="btn" href="#preco">Garantir o meu</a>
-        <p>R$ 97,50 em até 12x · 27 modelos e 75+ arquivos</p>
+        <p>12x de R$ 8,13 · 27 modelos e 75+ arquivos</p>
       </div>
     </div>
   </section>
@@ -1362,17 +1369,17 @@
         <div class="border-gradient-top" style="animation-duration:6s;" aria-hidden="true"></div>
         <div class="pricing">
         <span class="soon-badge">Pagamento único · até 12x</span>
-        <div class="price">R$ 97,50</div>
+        <p class="price-prefix">12x de</p>
+                  <div class="price">R$ 8,13</div>
         <!--
           TODO(Joel/Lindberg): trocar [data] pela data real de fim do preço de
           lançamento. Preço riscado sem motivo e sem prazo é o clichê que o
           público já aprendeu a ignorar — o desconto precisa do porquê e do quando.
         -->
-        <p class="price-old">preço de lançamento · de <s>R$ 139,00</s></p>
+        <p class="price-old">ou <strong>R$ 97,50</strong> à vista · preço de lançamento, de <s>R$ 139,00</s></p>
         <p class="price-math">27 modelos e 75+ arquivos — sai a <strong>R$ 3,61</strong> por modelo</p>
-                  <p class="price-math">ou parcelado em <strong>até 12x</strong> no cartão</p>
+                  <p class="price-anchor">Um croqui sob encomenda começa em <strong>R$ 150</strong>. Aqui você leva <strong>27 modelos</strong> por menos que isso.</p>
         <ul>
-          <li>Pagamento único, parcelável em até 12x no cartão</li>
                     <li>27 modelos: feminino, masculino, plus size e manequim técnico</li>
           <li>75+ arquivos: lineart + base renderizada + segundo tom de pele</li>
           <li>Licença para uso comercial dos seus próprios croquis</li>
