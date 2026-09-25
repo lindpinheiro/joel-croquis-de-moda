@@ -1481,11 +1481,6 @@ src="https://www.facebook.com/tr?id=4493762200768979&ev=PageView&noscript=1"
             btn.href = CHECKOUT_URL;
             btn.removeAttribute("target");
             btn.textContent = "Comprar agora · acesso imediato";
-            // Avisa o pixel da Meta que a pessoa foi pro checkout. A compra em
-            // si é registrada pelo pixel configurado dentro da Hotmart.
-            btn.addEventListener("click", function () {
-              if (window.fbq) fbq("track", "InitiateCheckout", { value: 97.5, currency: "BRL" });
-            });
           }
           var lead = document.getElementById("preco-lead");
           if (lead) {
